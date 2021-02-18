@@ -1,0 +1,3 @@
+# widget入门
+
+[widget.key](https://www.yuque.com/attachments/yuque/0/2020/key/384983/1596273258386-a92e3457-47ae-46a6-81b5-b08c142d0eff.key?_lake_card=%7B%22uid%22%3A%221596273256810-0%22%2C%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2020%2Fkey%2F384983%2F1596273258386-a92e3457-47ae-46a6-81b5-b08c142d0eff.key%22%2C%22name%22%3A%22widget.key%22%2C%22size%22%3A1291097%2C%22type%22%3A%22application%2Fx-iwork-keynote-sffkey%22%2C%22ext%22%3A%22key%22%2C%22progress%22%3A%7B%22percent%22%3A99%7D%2C%22status%22%3A%22done%22%2C%22percent%22%3A0%2C%22id%22%3A%22ZBN5x%22%2C%22card%22%3A%22file%22%7D)

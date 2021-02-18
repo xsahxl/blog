@@ -22,5 +22,17 @@ export default defineConfig({
       path: 'https://github.com/xsahxl/blog',
     },
   ],
+  base: '/blog',
+  publicPath: '/blog/',
+  externals: {
+    lodash: '_',
+    moment: 'moment',
+    'prop-types': 'propTypes',
+    react: 'React',
+    'react-dom': 'ReactDOM',
+  },
+  scripts: [
+    'https://g.alicdn.com/cm-design/mw-vendor/1.2.0/cloud-native-sdk.js',
+  ],
   // more config: https://d.umijs.org/config
 });

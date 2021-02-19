@@ -1,4 +1,4 @@
-# vue 和 react 简单对比
+# react vs vue
 
 watch (computed) => componentWillReceiveProps
 

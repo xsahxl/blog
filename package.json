@@ -4,7 +4,7 @@
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
-    "deploy": "gh-pages -d docs-dist",
+    "deploy": "bash deploy.sh",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"

@@ -1,6 +1,6 @@
 {
   "name": "@xsahxl/ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -15,6 +15,15 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xsahxl/ui"
+  },
+  "author": {
+    "name": "xsahxl",
+    "email": "xsahxl@126.com"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },

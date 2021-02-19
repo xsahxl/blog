@@ -7,12 +7,12 @@
     "deploy": "bash deploy.sh",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "gh-pages:deploy": "gh-pages -d docs-dist"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
-  "license": "MIT",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },

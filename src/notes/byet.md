@@ -1,6 +1,6 @@
 # [云主机](https://byet.host/)
 
-注册： http://cpanel.byethost.com/
+注册： https://byet.host/
 
 在用账户：b8_27955588
 

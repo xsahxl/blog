@@ -23,8 +23,8 @@ export default defineConfig({
       path: 'https://github.com/xsahxl/blog',
     },
   ],
-  // base: '/blog',
-  // publicPath: '/blog/',
+  base: '/blog',
+  publicPath: '/blog/',
   externals: {
     lodash: '_',
     moment: 'moment',

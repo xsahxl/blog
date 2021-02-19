@@ -3,37 +3,37 @@
 ## 忽略某文件
 
 ```shell
-git update-index --assume-unchanged file
+git update-index --assume-unchanged <filename>
 ```
 
 ## 重新添加已忽略的文件
 
 ```shell
-git add -f file
+git add -f <filename>
 ```
 
 ## 切分支
 
 ```shell
-git checkout pre
+git checkout <branchName>
 ```
 
 ## 合并分支
 
 ```shell
-git merge --no-ff dev
+git merge --no-ff <branchName>
 ```
 
 ## 删除本地分支（-D 强制删除）
 
 ```shell
-git branch -d branchname
+git branch -d <branchName>
 ```
 
 ## 删除远程分支
 
 ```shell
-git push origin :branchname
+git push origin --delete <branchName>
 ```
 
 ## 添加密钥

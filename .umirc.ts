@@ -20,7 +20,16 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/xsahxl/blog',
+      children: [
+        {
+          title: 'blog',
+          path: 'https://github.com/xsahxl/blog',
+        },
+        {
+          title: '@xsahxl/ui',
+          path: 'https://github.com/xsahxl/ui',
+        },
+      ],
     },
   ],
   // base: '/blog',

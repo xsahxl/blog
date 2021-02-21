@@ -41,6 +41,6 @@ export default defineConfig({
     react: 'React',
     'react-dom': 'ReactDOM',
   },
-  scripts: ['https://shihuali.tk/sdk.js'],
+  scripts: ['/public/sdk.js'],
   // more config: https://d.umijs.org/config
 });

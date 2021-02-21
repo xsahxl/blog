@@ -41,8 +41,6 @@ export default defineConfig({
     react: 'React',
     'react-dom': 'ReactDOM',
   },
-  scripts: [
-    'https://g.alicdn.com/cm-design/mw-vendor/1.2.0/cloud-native-sdk.js',
-  ],
+  scripts: ['https://shihuali.tk/sdk.js'],
   // more config: https://d.umijs.org/config
 });

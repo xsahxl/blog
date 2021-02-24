@@ -1,5 +1,11 @@
 # git 命令
 
+## 如何切换链接 git 服务器的方式是 ssh 还是 http
+
+```shell
+git remote set-url origin <要修改的url>
+```
+
 ## 忽略某文件
 
 ```shell

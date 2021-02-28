@@ -49,7 +49,7 @@
     (n.o = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = '/blog/'),
+    (n.p = '/'),
     n((n.s = 0));
 })({
   '+3Ak': function(e, t, n) {
@@ -22897,7 +22897,7 @@
         return o;
       });
     var r = n('HFu6'),
-      a = { basename: '/blog/' };
+      a = { basename: '/' };
     window.routerBase && (a.basename = window.routerBase);
     var o = Object({ NODE_ENV: 'production' }).__IS_SERVER
         ? null
@@ -49775,7 +49775,7 @@
       o = n('4H+6'),
       i = n('uZyb'),
       l = n('If9L'),
-      s = '/blog/';
+      s = '/';
     function u(e) {
       var t = e.href,
         n = e.children;

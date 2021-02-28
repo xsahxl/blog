@@ -22897,7 +22897,7 @@
         return o;
       });
     var r = n('HFu6'),
-      a = { basename: '/blog' };
+      a = { basename: '/blog/' };
     window.routerBase && (a.basename = window.routerBase);
     var o = Object({ NODE_ENV: 'production' }).__IS_SERVER
         ? null
@@ -49775,7 +49775,18 @@
       o = n('4H+6'),
       i = n('uZyb'),
       l = n('If9L'),
-      s = () =>
+      s = '/blog/';
+    function u(e) {
+      var t = e.href,
+        n = e.children;
+      return a.a.createElement(
+        'a',
+        { href: ''.concat(s, 'article/').concat(t) },
+        n,
+      );
+    }
+    var c = u,
+      d = () =>
         a.a.createElement(
           'div',
           null,
@@ -49808,7 +49819,7 @@
             ),
           ),
         ),
-      u = () =>
+      f = () =>
         a.a.createElement(
           'div',
           { style: { backgroundColor: '#fff', padding: 32 } },
@@ -49819,8 +49830,8 @@
               i['a'].Col,
               null,
               a.a.createElement(
-                'a',
-                { href: '/article/how-to-create-blog' },
+                c,
+                { href: 'how-to-create-blog' },
                 a.a.createElement(
                   l['a'],
                   {
@@ -49828,7 +49839,7 @@
                       '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
                   },
                   '\u672c\u6b21\u535a\u5ba2\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
-                  a.a.createElement(s, null),
+                  a.a.createElement(d, null),
                 ),
               ),
             ),
@@ -49839,7 +49850,7 @@
                 l['a'],
                 { title: '\u6587\u7ae02' },
                 a.a.createElement('div', null, '\u63cf\u8ff0'),
-                a.a.createElement(s, null),
+                a.a.createElement(d, null),
               ),
             ),
             a.a.createElement(
@@ -49849,12 +49860,12 @@
                 l['a'],
                 { title: '\u6587\u7ae03' },
                 a.a.createElement('div', null, '\u63cf\u8ff0'),
-                a.a.createElement(s, null),
+                a.a.createElement(d, null),
               ),
             ),
           ),
         );
-    t['default'] = u;
+    t['default'] = f;
   },
   dnUL: function(e, t, n) {
     'use strict';
@@ -76477,7 +76488,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/how-to-create-blog.md',
-                updatedTime: null,
+                updatedTime: 1614507421e3,
                 sidemenu: !1,
                 slugs: [
                   {
@@ -76533,7 +76544,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/index.md',
-                updatedTime: null,
+                updatedTime: 1614507421e3,
                 gapless: !0,
                 slugs: [],
                 title: 'Index',
@@ -76574,7 +76585,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/components/query.md',
-                updatedTime: 1613715229e3,
+                updatedTime: 1614507421e3,
                 slugs: [
                   { depth: 1, value: 'Query', heading: 'query' },
                   {

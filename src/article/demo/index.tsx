@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Grid, Icon } from '@alicloud/console-components';
+import Link from './Link';
 
 const CardFooter = () => (
   <div>
@@ -18,12 +19,12 @@ const List = () => (
   <div style={{ backgroundColor: '#fff', padding: 32 }}>
     <Grid.Row gutter={32}>
       <Grid.Col>
-        <a href="/article/how-to-create-blog">
+        <Link href="how-to-create-blog">
           <Card title="如何搭建自己的博客">
             本次博客搭建 以 dumi 和 GitHub Pages、云服务器为例子进行演示
             <CardFooter />
           </Card>
-        </a>
+        </Link>
       </Grid.Col>
       <Grid.Col>
         <Card title="文章2">

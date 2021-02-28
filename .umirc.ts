@@ -1,4 +1,5 @@
 import { defineConfig } from 'dumi';
+import { base } from './src/constans';
 
 export default defineConfig({
   title: 'blog',
@@ -36,8 +37,8 @@ export default defineConfig({
       ],
     },
   ],
-  base: '/blog',
-  publicPath: '/blog/',
+  base,
+  publicPath: base,
   externals: {
     lodash: '_',
     moment: 'moment',

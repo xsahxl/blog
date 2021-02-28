@@ -15,6 +15,10 @@ export default defineConfig({
       path: '/components',
     },
     {
+      title: '文章',
+      path: '/article',
+    },
+    {
       title: '笔记',
       path: '/notes',
     },
@@ -32,8 +36,8 @@ export default defineConfig({
       ],
     },
   ],
-  // base: '/blog',
-  // publicPath: '/blog/',
+  base: '/blog',
+  publicPath: '/blog/',
   externals: {
     lodash: '_',
     moment: 'moment',
@@ -42,5 +46,6 @@ export default defineConfig({
     'react-dom': 'ReactDOM',
   },
   scripts: ['https://shihuali.tk/sdk.js'],
+  sidemenu: false,
   // more config: https://d.umijs.org/config
 });

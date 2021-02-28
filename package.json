@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@alicloud/console-components": "^1.3.0",
+    "@alicloud/console-components-info": "^1.0.7",
     "@types/lodash": "^4.14.168",
     "@types/react": "^17.0.2",
     "@xsahxl/ui": "^1.1.0",

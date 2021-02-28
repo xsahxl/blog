@@ -1,6 +1,8 @@
 # Query
 
-<h3>refreshIndex 属性的初始值务必设置为 0，非0的case下会引起 fetchData 函数请求两次</h3>
+<Alert type="warning">
+  <strong>refreshIndex 属性的初始值务必设置为 0，非 0 的 case 下会引起 fetchData 函数请求两次</strong>
+</Alert>
 
 ## 何时使用
 

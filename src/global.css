@@ -1,1 +1,10 @@
 @import '~@alicloud/console-components/dist/wind.css';
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.next-card {
+  color: #111;
+}

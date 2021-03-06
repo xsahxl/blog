@@ -47,6 +47,5 @@ export default defineConfig({
     'react-dom': 'ReactDOM',
   },
   scripts: ['https://shihuali.tk/sdk.js'],
-  sidemenu: false,
   // more config: https://d.umijs.org/config
 });

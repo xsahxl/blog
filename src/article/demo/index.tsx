@@ -24,7 +24,9 @@ const List = () => (
       <Grid.Col>
         <Link href="how-to-create-blog">
           <Card title="如何搭建自己的博客">
-            本次博客搭建 以 dumi 和 GitHub Pages、云服务器为例子进行演示
+            <div>1.dumi</div>
+            <p>2.GitHub Pages</p>
+            <p>3.云服务器</p>
             <CardFooter time="2021-2-28" />
           </Card>
         </Link>
@@ -38,10 +40,13 @@ const List = () => (
         </Link>
       </Grid.Col>
       <Grid.Col>
-        <Card title="文章3">
-          <div>描述</div>
-          <CardFooter time="待定" />
-        </Card>
+        <Link href="vultr&shadowsocks">
+          <Card title="vultr&shadowsocks">
+            <div>1.购买vultr服务器</div>
+            <p>2.通过shadowsocks搭建vpn</p>
+            <CardFooter time="2021-3-7" />
+          </Card>
+        </Link>
       </Grid.Col>
     </Grid.Row>
   </div>

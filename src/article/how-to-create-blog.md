@@ -124,7 +124,7 @@ rz 上传 node 包
 解压 node 包
 
 ```
-tar -xvf node-v14.15.5-linux-x64.tar.xz
+tar -zxvf node-v14.15.5-linux-x64.tar.xz
 ```
 
 将文件移动到 /usr/local 目录下

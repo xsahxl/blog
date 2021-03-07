@@ -1,5 +1,5 @@
 import React from 'react';
-import { base } from '../../constans';
+import { base } from '../../constants';
 
 interface PropsOptions {
   href: string;

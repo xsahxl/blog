@@ -1,4 +1,6 @@
-# git 命令
+---
+sidemenu: false
+---
 
 ## 如何切换链接 git 服务器的方式是 ssh 还是 http
 
@@ -32,6 +34,8 @@ git config --global user.email "xsahxl@126.com"
 ```
 
 ## 当前仓库 设置 用户名和邮箱
+
+优先级由上至下 依次降低
 
 - local 项目级
 - global 当前用户级

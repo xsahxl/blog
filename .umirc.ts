@@ -1,5 +1,5 @@
 import { defineConfig } from 'dumi';
-import { base } from './src/constans';
+import { base } from './src/constants';
 
 export default defineConfig({
   title: 'blog',
@@ -18,10 +18,6 @@ export default defineConfig({
     {
       title: '文章',
       path: '/article',
-    },
-    {
-      title: '笔记',
-      path: '/notes',
     },
     {
       title: 'GitHub',

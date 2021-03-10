@@ -2,6 +2,14 @@
 sidemenu: false
 ---
 
+## 解决 git clone 下载速度缓慢问题， 使用 github 的镜像域名
+
+```
+git clone https://github.com/xsahxl/blog.git
+// 替换成
+git clone https://github.com.cnpmjs.org/xsahxl/blog.git
+```
+
 ## 如何切换链接 git 服务器的方式是 ssh 还是 http
 
 ```shell

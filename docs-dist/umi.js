@@ -6849,6 +6849,139 @@
       return i && '[object Window]' == o.call(e) ? l(e) : a(r(e));
     };
   },
+  '2wjr': function(e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('cDcd'),
+      a = n.n(r),
+      o = n('kvV8'),
+      i = n('HFCj');
+    t['default'] = function() {
+      return a.a.createElement(
+        a.a.Fragment,
+        null,
+        a.a.createElement(
+          'div',
+          { className: 'markdown' },
+          a.a.createElement(
+            'h2',
+            { id: '\u4e70\u673a\u5668' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u4e70\u673a\u5668',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u4e70\u673a\u5668',
+          ),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              '\u9996\u5148\u53bb',
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://my.vultr.com/' },
+                'vultr \u5b98\u7f51',
+              ),
+              '\u6ce8\u518c\u4e2a\u8d26\u53f7\uff0c\u4e70\u53f0\u673a\u5668\uff0c\u53ef\u9009\u62e9\u652f\u4ed8\u5b9d\u5145\u503c\u5230\u4f59\u989d',
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              '\u90e8\u7f72\u5b9e\u4f8b\uff0c\u673a\u623f\u53ef\u9009\u62e9\u65e5\u672c\u6216\u8005\u65b0\u52a0\u5761\uff08\u7f51\u901f\u8f83\u5feb\uff09\uff0c\u90e8\u7f72\u5b8c\u6210\u540e\uff0cping \u4e0b ip \u53ef\u67e5\u770b\u662f\u5426\u6210\u529f',
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            { id: '\u767b\u9646\u673a\u5668' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u767b\u9646\u673a\u5668',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u767b\u9646\u673a\u5668',
+          ),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              '\u8fdb\u5165\u7ec8\u7aef\u4ee5 ssh \u65b9\u5f0f\u767b\u9646',
+            ),
+          ),
+          a.a.createElement(i['a'], {
+            code: 'ssh username@ip\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'h2',
+            { id: '\u811a\u672c\uff08\u8d77\u4e2a\u670d\u52a1\uff09' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u811a\u672c\uff08\u8d77\u4e2a\u670d\u52a1\uff09',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u811a\u672c\uff08\u8d77\u4e2a\u670d\u52a1\uff09',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              'wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh\nchmod +x shadowsocksR.sh\n./shadowsocksR.sh 2>&1 | tee shadowsocksR.log\n\n//\u6267\u884c\u6210\u529f\u540e\nCongratulations, ShadowsocksR server install completed!\nYour Server IP        :  123.456.789\nYour Server Port      :  14627\nYour Password         :  123456\nYour Protocol         :  origin\nYour obfs             :  plain\nYour Encryption Method:  aes-256-cfb\n\n//\u5e38\u7528\u547d\u4ee4\n\u542f\u52a8\uff1a/etc/init.d/shadowsocks start\n\u505c\u6b62\uff1a/etc/init.d/shadowsocks stop\n\u91cd\u542f\uff1a/etc/init.d/shadowsocks restart\n\u72b6\u6001\uff1a/etc/init.d/shadowsocks status\n\u914d\u7f6e\u6587\u4ef6\u8def\u5f84\uff1a/etc/shadowsocks.json\n\u65e5\u5fd7\u6587\u4ef6\u8def\u5f84\uff1a/var/log/shadowsocks.log\n\u4ee3\u7801\u5b89\u88c5\u76ee\u5f55\uff1a/usr/local/shadowsocks\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'h2',
+            { id: '\u9510\u901f\u52a0\u901f' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u9510\u901f\u52a0\u901f',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              {
+                to:
+                  'https://www.vultrcn.com/tag/%E9%94%90%E9%80%9F%E4%B8%80%E9%94%AE/',
+              },
+              '\u9510\u901f\u52a0\u901f',
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            { id: 'shadowsocks' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#shadowsocks', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://github.com/shadowsocks/ShadowsocksX-NG' },
+              'shadowsocks',
+            ),
+          ),
+        ),
+      );
+    };
+  },
   '2x2d': function(e, t, n) {
     var r = n('HIsA'),
       a = n('icJ8'),
@@ -41648,6 +41781,29 @@
             'h2',
             {
               id:
+                '\u89e3\u51b3-git-clone-\u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c-\u4f7f\u7528-github-\u7684\u955c\u50cf\u57df\u540d',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#\u89e3\u51b3-git-clone-\u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c-\u4f7f\u7528-github-\u7684\u955c\u50cf\u57df\u540d',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              'git clone https://github.com/xsahxl/blog.git\n// \u66ff\u6362\u6210\ngit clone https://github.com.cnpmjs.org/xsahxl/blog.git\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'h2',
+            {
+              id:
                 '\u5982\u4f55\u5207\u6362\u94fe\u63a5-git-\u670d\u52a1\u5668\u7684\u65b9\u5f0f\u662f-ssh-\u8fd8\u662f-http',
             },
             a.a.createElement(
@@ -50209,7 +50365,9 @@
                     title:
                       '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
                   },
-                  '\u672c\u6b21\u535a\u5ba2\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+                  a.a.createElement('div', null, '1.dumi'),
+                  a.a.createElement('p', null, '2.GitHub Pages'),
+                  a.a.createElement('p', null, '3.\u4e91\u670d\u52a1\u5668'),
                   a.a.createElement(d, { time: '2021-2-28' }),
                 ),
               ),
@@ -50232,10 +50390,23 @@
               i['a'].Col,
               null,
               a.a.createElement(
-                l['a'],
-                { title: '\u6587\u7ae03' },
-                a.a.createElement('div', null, '\u63cf\u8ff0'),
-                a.a.createElement(d, { time: '\u5f85\u5b9a' }),
+                c,
+                { href: 'vultr&shadowsocks' },
+                a.a.createElement(
+                  l['a'],
+                  { title: 'vultr&shadowsocks' },
+                  a.a.createElement(
+                    'div',
+                    null,
+                    '1.\u8d2d\u4e70vultr\u670d\u52a1\u5668',
+                  ),
+                  a.a.createElement(
+                    'p',
+                    null,
+                    '2.\u901a\u8fc7shadowsocks\u642d\u5efavpn',
+                  ),
+                  a.a.createElement(d, { time: '2021-3-7' }),
+                ),
               ),
             ),
           ),
@@ -54136,7 +54307,7 @@
             'rz \u4e0a\u4f20 node \u5305 \u89e3\u538b node \u5305',
           ),
           a.a.createElement(i['a'], {
-            code: 'tar -xvf node-v14.15.5-linux-x64.tar.xz\n',
+            code: 'tar -zxvf node-v14.15.5-linux-x64.tar.xz\n',
             lang: 'unknown',
           }),
           a.a.createElement(
@@ -54294,6 +54465,89 @@
           }),
           a.a.createElement('p', null, '\u7ed3\u675f\u8fdb\u7a0b'),
           a.a.createElement(i['a'], { code: 'kill id\n', lang: 'unknown' }),
+          a.a.createElement(
+            'h2',
+            { id: 'egg-\u90e8\u7f72' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#egg-\u90e8\u7f72', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'egg \u90e8\u7f72',
+          ),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              '\u5c06\u672c\u5730\u6587\u4ef6\u9664\u4e86 node_modules \u8fdb\u884c\u538b\u7f29\uff0c\u5e76\u547d\u540d\u4e3a dist.zip',
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              '\u5c06\u6587\u4ef6\u4e0a\u4f20\u5230\u4e91\u670d\u52a1\u5668',
+            ),
+            a.a.createElement('li', null, 'unzip dist.zip'),
+            a.a.createElement('li', null, '\u5b89\u88c5\u4f9d\u8d56'),
+          ),
+          a.a.createElement(i['a'], {
+            code: 'npm install --production\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement('li', null, '\u542f\u52a8'),
+          ),
+          a.a.createElement(i['a'], { code: 'npm start\n', lang: 'unknown' }),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              '\u67e5\u770b\u5f53\u524d\u7aef\u53e3\u662f\u5426\u5360\u7528',
+            ),
+          ),
+          a.a.createElement(i['a'], {
+            code: 'lsof -i tcp:7001\n\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement('li', null, '\u7ed3\u675f\u8fdb\u7a0b'),
+          ),
+          a.a.createElement(i['a'], { code: 'kill pid\n', lang: 'unknown' }),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                'p',
+                null,
+                '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip + 7001 \u5c31\u53ef\u4ee5\u4e86',
+              ),
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement('p', null, 'Nginx \u914d\u7f6e'),
+            ),
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              'location / {\n  proxy_set_header Upgrade $http_upgrade;\n  proxy_set_header Connection "upgrade";\n  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n  proxy_set_header Host $host;\n  proxy_pass   http://127.0.0.1:7001;\n\n  # http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_bind\n  # proxy_bind       $remote_addr transparent;\n}\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip \u5c31\u53ef\u4ee5\u4e86',
+          ),
         ),
       );
     };
@@ -73576,7 +73830,7 @@
   },
   q3YX: function(e) {
     e.exports = JSON.parse(
-      '{"menus":{"en-US":{"/article":[{"path":"/article","title":"Index","meta":{}},{"path":"/article/git","title":"\u5982\u4f55\u5207\u6362\u94fe\u63a5 git \u670d\u52a1\u5668\u7684\u65b9\u5f0f\u662f ssh \u8fd8\u662f http","meta":{}},{"path":"/article/how-to-create-blog","title":"\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2","meta":{}}],"/components":[{"path":"/components/mutation","title":"Mutation","meta":{}},{"path":"/components/query","title":"Query","meta":{}}],"/notes":[{"path":"/notes/a","title":"\u8d85\u94fe\u63a5","meta":{}},{"path":"/notes/byet","title":"\u4e91\u4e3b\u673a","meta":{}},{"path":"/notes/debounce-vs-throttle","title":"\u9632\u6296\u4e0e\u8282\u6d41","meta":{}},{"path":"/notes/egg","title":"egg \u5165\u95e8","meta":{}},{"path":"/notes/git","title":"git \u547d\u4ee4","meta":{}},{"path":"/notes/jsx-control-statements","title":"jsx-control-statements","meta":{}},{"path":"/notes/module","title":"\u524d\u7aef\u6a21\u5757\u5316","meta":{}},{"path":"/notes/react-vs-vue","title":"react vs vue","meta":{}},{"path":"/notes/regx","title":"\u5e38\u7528\u6b63\u5219","meta":{}},{"path":"/notes/sync-demo","title":"sync-demo","meta":{}},{"path":"/notes/use-ref-vs-create-ref","title":"useRef vs createRef","meta":{}},{"path":"/notes/vultr&shadowsocks","title":"vultr & shadowsocks","meta":{}}],"*":[{"path":"/","title":"Index","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"},{"title":"\u6587\u7ae0","path":"/article"},{"title":"GitHub","children":[{"title":"blog","path":"https://github.com/xsahxl/blog"},{"title":"@xsahxl/ui","path":"https://github.com/xsahxl/ui"}]}]},"title":"blog","logo":"https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png","mode":"site","repository":{"branch":"master"},"theme":{}}',
+      '{"menus":{"en-US":{"/article":[{"path":"/article","title":"Index","meta":{}},{"path":"/article/git","title":"\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d","meta":{}},{"path":"/article/how-to-create-blog","title":"\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2","meta":{}},{"path":"/article/vultr&shadowsocks","title":"\u4e70\u673a\u5668","meta":{}}],"/components":[{"path":"/components/mutation","title":"Mutation","meta":{}},{"path":"/components/query","title":"Query","meta":{}}],"/notes":[{"path":"/notes/a","title":"\u8d85\u94fe\u63a5","meta":{}},{"path":"/notes/byet","title":"\u4e91\u4e3b\u673a","meta":{}},{"path":"/notes/debounce-vs-throttle","title":"\u9632\u6296\u4e0e\u8282\u6d41","meta":{}},{"path":"/notes/egg","title":"egg \u5165\u95e8","meta":{}},{"path":"/notes/git","title":"git \u547d\u4ee4","meta":{}},{"path":"/notes/jsx-control-statements","title":"jsx-control-statements","meta":{}},{"path":"/notes/module","title":"\u524d\u7aef\u6a21\u5757\u5316","meta":{}},{"path":"/notes/react-vs-vue","title":"react vs vue","meta":{}},{"path":"/notes/regx","title":"\u5e38\u7528\u6b63\u5219","meta":{}},{"path":"/notes/sync-demo","title":"sync-demo","meta":{}},{"path":"/notes/use-ref-vs-create-ref","title":"useRef vs createRef","meta":{}},{"path":"/notes/vultr&shadowsocks","title":"vultr & shadowsocks","meta":{}}],"*":[{"path":"/","title":"Index","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"},{"title":"\u6587\u7ae0","path":"/article"},{"title":"GitHub","children":[{"title":"blog","path":"https://github.com/xsahxl/blog"},{"title":"@xsahxl/ui","path":"https://github.com/xsahxl/ui"}]}]},"title":"blog","logo":"https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png","mode":"site","repository":{"branch":"master"},"theme":{}}',
     );
   },
   'q5+0': function(e, t, n) {
@@ -77233,9 +77487,16 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/git.md',
-                updatedTime: null,
+                updatedTime: 161538181e4,
                 sidemenu: !1,
                 slugs: [
+                  {
+                    depth: 2,
+                    value:
+                      '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
+                    heading:
+                      '\u89e3\u51b3-git-clone-\u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c-\u4f7f\u7528-github-\u7684\u955c\u50cf\u57df\u540d',
+                  },
                   {
                     depth: 2,
                     value:
@@ -77311,11 +77572,11 @@
                   },
                 ],
                 title:
-                  '\u5982\u4f55\u5207\u6362\u94fe\u63a5 git \u670d\u52a1\u5668\u7684\u65b9\u5f0f\u662f ssh \u8fd8\u662f http',
+                  '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
                 nav: { path: '/article', title: 'Article' },
               },
               title:
-                '\u5982\u4f55\u5207\u6362\u94fe\u63a5 git \u670d\u52a1\u5668\u7684\u65b9\u5f0f\u662f ssh \u8fd8\u662f http',
+                '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
             },
             {
               path: '/article/how-to-create-blog',
@@ -77323,7 +77584,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/how-to-create-blog.md',
-                updatedTime: 1615035427e3,
+                updatedTime: 1615115297e3,
                 sidemenu: !1,
                 slugs: [
                   {
@@ -77414,6 +77675,11 @@
                     heading: '\u90e8\u7f72-node-\u73af\u5883',
                   },
                   { depth: 3, value: 'mongodb', heading: 'mongodb' },
+                  {
+                    depth: 2,
+                    value: 'egg \u90e8\u7f72',
+                    heading: 'egg-\u90e8\u7f72',
+                  },
                 ],
                 title: '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
                 nav: { path: '/article', title: 'Article' },
@@ -77433,6 +77699,42 @@
                 nav: { path: '/article', title: 'Article' },
               },
               title: 'Index',
+            },
+            {
+              path: '/article/vultr&shadowsocks',
+              component: n('2wjr').default,
+              exact: !0,
+              meta: {
+                filePath: 'src/article/vultr&shadowsocks.md',
+                updatedTime: 1615115394312,
+                sidemenu: !1,
+                slugs: [
+                  {
+                    depth: 2,
+                    value: '\u4e70\u673a\u5668',
+                    heading: '\u4e70\u673a\u5668',
+                  },
+                  {
+                    depth: 2,
+                    value: '\u767b\u9646\u673a\u5668',
+                    heading: '\u767b\u9646\u673a\u5668',
+                  },
+                  {
+                    depth: 2,
+                    value: '\u811a\u672c\uff08\u8d77\u4e2a\u670d\u52a1\uff09',
+                    heading: '\u811a\u672c\uff08\u8d77\u4e2a\u670d\u52a1\uff09',
+                  },
+                  {
+                    depth: 2,
+                    value: '\u9510\u901f\u52a0\u901f',
+                    heading: '\u9510\u901f\u52a0\u901f',
+                  },
+                  { depth: 2, value: 'shadowsocks', heading: 'shadowsocks' },
+                ],
+                title: '\u4e70\u673a\u5668',
+                nav: { path: '/article', title: 'Article' },
+              },
+              title: '\u4e70\u673a\u5668',
             },
             {
               path: '/components/mutation',
@@ -77595,7 +77897,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/notes/git.md',
-                updatedTime: 161416959e4,
+                updatedTime: 1615113144e3,
                 slugs: [
                   {
                     depth: 1,

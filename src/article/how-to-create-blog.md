@@ -249,3 +249,52 @@ ps -ef|grep mongo
 ```
 kill id
 ```
+
+## egg 部署
+
+- 将本地文件除了 node_modules 进行压缩，并命名为 dist.zip
+- 将文件上传到云服务器
+- unzip dist.zip
+- 安装依赖
+
+```
+npm install --production
+```
+
+- 启动
+
+```
+npm start
+```
+
+- 查看当前端口是否占用
+
+```
+lsof -i tcp:7001
+
+```
+
+- 结束进程
+
+```
+kill pid
+```
+
+- 这时候访问 公网 ip + 7001 就可以了
+
+- Nginx 配置
+
+```
+location / {
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "upgrade";
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header Host $host;
+  proxy_pass   http://127.0.0.1:7001;
+
+  # http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_bind
+  # proxy_bind       $remote_addr transparent;
+}
+```
+
+这时候访问 公网 ip 就可以了

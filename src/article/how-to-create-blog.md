@@ -252,37 +252,44 @@ kill id
 
 ## egg 部署
 
-- 将本地文件除了 node_modules 进行压缩，并命名为 dist.zip
-- 将文件上传到云服务器
-- unzip dist.zip
-- 安装依赖
+#### 将本地文件除了 node_modules 进行压缩，并命名为 dist.zip
+
+#### 将文件上传到云服务器
+
+#### 解压文件
+
+```
+unzip dist.zip
+```
+
+#### 安装依赖
 
 ```
 npm install --production
 ```
 
-- 启动
+#### 启动
 
 ```
 npm start
 ```
 
-- 查看当前端口是否占用
+#### 查看当前端口是否占用
 
 ```
 lsof -i tcp:7001
 
 ```
 
-- 结束进程
+#### 结束进程
 
 ```
 kill pid
 ```
 
-- 这时候访问 公网 ip + 7001 就可以了
+#### 这时候访问 公网 ip + 7001 就可以了
 
-- Nginx 配置
+#### Nginx 配置
 
 ```
 location / {
@@ -297,4 +304,4 @@ location / {
 }
 ```
 
-这时候访问 公网 ip 就可以了
+#### 这时候访问 公网 ip 就可以了

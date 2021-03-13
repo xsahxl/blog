@@ -2,7 +2,7 @@
 sidemenu: false
 ---
 
-# 如何搭建自己的博客
+# 如何搭建自己的个人网站
 
 ## ui 选型
 
@@ -15,11 +15,11 @@ sidemenu: false
 - [GitHub Pages](https://pages.github.com/)
 - [云服务器](https://ecs.console.aliyun.com/)
 
-## 本次博客搭建 以 dumi 和 GitHub Pages、云服务器为例子进行演示
+## 静态网站搭建 以 dumi 和 GitHub Pages 为例子进行演示
 
 ## dumi
 
-#### 1.环境准备
+环境准备
 
 首先得有 node，并确保 node 版本是 10.13 或以上。
 
@@ -27,7 +27,7 @@ sidemenu: false
 node -v
 ```
 
-#### 2.仓库模板初始化
+仓库模板初始化
 
 我们也可以使用 dumi-template 仓库进行初始化，访问 https://github.com/umijs/dumi-template 了解更多。
 
@@ -35,7 +35,7 @@ node -v
 
 Head over to GitHub and create a new public repository named username.github.io, where username is your username (or organization name) on GitHub.
 
-#### 部署
+部署
 
 1.在 `.umirc.ts` 中设置正确的 `base`。
 
@@ -73,7 +73,7 @@ git push -f git@github.com:xsahxl/blog.git master:gh-pages
 cd -
 ```
 
-## [cdn 加速](https://vercel.com)
+## [vercel](https://vercel.com)
 
 将项目导入进来，会帮我们部署项目，然后生成一个可访问的 url
 
@@ -85,27 +85,27 @@ cd -
 
 如果第一次使用阿里云服务器的话，可以先申请[免费试用的云服务器](https://free.aliyun.com/)
 
-### nignx
+## nignx
 
-#### 1.安装
+安装
 
 ```
 yum install nginx
 ```
 
-#### 2.启动 nginx
+启动 nginx
 
 ```
 nginx
 ```
 
-阿里云服务器的默认开放端口没有 80,记得在安全组里添加下，然后 访问公网 ip 应该会看到 nginx 启动成功了，显然这时候也可以部署我们的静态博客了。
+阿里云 ecs 服务器的默认开放端口没有 80,记得在安全组里添加下，然后 访问公网 ip 应该会看到 nginx 启动成功了，显然这时候也可以部署我们的静态博客了。
 
-### 云服务器如何上传文件
+## 云服务器如何上传文件
 
-#### 1.[安装 SecureCRT](https://www.jianshu.com/p/983f2f226579)
+[安装 SecureCRT](https://www.jianshu.com/p/983f2f226579)
 
-#### 2.rz 与 sz 命令
+rz 与 sz 命令
 
 安装
 
@@ -118,13 +118,13 @@ rz 命令（Receive ZMODEM），使用 ZMODEM 协议，将本地文件批量上�
 
 sz 命令（Send ZMODEM）通过 ZMODEM 协议，可将多个文件从远程服务器下载到本地。注意不能下载文件夹，如果下载文件夹，请先打包再下载
 
-### 部署 node 环境
+## 部署 node 环境
 
 rz 上传 node 包
 解压 node 包
 
 ```
-tar -zxvf node-v14.15.5-linux-x64.tar.xz
+tar -xvf node-v14.15.5-linux-x64.tar.xz
 ```
 
 将文件移动到 /usr/local 目录下
@@ -147,6 +147,14 @@ ln -s /usr/local/node/bin/npm /usr/local/bin
 ```
 
 再次执行 node -v 就可以看到版本号了
+
+安装 cnpm
+
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+后续安装的包，添加软链接同 node
 
 [express](https://www.expressjs.com.cn/starter/hello-world.html)
 
@@ -174,7 +182,26 @@ pm2 是一个进程管理工具,可以用它来管理你的 node 进程，并查
  pm2 delete id
 ```
 
-### mongodb
+## mongodb
+
+```
+数据库（database）
+集合（collection）
+文档（document）
+在MongoDB中，数据库和集合都不需要手动创建，当我们创建文档时，如果文档所在的数据库或集合不存在，会自动创建数据库和集合
+基本指令
+show dbs(databases): 显示当前的所以数据库
+use 数据库名称：进入到指定的数据库当中
+db：表示的是当前所处的数据库
+show collections：显示数据库中所有的集合
+db.dropDatabase()：输出数据库
+db.<collection>.drop(): 删除集合
+数据库的CRUD（增删改查）的操作
+create: db.<collection>.insert(doc)
+read: db.<collection>.find()
+update: db.<collection>.update():
+delete: db.<collection>.remove():
+```
 
 [下载资源](https://www.mongodb.com/try/download/community), 注意查看服务器的操作系统，请确保下载正确的版本
 
@@ -187,7 +214,7 @@ tar -zxvf mongodb-linux-x86_64-rhel80-4.4.4.tgz
 将解压后的文件夹移动至指定目录
 
 ```
-mv mongodb-linux-x86_64-rhel80-4.4.4.tgz /usr/local/mongodb
+mv mongodb-linux-x86_64-rhel80-4.4.4 /usr/local/mongodb
 ```
 
 创建数据文件夹、日志文件和 mongo 配置文件
@@ -210,6 +237,7 @@ vim /usr/local/mongodb/mongodb.conf
 dbpath=/usr/local/mongodb/data
 logpath=/usr/local/mongodb/mongod.log
 logappend = true
+bind_ip = 0.0.0.0
 port = 27017
 fork = true
 ```
@@ -252,44 +280,44 @@ kill id
 
 ## egg 部署
 
-#### 将本地文件除了 node_modules 进行压缩，并命名为 dist.zip
+将本地文件除了 node_modules 进行压缩，并命名为 dist.zip
 
-#### 将文件上传到云服务器
+将文件上传到云服务器
 
-#### 解压文件
+解压文件
 
 ```
 unzip dist.zip
 ```
 
-#### 安装依赖
+安装依赖
 
 ```
 npm install --production
 ```
 
-#### 启动
+启动
 
 ```
 npm start
 ```
 
-#### 查看当前端口是否占用
+查看当前端口是否占用
 
 ```
 lsof -i tcp:7001
 
 ```
 
-#### 结束进程
+结束进程
 
 ```
 kill pid
 ```
 
-#### 这时候访问 公网 ip + 7001 就可以了
+这时候访问 公网 ip + 7001 就可以了
 
-#### Nginx 配置
+Nginx 配置
 
 ```
 location / {
@@ -304,4 +332,4 @@ location / {
 }
 ```
 
-#### 这时候访问 公网 ip 就可以了
+这时候访问 公网 ip 就可以了

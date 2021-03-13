@@ -1,5 +1,6 @@
 import { defineConfig } from 'dumi';
-import { base } from './src/constants';
+
+const base = '/';
 
 export default defineConfig({
   title: 'blog',

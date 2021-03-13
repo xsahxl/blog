@@ -2,6 +2,12 @@
 sidemenu: false
 ---
 
+## github 国内镜像网站
+
+[https://github.com.cnpmjs.org/](https://github.com.cnpmjs.org/)
+
+[https://git.sdut.me/](https://git.sdut.me/)
+
 ## 解决 git clone 下载速度缓慢问题， 使用 github 的镜像域名
 
 ```

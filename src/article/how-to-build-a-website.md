@@ -73,11 +73,11 @@ git push -f git@github.com:xsahxl/blog.git master:gh-pages
 cd -
 ```
 
-## [vercel](https://vercel.com)
+## [cdn 加速](https://vercel.com)
 
 将项目导入进来，会帮我们部署项目，然后生成一个可访问的 url
 
-## [申请域名](https://www.freenom.com/zh/index.html?lang=zh)（免费一年）
+## [域名申请](https://www.freenom.com/zh/index.html?lang=zh)（免费一年）
 
 可参考 [教程](https://zhuanlan.zhihu.com/p/115535965)
 
@@ -90,7 +90,7 @@ cd -
 安装
 
 ```
-yum install nginx
+yum install nginx -y
 ```
 
 启动 nginx

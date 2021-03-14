@@ -8010,17 +8010,17 @@
           { className: 'markdown' },
           a.a.createElement(
             'h2',
-            { id: '\u4e70\u673a\u5668' },
+            { id: '\u8d2d\u4e70\u673a\u5668' },
             a.a.createElement(
               o['AnchorLink'],
               {
-                to: '#\u4e70\u673a\u5668',
+                to: '#\u8d2d\u4e70\u673a\u5668',
                 'aria-hidden': 'true',
                 tabIndex: -1,
               },
               a.a.createElement('span', { className: ['icon', 'icon-link'] }),
             ),
-            '\u4e70\u673a\u5668',
+            '\u8d2d\u4e70\u673a\u5668',
           ),
           a.a.createElement(
             'ul',
@@ -8749,12 +8749,6 @@
       return r;
     }
     e.exports = n;
-  },
-  '4H+6': function(e, t, n) {
-    'use strict';
-    var r = n('l3hT'),
-      a = n.n(r);
-    t['a'] = a.a;
   },
   '4QgX': function(e, t, n) {
     'use strict';
@@ -9576,12 +9570,6 @@
     e.exports = function(e) {
       return o ? a.createElement(e) : {};
     };
-  },
-  '52XR': function(e, t, n) {
-    'use strict';
-    var r = n('i1ZX'),
-      a = n.n(r);
-    t['a'] = a.a;
   },
   '56k6': function(e, t, n) {
     'use strict';
@@ -25406,136 +25394,136 @@
         return ee;
       }),
       n.d(t, 'Icon', function() {
-        return te['a'];
+        return re;
       }),
       n.d(t, 'Grid', function() {
-        return ne['a'];
+        return ie;
       }),
       n.d(t, 'Button', function() {
-        return oe;
+        return ue;
       }),
       n.d(t, 'MenuButton', function() {
-        return se;
+        return fe;
       }),
       n.d(t, 'SplitButton', function() {
-        return ce;
+        return me;
       }),
       n.d(t, 'Breadcrumb', function() {
-        return he;
+        return ge;
       }),
       n.d(t, 'Step', function() {
-        return je;
+        return Ke;
       }),
       n.d(t, 'Tab', function() {
-        return He;
+        return qe;
       }),
       n.d(t, 'Pagination', function() {
-        return Ve;
+        return Je;
       }),
       n.d(t, 'Form', function() {
-        return $e;
+        return ot;
       }),
       n.d(t, 'Field', function() {
-        return et;
+        return st;
       }),
       n.d(t, 'Checkbox', function() {
-        return rt;
+        return ct;
       }),
       n.d(t, 'Radio', function() {
-        return it;
+        return ht;
       }),
       n.d(t, 'Select', function() {
-        return ut;
+        return yt;
       }),
       n.d(t, 'TreeSelect', function() {
-        return ft;
+        return _t;
       }),
       n.d(t, 'CascaderSelect', function() {
-        return mt;
+        return kt;
       }),
       n.d(t, 'DatePicker', function() {
-        return Ot;
+        return Ht;
       }),
       n.d(t, 'TimePicker', function() {
-        return Yt;
+        return Vt;
       }),
       n.d(t, 'NumberPicker', function() {
-        return Rt;
+        return Wt;
       }),
       n.d(t, 'Switch', function() {
-        return Ft;
+        return Xt;
       }),
       n.d(t, 'Range', function() {
-        return Ut;
+        return $t;
       }),
       n.d(t, 'Rating', function() {
-        return Bt;
+        return en;
       }),
       n.d(t, 'Transfer', function() {
-        return Gt;
+        return rn;
       }),
       n.d(t, 'Upload', function() {
-        return Zt;
+        return ln;
       }),
       n.d(t, 'Search', function() {
-        return tn;
+        return dn;
       }),
       n.d(t, 'Table', function() {
-        return an;
+        return pn;
       }),
       n.d(t, 'Collapse', function() {
-        return sn;
+        return vn;
       }),
       n.d(t, 'Card', function() {
-        return un['a'];
+        return Mn;
       }),
       n.d(t, 'Badge', function() {
-        return fn;
+        return xn;
       }),
       n.d(t, 'Slider', function() {
-        return mn;
+        return Cn;
       }),
       n.d(t, 'Calendar', function() {
-        return gn;
+        return On;
       }),
       n.d(t, 'Progress', function() {
-        return wn;
+        return Yn;
       }),
       n.d(t, 'Timeline', function() {
-        return En;
+        return Rn;
       }),
       n.d(t, 'Tree', function() {
-        return Tn;
+        return Fn;
       }),
       n.d(t, 'Cascader', function() {
-        return Dn;
+        return Un;
       }),
       n.d(t, 'Message', function() {
-        return Nn;
-      }),
-      n.d(t, 'Dialog', function() {
-        return jn;
-      }),
-      n.d(t, 'Balloon', function() {
-        return Hn;
-      }),
-      n.d(t, 'Loading', function() {
-        return Vn;
-      }),
-      n.d(t, 'ConfigProvider', function() {
-        return Un['a'];
-      }),
-      n.d(t, 'Overlay', function() {
         return Bn;
       }),
-      n.d(t, 'Dropdown', function() {
+      n.d(t, 'Dialog', function() {
         return Gn;
       }),
-      n.d(t, 'Animate', function() {
+      n.d(t, 'Balloon', function() {
         return Zn;
       }),
-      n.d(t, 'Affix', function() {
+      n.d(t, 'Loading', function() {
         return tr;
+      }),
+      n.d(t, 'ConfigProvider', function() {
+        return He;
+      }),
+      n.d(t, 'Overlay', function() {
+        return ar;
+      }),
+      n.d(t, 'Dropdown', function() {
+        return lr;
+      }),
+      n.d(t, 'Animate', function() {
+        return dr;
+      }),
+      n.d(t, 'Affix', function() {
+        return pr;
       });
     var r = n('kPEE'),
       a = n.n(r),
@@ -25672,69 +25660,91 @@
     var Q = Z;
     (p.a.Colored = G), (p.a.ColoredGroup = Q), (p.a[W] = 'Tag');
     var ee = p.a,
-      te = n('4H+6'),
-      ne = n('uZyb'),
-      re = n('H3sB'),
-      ae = n.n(re),
-      oe = ae.a,
-      ie = n('KJLh'),
-      le = n.n(ie),
-      se = le.a,
-      ue = n('27ZL'),
-      de = n.n(ue),
-      ce = de.a,
-      fe = n('2UTr'),
-      pe = n.n(fe),
-      he = pe.a,
-      me = n('Wxh9'),
-      ve = n.n(me),
-      ye = n('bmM9'),
-      ge = n.n(ye),
-      be = n('Vis/'),
+      te = n('l3hT'),
+      ne = n.n(te),
+      re = ne.a,
+      ae = n('BCQY'),
+      oe = n.n(ae),
+      ie = oe.a,
+      le = n('H3sB'),
+      se = n.n(le),
+      ue = se.a,
+      de = n('KJLh'),
+      ce = n.n(de),
+      fe = ce.a,
+      pe = n('27ZL'),
+      he = n.n(pe),
+      me = he.a,
+      ve = n('2UTr'),
+      ye = n.n(ve),
+      ge = ye.a,
+      be = n('Wxh9'),
       _e = n.n(be),
-      we = n('afWF'),
+      we = n('bmM9'),
       Me = n.n(we),
-      ke = n('C31l'),
+      ke = n('Vis/'),
       Ee = n.n(ke),
-      xe = n('wCtb'),
+      xe = n('afWF'),
       Se = n.n(xe),
-      Te = n('QIG3'),
+      Te = n('C31l'),
       Ce = n.n(Te),
-      Le = n('lWJ2'),
+      Le = n('wCtb'),
       De = n.n(Le),
-      Oe = n('OJSO'),
-      Pe = n('lKZC');
-    function Ne(e) {
-      var t = Ye();
+      Oe = n('QIG3'),
+      Pe = n.n(Oe),
+      Ne = n('lWJ2'),
+      Ye = n.n(Ne),
+      Ae = function(e) {
+        var t =
+          arguments.length > 1 && void 0 !== arguments[1]
+            ? arguments[1]
+            : 'Component';
+        return (e && (e.displayName || e.name)) || t;
+      },
+      je = Ae,
+      Re = n('i1ZX'),
+      Ie = n.n(Re),
+      He = Ie.a;
+    function Fe(e) {
+      var t = He.Consumer,
+        n = function(n) {
+          return A.a.createElement(t, null, function(t) {
+            return A.a.createElement(e, O()({}, n, { windConfig: t }));
+          });
+        };
+      return Pe()(n, e), n;
+    }
+    function ze(e) {
+      var t = Ve();
       return function() {
         var n,
-          r = Se()(e);
+          r = De()(e);
         if (t) {
-          var a = Se()(this).constructor;
-          n = ve()(r, arguments, a);
+          var a = De()(this).constructor;
+          n = _e()(r, arguments, a);
         } else n = r.apply(this, arguments);
-        return Ee()(this, n);
+        return Ce()(this, n);
       };
     }
-    function Ye() {
-      if ('undefined' === typeof Reflect || !ve.a) return !1;
-      if (ve.a.sham) return !1;
+    function Ve() {
+      if ('undefined' === typeof Reflect || !_e.a) return !1;
+      if (_e.a.sham) return !1;
       if ('function' === typeof Proxy) return !0;
       try {
-        return Date.prototype.toString.call(ve()(Date, [], function() {})), !0;
+        return Date.prototype.toString.call(_e()(Date, [], function() {})), !0;
       } catch (e) {
         return !1;
       }
     }
-    var Ae = function(e) {
+    var Ue = function(e) {
         var t = (function(t) {
-          Me()(r, t);
-          var n = Ne(r);
+          Se()(r, t);
+          var n = ze(r);
           function r() {
-            return ge()(this, r), n.apply(this, arguments);
+            return Me()(this, r), n.apply(this, arguments);
           }
           return (
-            _e()(r, [
+            Ee()(r, [
               {
                 key: 'render',
                 value: function() {
@@ -25768,77 +25778,73 @@
           );
         })(Y['Component']);
         return (
-          L()(
-            t,
-            'displayName',
-            'WindEnhanced('.concat(Object(Oe['a'])(e, 'Step'), ')'),
-          ),
+          L()(t, 'displayName', 'WindEnhanced('.concat(je(e, 'Step'), ')')),
           L()(t, 'propTypes', {
             size: R.a.oneOf(['medium', 'small']),
             className: R.a.string,
           }),
           L()(t, 'defaultProps', { size: 'medium' }),
-          Ce()(t, De.a),
+          Pe()(t, Ye.a),
           t
         );
       },
-      je = Object(Pe['a'])(Ae(De.a)),
-      Re = n('rgj3'),
-      Ie = n.n(Re),
-      He = Ie.a,
-      Fe = n('TBX9'),
-      ze = n.n(Fe),
-      Ve = ze.a,
-      Ue = n('Opop'),
-      Ke = n.n(Ue),
-      We = n('R/Dc'),
+      Ke = Fe(Ue(Ye.a)),
+      We = n('rgj3'),
       Be = n.n(We),
-      qe = Be.a.Item,
-      Xe = Y['createContext'](),
-      Ge = function(e) {
+      qe = Be.a,
+      Xe = n('TBX9'),
+      Ge = n.n(Xe),
+      Je = Ge.a,
+      $e = n('Opop'),
+      Ze = n.n($e),
+      Qe = n('R/Dc'),
+      et = n.n(Qe),
+      tt = et.a.Item,
+      nt = Y['createContext'](),
+      rt = function(e) {
         return Y['createElement'](
-          Xe.Provider,
+          nt.Provider,
           { value: e },
-          Y['createElement'](Be.a, e),
+          Y['createElement'](et.a, e),
         );
       },
-      Je = function(e) {
-        return Y['createElement'](Xe.Consumer, null, function(t) {
+      at = function(e) {
+        return Y['createElement'](nt.Consumer, null, function(t) {
           var n = (function() {
-            return 'object' !== Ke()(t)
+            return 'object' !== Ze()(t)
               ? 'left'
               : 'right' === t.labelTextAlign
               ? 'right'
               : 'left';
           })();
-          return Y['createElement'](qe, O()({ labelTextAlign: n }, e));
+          return Y['createElement'](tt, O()({ labelTextAlign: n }, e));
         });
       };
-    Ce()(Ge, Be.a), Ce()(Je, qe), (Ge.Item = Je);
-    var $e = Ge,
-      Ze = n('r57M'),
-      Qe = n.n(Ze),
-      et = Qe.a,
-      tt = n('PpR+'),
-      nt = n.n(tt),
-      rt = nt.a,
-      at = n('MKcE'),
-      ot = n.n(at),
-      it = ot.a,
-      lt = n('mBdQ'),
-      st = n.n(lt),
-      ut = st.a,
-      dt = n('XuX6'),
-      ct = n.n(dt),
-      ft = ct.a,
-      pt = n('C/Xe'),
-      ht = n.n(pt),
-      mt = ht.a,
-      vt = n('pHh4'),
-      yt = n.n(vt),
-      gt = n('yq+b'),
-      bt = n.n(gt);
-    function _t(e, t) {
+    Pe()(rt, et.a), Pe()(at, tt), (rt.Item = at);
+    var ot = rt,
+      it = n('r57M'),
+      lt = n.n(it),
+      st = lt.a,
+      ut = n('PpR+'),
+      dt = n.n(ut),
+      ct = dt.a,
+      ft = n('MKcE'),
+      pt = n.n(ft),
+      ht = pt.a,
+      mt = n('mBdQ'),
+      vt = n.n(mt),
+      yt = vt.a,
+      gt = n('XuX6'),
+      bt = n.n(gt),
+      _t = bt.a,
+      wt = n('C/Xe'),
+      Mt = n.n(wt),
+      kt = Mt.a,
+      Et = n('pHh4'),
+      xt = n.n(Et),
+      St = n('yq+b'),
+      Tt = n.n(St);
+    function Ct(e, t) {
       var n = x()(e);
       if (k.a) {
         var r = k()(e);
@@ -25850,57 +25856,57 @@
       }
       return n;
     }
-    function wt(e) {
+    function Lt(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {};
         t % 2
-          ? _t(Object(n), !0).forEach(function(t) {
+          ? Ct(Object(n), !0).forEach(function(t) {
               L()(e, t, n[t]);
             })
           : b.a
           ? y()(e, b()(n))
-          : _t(Object(n)).forEach(function(t) {
+          : Ct(Object(n)).forEach(function(t) {
               m()(e, t, w()(n, t));
             });
       }
       return e;
     }
-    function Mt(e) {
-      var t = kt();
+    function Dt(e) {
+      var t = Ot();
       return function() {
         var n,
-          r = Se()(e);
+          r = De()(e);
         if (t) {
-          var a = Se()(this).constructor;
-          n = ve()(r, arguments, a);
+          var a = De()(this).constructor;
+          n = _e()(r, arguments, a);
         } else n = r.apply(this, arguments);
-        return Ee()(this, n);
+        return Ce()(this, n);
       };
     }
-    function kt() {
-      if ('undefined' === typeof Reflect || !ve.a) return !1;
-      if (ve.a.sham) return !1;
+    function Ot() {
+      if ('undefined' === typeof Reflect || !_e.a) return !1;
+      if (_e.a.sham) return !1;
       if ('function' === typeof Proxy) return !0;
       try {
-        return Date.prototype.toString.call(ve()(Date, [], function() {})), !0;
+        return Date.prototype.toString.call(_e()(Date, [], function() {})), !0;
       } catch (e) {
         return !1;
       }
     }
-    var Et = function(e) {
+    var Pt = function(e) {
         return 'zh' === e ? 'zh-cn' : e;
       },
-      xt = function(e) {
+      Nt = function(e) {
         var t, n;
         return (
           (n = t = (function(t) {
-            Me()(r, t);
-            var n = Mt(r);
+            Se()(r, t);
+            var n = Dt(r);
             function r() {
-              return ge()(this, r), n.apply(this, arguments);
+              return Me()(this, r), n.apply(this, arguments);
             }
             return (
-              _e()(r, [
+              Ee()(r, [
                 {
                   key: 'render',
                   value: function() {
@@ -25910,15 +25916,15 @@
                       a = this.context.nextLocale;
                     a = void 0 === a ? {} : a;
                     var o = a.momentLocale,
-                      i = bt()(),
-                      l = i.locale(Et(o) || 'en'),
+                      i = Tt()(),
+                      l = i.locale(Pt(o) || 'en'),
                       s = r.value,
                       u = r.defaultValue,
                       d = s || u;
-                    bt.a.isMoment(d) && (l = d.locale());
-                    var c = bt.a.localeData(l).longDateFormat('ll'),
+                    Tt.a.isMoment(d) && (l = d.locale());
+                    var c = Tt.a.localeData(l).longDateFormat('ll'),
                       f = 'undefined' !== typeof n ? n : c,
-                      p = wt(wt({}, r), {}, { format: f });
+                      p = Lt(Lt({}, r), {}, { format: f });
                     return A.a.createElement(e, p);
                   },
                 },
@@ -25934,93 +25940,152 @@
           n
         );
       },
-      St = yt.a.RangePicker,
-      Tt = yt.a.MonthPicker,
-      Ct = yt.a.YearPicker,
-      Lt = yt.a.WeekPicker,
-      Dt = xt(yt.a);
-    (Dt.RangePicker = xt(St)),
-      (Dt.MonthPicker = xt(Tt)),
-      (Dt.YearPicker = xt(Ct)),
-      (Dt.WeekPicker = xt(Lt));
-    var Ot = Dt,
-      Pt = n('qKWU'),
-      Nt = n.n(Pt),
-      Yt = Nt.a,
-      At = n('8aKn'),
-      jt = n.n(At),
-      Rt = jt.a,
-      It = n('ySHK'),
-      Ht = n.n(It),
-      Ft = Ht.a,
-      zt = n('O9q3'),
-      Vt = n.n(zt),
-      Ut = Vt.a,
-      Kt = n('uQJN'),
-      Wt = n.n(Kt),
-      Bt = Wt.a,
-      qt = n('S/vx'),
-      Xt = n.n(qt),
-      Gt = Xt.a,
-      Jt = n('mGcj'),
-      $t = n.n(Jt),
-      Zt = $t.a,
-      Qt = n('cz6B'),
-      en = n.n(Qt),
-      tn = en.a,
-      nn = n('Lw33'),
-      rn = n.n(nn),
-      an = rn.a,
-      on = n('9pSi'),
-      ln = n.n(on),
-      sn = ln.a,
-      un = n('If9L'),
-      dn = n('EgHx'),
-      cn = n.n(dn),
-      fn = cn.a,
-      pn = n('PvfK'),
-      hn = n.n(pn),
-      mn = hn.a,
-      vn = n('HM3F'),
-      yn = n.n(vn),
-      gn = yn.a,
-      bn = n('I9kZ'),
-      _n = n.n(bn),
-      wn = _n.a,
-      Mn = n('bkR1'),
-      kn = n.n(Mn),
-      En = kn.a,
-      xn = n('3snE'),
-      Sn = n.n(xn),
-      Tn = Sn.a,
-      Cn = n('7YzW'),
-      Ln = n.n(Cn),
-      Dn = Ln.a,
-      On = n('nhuF'),
-      Pn = n.n(On),
-      Nn = Pn.a,
-      Yn = n('dnUL'),
-      An = n.n(Yn),
-      jn = An.a,
-      Rn = n('b8gb'),
-      In = n.n(Rn),
-      Hn = In.a,
-      Fn = n('HAdR'),
-      zn = n.n(Fn),
-      Vn = zn.a,
-      Un = n('52XR'),
-      Kn = n('94fp'),
+      Yt = xt.a.RangePicker,
+      At = xt.a.MonthPicker,
+      jt = xt.a.YearPicker,
+      Rt = xt.a.WeekPicker,
+      It = Nt(xt.a);
+    (It.RangePicker = Nt(Yt)),
+      (It.MonthPicker = Nt(At)),
+      (It.YearPicker = Nt(jt)),
+      (It.WeekPicker = Nt(Rt));
+    var Ht = It,
+      Ft = n('qKWU'),
+      zt = n.n(Ft),
+      Vt = zt.a,
+      Ut = n('8aKn'),
+      Kt = n.n(Ut),
+      Wt = Kt.a,
+      Bt = n('ySHK'),
+      qt = n.n(Bt),
+      Xt = qt.a,
+      Gt = n('O9q3'),
+      Jt = n.n(Gt),
+      $t = Jt.a,
+      Zt = n('uQJN'),
+      Qt = n.n(Zt),
+      en = Qt.a,
+      tn = n('S/vx'),
+      nn = n.n(tn),
+      rn = nn.a,
+      an = n('mGcj'),
+      on = n.n(an),
+      ln = on.a,
+      sn = n('cz6B'),
+      un = n.n(sn),
+      dn = un.a,
+      cn = n('Lw33'),
+      fn = n.n(cn),
+      pn = fn.a,
+      hn = n('9pSi'),
+      mn = n.n(hn),
+      vn = mn.a,
+      yn = n('aAQK'),
+      gn = n.n(yn);
+    function bn(e) {
+      var t = _n();
+      return function() {
+        var n,
+          r = De()(e);
+        if (t) {
+          var a = De()(this).constructor;
+          n = _e()(r, arguments, a);
+        } else n = r.apply(this, arguments);
+        return Ce()(this, n);
+      };
+    }
+    function _n() {
+      if ('undefined' === typeof Reflect || !_e.a) return !1;
+      if (_e.a.sham) return !1;
+      if ('function' === typeof Proxy) return !0;
+      try {
+        return Date.prototype.toString.call(_e()(Date, [], function() {})), !0;
+      } catch (e) {
+        return !1;
+      }
+    }
+    var wn = function(e) {
+        var t = (function(t) {
+          Se()(r, t);
+          var n = bn(r);
+          function r() {
+            return Me()(this, r), n.apply(this, arguments);
+          }
+          return (
+            Ee()(r, [
+              {
+                key: 'render',
+                value: function() {
+                  var t = this.props,
+                    n = t.hasBorder,
+                    r = t.windConfig,
+                    a = t.className,
+                    o = N()(t, ['hasBorder', 'windConfig', 'className']),
+                    i = r && r.prefix ? r.prefix : 'next-',
+                    l = n ? ''.concat(i, 'enhanced-card-has-border') : '';
+                  return A.a.createElement(
+                    e,
+                    O()({}, o, { className: H()(l, a) }),
+                  );
+                },
+              },
+            ]),
+            r
+          );
+        })(Y['Component']);
+        return (
+          L()(t, 'displayName', 'WindEnhanced('.concat(je(e, 'Card'), ')')),
+          L()(t, 'propTypes', { hasBorder: R.a.bool, className: R.a.string }),
+          Pe()(t, gn.a),
+          t
+        );
+      },
+      Mn = Fe(wn(gn.a)),
+      kn = n('EgHx'),
+      En = n.n(kn),
+      xn = En.a,
+      Sn = n('PvfK'),
+      Tn = n.n(Sn),
+      Cn = Tn.a,
+      Ln = n('HM3F'),
+      Dn = n.n(Ln),
+      On = Dn.a,
+      Pn = n('I9kZ'),
+      Nn = n.n(Pn),
+      Yn = Nn.a,
+      An = n('bkR1'),
+      jn = n.n(An),
+      Rn = jn.a,
+      In = n('3snE'),
+      Hn = n.n(In),
+      Fn = Hn.a,
+      zn = n('7YzW'),
+      Vn = n.n(zn),
+      Un = Vn.a,
+      Kn = n('nhuF'),
       Wn = n.n(Kn),
       Bn = Wn.a,
-      qn = n('D6Wx'),
+      qn = n('dnUL'),
       Xn = n.n(qn),
       Gn = Xn.a,
-      Jn = n('/hRg'),
+      Jn = n('b8gb'),
       $n = n.n(Jn),
       Zn = $n.a,
-      Qn = n('PHZy'),
+      Qn = n('HAdR'),
       er = n.n(Qn),
-      tr = er.a;
+      tr = er.a,
+      nr = n('94fp'),
+      rr = n.n(nr),
+      ar = rr.a,
+      or = n('D6Wx'),
+      ir = n.n(or),
+      lr = ir.a,
+      sr = n('/hRg'),
+      ur = n.n(sr),
+      dr = ur.a,
+      cr = n('PHZy'),
+      fr = n.n(cr),
+      pr = fr.a;
   },
   FaOA: function(e, t, n) {
     'use strict';
@@ -33011,102 +33076,6 @@
       a = n('VeQJ');
     r({ target: 'Set', stat: !0 }, { of: a });
   },
-  If9L: function(e, t, n) {
-    'use strict';
-    var r = n('Wxh9'),
-      a = n.n(r),
-      o = n('RPYV'),
-      i = n.n(o),
-      l = n('n3ao'),
-      s = n.n(l),
-      u = n('bmM9'),
-      d = n.n(u),
-      c = n('Vis/'),
-      f = n.n(c),
-      p = n('afWF'),
-      h = n.n(p),
-      m = n('C31l'),
-      v = n.n(m),
-      y = n('wCtb'),
-      g = n.n(y),
-      b = n('QPhp'),
-      _ = n.n(b),
-      w = n('yDyU'),
-      M = n.n(w),
-      k = n('EH+i'),
-      E = n.n(k),
-      x = n('aAQK'),
-      S = n.n(x),
-      T = n('iczh'),
-      C = n.n(T),
-      L = n('QIG3'),
-      D = n.n(L),
-      O = n('OJSO'),
-      P = n('lKZC');
-    function N(e) {
-      var t = Y();
-      return function() {
-        var n,
-          r = g()(e);
-        if (t) {
-          var o = g()(this).constructor;
-          n = a()(r, arguments, o);
-        } else n = r.apply(this, arguments);
-        return v()(this, n);
-      };
-    }
-    function Y() {
-      if ('undefined' === typeof Reflect || !a.a) return !1;
-      if (a.a.sham) return !1;
-      if ('function' === typeof Proxy) return !0;
-      try {
-        return Date.prototype.toString.call(a()(Date, [], function() {})), !0;
-      } catch (e) {
-        return !1;
-      }
-    }
-    var A = function(e) {
-      var t = (function(t) {
-        h()(r, t);
-        var n = N(r);
-        function r() {
-          return d()(this, r), n.apply(this, arguments);
-        }
-        return (
-          f()(r, [
-            {
-              key: 'render',
-              value: function() {
-                var t = this.props,
-                  n = t.hasBorder,
-                  r = t.windConfig,
-                  a = t.className,
-                  o = s()(t, ['hasBorder', 'windConfig', 'className']),
-                  l = r && r.prefix ? r.prefix : 'next-',
-                  u = n ? ''.concat(l, 'enhanced-card-has-border') : '';
-                return M.a.createElement(
-                  e,
-                  i()({}, o, { className: C()(u, a) }),
-                );
-              },
-            },
-          ]),
-          r
-        );
-      })(w['Component']);
-      return (
-        _()(
-          t,
-          'displayName',
-          'WindEnhanced('.concat(Object(O['a'])(e, 'Card'), ')'),
-        ),
-        _()(t, 'propTypes', { hasBorder: E.a.bool, className: E.a.string }),
-        D()(t, S.a),
-        t
-      );
-    };
-    t['a'] = Object(P['a'])(A(S.a));
-  },
   Iu9s: function(e, t, n) {
     'use strict';
     var r = n('7+LC');
@@ -37485,6 +37454,640 @@
       })),
       (e.exports = t['default']);
   },
+  LzMK: function(e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('yDyU'),
+      a = n.n(r),
+      o = n('kvV8'),
+      i = n('HFCj');
+    t['default'] = function() {
+      return a.a.createElement(
+        a.a.Fragment,
+        null,
+        a.a.createElement(
+          'div',
+          { className: 'markdown' },
+          a.a.createElement(
+            'h1',
+            {
+              id:
+                '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+          ),
+          a.a.createElement(
+            'h2',
+            { id: 'ui-\u9009\u578b' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#ui-\u9009\u578b', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'ui \u9009\u578b',
+          ),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://hexo.io/zh-cn/' },
+                'hexo',
+              ),
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://vuepress.vuejs.org/zh/' },
+                'vuepress',
+              ),
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://d.umijs.org/zh-CN' },
+                'dumi',
+              ),
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            { id: '\u90e8\u7f72' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#\u90e8\u7f72', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u90e8\u7f72',
+          ),
+          a.a.createElement(
+            'ul',
+            null,
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://pages.github.com/' },
+                'GitHub Pages',
+              ),
+            ),
+            a.a.createElement(
+              'li',
+              null,
+              a.a.createElement(
+                o['Link'],
+                { to: 'https://ecs.console.aliyun.com/' },
+                '\u4e91\u670d\u52a1\u5668',
+              ),
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            {
+              id:
+                '\u9759\u6001\u7f51\u7ad9\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages-\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#\u9759\u6001\u7f51\u7ad9\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages-\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u9759\u6001\u7f51\u7ad9\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages \u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+          ),
+          a.a.createElement(
+            'h2',
+            { id: 'dumi' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#dumi', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'dumi',
+          ),
+          a.a.createElement('p', null, '\u73af\u5883\u51c6\u5907'),
+          a.a.createElement(
+            'p',
+            null,
+            '\u9996\u5148\u5f97\u6709 node\uff0c\u5e76\u786e\u4fdd node \u7248\u672c\u662f 10.13 \u6216\u4ee5\u4e0a\u3002',
+          ),
+          a.a.createElement(i['a'], { code: 'node -v\n', lang: 'unknown' }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u6211\u4eec\u4e5f\u53ef\u4ee5\u4f7f\u7528 dumi-template \u4ed3\u5e93\u8fdb\u884c\u521d\u59cb\u5316\uff0c\u8bbf\u95ee ',
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://github.com/umijs/dumi-template' },
+              'https://github.com/umijs/dumi-template',
+            ),
+            ' \u4e86\u89e3\u66f4\u591a\u3002',
+          ),
+          a.a.createElement(
+            'h2',
+            { id: 'github-pages' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#github-pages', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://pages.github.com/' },
+              'GitHub Pages',
+            ),
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            'Head over to GitHub and create a new public repository named username.github.io, where username is your username (or organization name) on GitHub.',
+          ),
+          a.a.createElement('p', null, '\u90e8\u7f72'),
+          a.a.createElement(
+            'p',
+            null,
+            '1.\u5728 ',
+            a.a.createElement('code', null, '.umirc.ts'),
+            ' \u4e2d\u8bbe\u7f6e\u6b63\u786e\u7684 ',
+            a.a.createElement('code', null, 'base'),
+            '\u3002',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5982\u679c\u4f60\u6253\u7b97\u53d1\u5e03\u5230 ',
+            a.a.createElement('code', null, 'https://<USERNAME>.github.io/'),
+            '\uff0c\u5219\u53ef\u4ee5\u7701\u7565\u8fd9\u4e00\u6b65\uff0c\u56e0\u4e3a ',
+            a.a.createElement('code', null, 'base'),
+            ' \u548c ',
+            a.a.createElement('code', null, 'publicPath'),
+            ' \u9ed8\u8ba4\u5373\u662f ',
+            a.a.createElement('code', null, '"/"'),
+            '\u3002',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5982\u679c\u4f60\u6253\u7b97\u53d1\u5e03\u5230 ',
+            a.a.createElement(
+              'code',
+              null,
+              'https://<USERNAME>.github.io/<REPO>/',
+            ),
+            '\uff08\u4e5f\u5c31\u662f\u8bf4\u4f60\u7684\u4ed3\u5e93\u5728 ',
+            a.a.createElement(
+              'code',
+              null,
+              'https://github.com/<USERNAME>/<REPO>',
+            ),
+            '\uff09\uff0c\u5219\u5c06 ',
+            a.a.createElement('code', null, 'base'),
+            ' \u548c ',
+            a.a.createElement('code', null, 'publicPath'),
+            ' \u8bbe\u7f6e\u4e3a ',
+            a.a.createElement('code', null, '"/<REPO>/"'),
+            '\u3002',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '2.\u5728\u4f60\u7684\u9879\u76ee\u4e2d\uff0c\u521b\u5efa\u4e00\u4e2a\u5982\u4e0b\u7684 ',
+            a.a.createElement('code', null, 'deploy.sh'),
+            ' \u6587\u4ef6\uff08\u8bf7\u81ea\u884c\u5224\u65ad\u53bb\u6389\u9ad8\u4eae\u884c\u7684\u6ce8\u91ca\uff09:',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              "#!/usr/bin/env sh\n\n# \u786e\u4fdd\u811a\u672c\u629b\u51fa\u9047\u5230\u7684\u9519\u8bef\nset -e\n\n# \u751f\u6210\u9759\u6001\u6587\u4ef6\nnpm run build\n\n# \u8fdb\u5165\u751f\u6210\u7684\u6587\u4ef6\u5939\ncd docs-dist\n\n# \u5982\u679c\u662f\u53d1\u5e03\u5230\u81ea\u5b9a\u4e49\u57df\u540d\n# echo 'www.example.com' > CNAME\n\ngit init\ngit add -A\ngit commit -m 'deploy'\n\n# \u5982\u679c\u53d1\u5e03\u5230 https://<USERNAME>.github.io\n# git push -f git@github.com:xsahxl/xsahxl.github.io.git master\n\n# \u5982\u679c\u53d1\u5e03\u5230 https://<USERNAME>.github.io/<REPO>\ngit push -f git@github.com:xsahxl/blog.git master:gh-pages\n\ncd -\n",
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'h2',
+            { id: 'cdn-\u52a0\u901f' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#cdn-\u52a0\u901f', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://vercel.com/' },
+              'cdn \u52a0\u901f',
+            ),
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5c06\u9879\u76ee\u5bfc\u5165\u8fdb\u6765\uff0c\u4f1a\u5e2e\u6211\u4eec\u90e8\u7f72\u9879\u76ee\uff0c\u7136\u540e\u751f\u6210\u4e00\u4e2a\u53ef\u8bbf\u95ee\u7684 url',
+          ),
+          a.a.createElement(
+            'h2',
+            {
+              id:
+                '\u57df\u540d\u7533\u8bf7\uff08\u514d\u8d39\u4e00\u5e74\uff09',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#\u57df\u540d\u7533\u8bf7\uff08\u514d\u8d39\u4e00\u5e74\uff09',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://www.freenom.com/zh/index.html?lang=zh' },
+              '\u57df\u540d\u7533\u8bf7',
+            ),
+            '\uff08\u514d\u8d39\u4e00\u5e74\uff09',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u53ef\u53c2\u8003 ',
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://zhuanlan.zhihu.com/p/115535965' },
+              '\u6559\u7a0b',
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            { id: '\u4e91\u670d\u52a1\u5668' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u4e91\u670d\u52a1\u5668',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://ecs.console.aliyun.com/' },
+              '\u4e91\u670d\u52a1\u5668',
+            ),
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5982\u679c\u7b2c\u4e00\u6b21\u4f7f\u7528\u963f\u91cc\u4e91\u670d\u52a1\u5668\u7684\u8bdd\uff0c\u53ef\u4ee5\u5148\u7533\u8bf7',
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://free.aliyun.com/' },
+              '\u514d\u8d39\u8bd5\u7528\u7684\u4e91\u670d\u52a1\u5668',
+            ),
+          ),
+          a.a.createElement(
+            'h2',
+            { id: 'nignx' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#nignx', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'nignx',
+          ),
+          a.a.createElement('p', null, '\u5b89\u88c5'),
+          a.a.createElement(i['a'], {
+            code: 'yum install nginx -y\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u542f\u52a8 nginx'),
+          a.a.createElement(i['a'], { code: 'nginx\n', lang: 'unknown' }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u963f\u91cc\u4e91 ecs \u670d\u52a1\u5668\u7684\u9ed8\u8ba4\u5f00\u653e\u7aef\u53e3\u6ca1\u6709 80,\u8bb0\u5f97\u5728\u5b89\u5168\u7ec4\u91cc\u6dfb\u52a0\u4e0b\uff0c\u7136\u540e \u8bbf\u95ee\u516c\u7f51 ip \u5e94\u8be5\u4f1a\u770b\u5230 nginx \u542f\u52a8\u6210\u529f\u4e86\uff0c\u663e\u7136\u8fd9\u65f6\u5019\u4e5f\u53ef\u4ee5\u90e8\u7f72\u6211\u4eec\u7684\u9759\u6001\u535a\u5ba2\u4e86\u3002',
+          ),
+          a.a.createElement(
+            'h2',
+            {
+              id:
+                '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://www.jianshu.com/p/983f2f226579' },
+              '\u5b89\u88c5 SecureCRT',
+            ),
+          ),
+          a.a.createElement('p', null, 'rz \u4e0e sz \u547d\u4ee4'),
+          a.a.createElement('p', null, '\u5b89\u88c5'),
+          a.a.createElement(i['a'], {
+            code: 'yum install lrzsz -y\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            'rz \u547d\u4ee4\uff08Receive ZMODEM\uff09\uff0c\u4f7f\u7528 ZMODEM \u534f\u8bae\uff0c\u5c06\u672c\u5730\u6587\u4ef6\u6279\u91cf\u4e0a\u4f20\u5230\u8fdc\u7a0b Linux/Unix \u670d\u52a1\u5668\uff0c\u6ce8\u610f\u4e0d\u80fd\u4e0a\u4f20\u6587\u4ef6\u5939\u3002 \u5f53\u6211\u4eec\u4f7f\u7528\u865a\u62df\u7ec8\u7aef\u8f6f\u4ef6\uff0c\u5982 Xshell\u3001SecureCRT \u6216 PuTTY \u6765\u8fde\u63a5\u8fdc\u7a0b\u670d\u52a1\u5668\u540e\uff0c\u4f7f\u7528 rz \u547d\u4ee4\u53ef\u4ee5\u4e0a\u4f20\u672c\u5730\u6587\u4ef6\u5230\u8fdc\u7a0b\u670d\u52a1\u5668\u3002\u8f93\u5165 rz \u56de\u8f66\u540e\uff0c\u4f1a\u51fa\u73b0\u6587\u4ef6\u9009\u62e9\u5bf9\u8bdd\u6846\uff0c\u9009\u62e9\u9700\u8981\u4e0a\u4f20\u6587\u4ef6\uff0c\u4e00\u6b21\u53ef\u4ee5\u6307\u5b9a\u591a\u4e2a\u6587\u4ef6\uff0c\u4e0a\u4f20\u5230\u670d\u52a1\u5668\u7684\u8def\u5f84\u4e3a\u5f53\u524d\u6267\u884c rz \u547d\u4ee4\u7684\u76ee\u5f55\u3002',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            'sz \u547d\u4ee4\uff08Send ZMODEM\uff09\u901a\u8fc7 ZMODEM \u534f\u8bae\uff0c\u53ef\u5c06\u591a\u4e2a\u6587\u4ef6\u4ece\u8fdc\u7a0b\u670d\u52a1\u5668\u4e0b\u8f7d\u5230\u672c\u5730\u3002\u6ce8\u610f\u4e0d\u80fd\u4e0b\u8f7d\u6587\u4ef6\u5939\uff0c\u5982\u679c\u4e0b\u8f7d\u6587\u4ef6\u5939\uff0c\u8bf7\u5148\u6253\u5305\u518d\u4e0b\u8f7d',
+          ),
+          a.a.createElement(
+            'h2',
+            { id: '\u90e8\u7f72-node-\u73af\u5883' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#\u90e8\u7f72-node-\u73af\u5883',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '\u90e8\u7f72 node \u73af\u5883',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            'rz \u4e0a\u4f20 node \u5305 \u89e3\u538b node \u5305',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'tar -xvf node-v14.15.5-linux-x64.tar.xz\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5c06\u6587\u4ef6\u79fb\u52a8\u5230 /usr/local \u76ee\u5f55\u4e0b',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'mv node-v14.15.5-linux-x64 /usr/local/node\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u68c0\u9a8c node \u662f\u5426\u5b89\u88c5\u6210\u529f',
+          ),
+          a.a.createElement(i['a'], { code: 'node -v\n', lang: 'unknown' }),
+          a.a.createElement('p', null, '\u8f6f\u8fde\u63a5'),
+          a.a.createElement(i['a'], {
+            code:
+              'ln -s /usr/local/node/bin/node /usr/local/bin\nln -s /usr/local/node/bin/npm /usr/local/bin\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u518d\u6b21\u6267\u884c node -v \u5c31\u53ef\u4ee5\u770b\u5230\u7248\u672c\u53f7\u4e86',
+          ),
+          a.a.createElement('p', null, '\u5b89\u88c5 cnpm'),
+          a.a.createElement(i['a'], {
+            code:
+              'npm install -g cnpm --registry=https://registry.npm.taobao.org\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u540e\u7eed\u5b89\u88c5\u7684\u5305\uff0c\u6dfb\u52a0\u8f6f\u94fe\u63a5\u540c node',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://www.expressjs.com.cn/starter/hello-world.html' },
+              'express',
+            ),
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            'pm2 \u662f\u4e00\u4e2a\u8fdb\u7a0b\u7ba1\u7406\u5de5\u5177,\u53ef\u4ee5\u7528\u5b83\u6765\u7ba1\u7406\u4f60\u7684 node \u8fdb\u7a0b\uff0c\u5e76\u67e5\u770b node \u8fdb\u7a0b\u7684\u72b6\u6001\uff0c\u5f53\u7136\u4e5f\u652f\u6301\u6027\u80fd\u76d1\u63a7\uff0c\u8fdb\u7a0b\u5b88\u62a4\uff0c\u8d1f\u8f7d\u5747\u8861\u7b49\u529f\u80fd',
+          ),
+          a.a.createElement(i['a'], {
+            code: ' npm install pm2 -g\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u542f\u52a8\u8fdb\u7a0b/\u5e94\u7528'),
+          a.a.createElement(i['a'], {
+            code: ' pm2 start helloworld.js\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5217\u51fa\u6240\u6709\u8fdb\u7a0b/\u5e94\u7528',
+          ),
+          a.a.createElement(i['a'], { code: ' pm2 list\n', lang: 'unknown' }),
+          a.a.createElement('p', null, '\u5220\u9664\u8fdb\u7a0b/\u5e94\u7528'),
+          a.a.createElement(i['a'], {
+            code: ' pm2 delete id\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'h2',
+            { id: 'mongodb' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#mongodb', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'mongodb',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              '\u6570\u636e\u5e93\uff08database\uff09\n\u96c6\u5408\uff08collection\uff09\n\u6587\u6863\uff08document\uff09\n\u5728MongoDB\u4e2d\uff0c\u6570\u636e\u5e93\u548c\u96c6\u5408\u90fd\u4e0d\u9700\u8981\u624b\u52a8\u521b\u5efa\uff0c\u5f53\u6211\u4eec\u521b\u5efa\u6587\u6863\u65f6\uff0c\u5982\u679c\u6587\u6863\u6240\u5728\u7684\u6570\u636e\u5e93\u6216\u96c6\u5408\u4e0d\u5b58\u5728\uff0c\u4f1a\u81ea\u52a8\u521b\u5efa\u6570\u636e\u5e93\u548c\u96c6\u5408\n\u57fa\u672c\u6307\u4ee4\nshow dbs(databases): \u663e\u793a\u5f53\u524d\u7684\u6240\u4ee5\u6570\u636e\u5e93\nuse \u6570\u636e\u5e93\u540d\u79f0\uff1a\u8fdb\u5165\u5230\u6307\u5b9a\u7684\u6570\u636e\u5e93\u5f53\u4e2d\ndb\uff1a\u8868\u793a\u7684\u662f\u5f53\u524d\u6240\u5904\u7684\u6570\u636e\u5e93\nshow collections\uff1a\u663e\u793a\u6570\u636e\u5e93\u4e2d\u6240\u6709\u7684\u96c6\u5408\ndb.dropDatabase()\uff1a\u8f93\u51fa\u6570\u636e\u5e93\ndb.<collection>.drop(): \u5220\u9664\u96c6\u5408\n\u6570\u636e\u5e93\u7684CRUD\uff08\u589e\u5220\u6539\u67e5\uff09\u7684\u64cd\u4f5c\ncreate: db.<collection>.insert(doc)\nread: db.<collection>.find()\nupdate: db.<collection>.update():\ndelete: db.<collection>.remove():\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://www.mongodb.com/try/download/community' },
+              '\u4e0b\u8f7d\u8d44\u6e90',
+            ),
+            ', \u6ce8\u610f\u67e5\u770b\u670d\u52a1\u5668\u7684\u64cd\u4f5c\u7cfb\u7edf\uff0c\u8bf7\u786e\u4fdd\u4e0b\u8f7d\u6b63\u786e\u7684\u7248\u672c',
+          ),
+          a.a.createElement('p', null, '\u89e3\u538b'),
+          a.a.createElement(i['a'], {
+            code: 'tar -zxvf mongodb-linux-x86_64-rhel80-4.4.4.tgz\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5c06\u89e3\u538b\u540e\u7684\u6587\u4ef6\u5939\u79fb\u52a8\u81f3\u6307\u5b9a\u76ee\u5f55',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'mv mongodb-linux-x86_64-rhel80-4.4.4 /usr/local/mongodb\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u521b\u5efa\u6570\u636e\u6587\u4ef6\u5939\u3001\u65e5\u5fd7\u6587\u4ef6\u548c mongo \u914d\u7f6e\u6587\u4ef6',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              'mkdir -p  /usr/local/mongodb/data\ntouch /usr/local/mongodb/mongod.log\ntouch /usr/local/mongodb/mongodb.conf\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u4fee\u6539\u914d\u7f6e\u6587\u4ef6'),
+          a.a.createElement(i['a'], {
+            code: 'vim /usr/local/mongodb/mongodb.conf\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5728\u914d\u7f6e\u6587\u4ef6\u4e2d\u52a0\u5165\u5982\u4e0b\u4ee3\u7801\uff1a',
+          ),
+          a.a.createElement(i['a'], {
+            code:
+              'dbpath=/usr/local/mongodb/data\nlogpath=/usr/local/mongodb/mongod.log\nlogappend = true\nbind_ip = 0.0.0.0\nport = 27017\nfork = true\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u8fdb\u5165\u5230\u5b89\u88c5\u76ee\u5f55\u4e0b',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'cd /usr/local/mongodb/bin\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u542f\u52a8'),
+          a.a.createElement(i['a'], {
+            code: './mongod --config /usr/local/mongodb/mongodb.conf\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u5173\u95ed'),
+          a.a.createElement(i['a'], {
+            code: './mongod -shutdown -dbpath=/usr/local/mongodb/data\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u8f6f\u8fde\u63a5'),
+          a.a.createElement(i['a'], {
+            code: 'ln -s /usr/local/mongodb/bin/mongo /usr/local/bin\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u67e5\u770b mongo \u8fdb\u7a0b \u7b2c\u4e8c\u5217\u5c31\u662f\u8fdb\u7a0b id',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'ps -ef|grep mongo\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u7ed3\u675f\u8fdb\u7a0b'),
+          a.a.createElement(i['a'], { code: 'kill id\n', lang: 'unknown' }),
+          a.a.createElement(
+            'h2',
+            { id: 'egg-\u90e8\u7f72' },
+            a.a.createElement(
+              o['AnchorLink'],
+              { to: '#egg-\u90e8\u7f72', 'aria-hidden': 'true', tabIndex: -1 },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'egg \u90e8\u7f72',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5c06\u672c\u5730\u6587\u4ef6\u9664\u4e86 node_modules \u8fdb\u884c\u538b\u7f29\uff0c\u5e76\u547d\u540d\u4e3a dist.zip',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            '\u5c06\u6587\u4ef6\u4e0a\u4f20\u5230\u4e91\u670d\u52a1\u5668',
+          ),
+          a.a.createElement('p', null, '\u89e3\u538b\u6587\u4ef6'),
+          a.a.createElement(i['a'], {
+            code: 'unzip dist.zip\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u5b89\u88c5\u4f9d\u8d56'),
+          a.a.createElement(i['a'], {
+            code: 'npm install --production\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u542f\u52a8'),
+          a.a.createElement(i['a'], { code: 'npm start\n', lang: 'unknown' }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u67e5\u770b\u5f53\u524d\u7aef\u53e3\u662f\u5426\u5360\u7528',
+          ),
+          a.a.createElement(i['a'], {
+            code: 'lsof -i tcp:7001\n\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement('p', null, '\u7ed3\u675f\u8fdb\u7a0b'),
+          a.a.createElement(i['a'], { code: 'kill pid\n', lang: 'unknown' }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip + 7001 \u5c31\u53ef\u4ee5\u4e86',
+          ),
+          a.a.createElement('p', null, 'Nginx \u914d\u7f6e'),
+          a.a.createElement(i['a'], {
+            code:
+              'location / {\n  proxy_set_header Upgrade $http_upgrade;\n  proxy_set_header Connection "upgrade";\n  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n  proxy_set_header Host $host;\n  proxy_pass   http://127.0.0.1:7001;\n\n  # http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_bind\n  # proxy_bind       $remote_addr transparent;\n}\n',
+            lang: 'unknown',
+          }),
+          a.a.createElement(
+            'p',
+            null,
+            '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip \u5c31\u53ef\u4ee5\u4e86',
+          ),
+        ),
+      );
+    };
+  },
   M0xE: function(e, t, n) {
     (function(e, t) {
       t(n('yq+b'));
@@ -39372,17 +39975,6 @@
     (E.displayName = 'CardContent'),
       (t['default'] = M['default'].config(E)),
       (e.exports = t['default']);
-  },
-  OJSO: function(e, t, n) {
-    'use strict';
-    var r = function(e) {
-      var t =
-        arguments.length > 1 && void 0 !== arguments[1]
-          ? arguments[1]
-          : 'Component';
-      return (e && (e.displayName || e.name)) || t;
-    };
-    t['a'] = r;
   },
   OKtk: function(e, t, n) {
     n('DOi2'), (e.exports = n('zpmP').Reflect.construct);
@@ -47692,6 +48284,38 @@
         a.a.createElement(
           'div',
           { className: 'markdown' },
+          a.a.createElement(
+            'h2',
+            { id: 'github-\u56fd\u5185\u955c\u50cf\u7f51\u7ad9' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#github-\u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            'github \u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://github.com.cnpmjs.org/' },
+              'https://github.com.cnpmjs.org/',
+            ),
+          ),
+          a.a.createElement(
+            'p',
+            null,
+            a.a.createElement(
+              o['Link'],
+              { to: 'https://git.sdut.me/' },
+              'https://git.sdut.me/',
+            ),
+          ),
           a.a.createElement(
             'h2',
             {
@@ -58462,121 +59086,6 @@
     (t['default'] = M), (e.exports = t['default']);
   },
   'dao+': function(e, t, n) {},
-  dlCU: function(e, t, n) {
-    'use strict';
-    n.r(t);
-    var r = n('yDyU'),
-      a = n.n(r),
-      o = n('4H+6'),
-      i = n('uZyb'),
-      l = n('If9L'),
-      s = '/';
-    function u(e) {
-      var t = e.href,
-        n = e.children;
-      return a.a.createElement(
-        'a',
-        { href: ''.concat(s, 'article/').concat(t) },
-        n,
-      );
-    }
-    var d = u,
-      c = e => {
-        var t = e.time,
-          n = e.auther,
-          r = void 0 === n ? '\u53f2\u534e\u529b' : n;
-        return a.a.createElement(
-          'div',
-          null,
-          a.a.createElement(
-            'div',
-            { style: { position: 'absolute', bottom: 0 } },
-            a.a.createElement(o['a'], {
-              type: 'calendar',
-              size: 'xs',
-              style: { verticalAlign: 'bottom' },
-            }),
-            a.a.createElement('span', { style: { marginLeft: 8 } }, t),
-          ),
-          a.a.createElement(
-            'div',
-            { style: { position: 'absolute', bottom: 0, right: 0 } },
-            a.a.createElement(o['a'], {
-              type: 'account',
-              size: 'xs',
-              style: { verticalAlign: 'bottom' },
-            }),
-            a.a.createElement('span', { style: { marginLeft: 8 } }, r),
-          ),
-        );
-      },
-      f = () =>
-        a.a.createElement(
-          'div',
-          { style: { backgroundColor: '#fff', padding: 32 } },
-          a.a.createElement(
-            i['a'].Row,
-            { gutter: 32 },
-            a.a.createElement(
-              i['a'].Col,
-              null,
-              a.a.createElement(
-                d,
-                { href: 'how-to-create-blog' },
-                a.a.createElement(
-                  l['a'],
-                  {
-                    title:
-                      '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
-                  },
-                  a.a.createElement('div', null, '1.dumi'),
-                  a.a.createElement('p', null, '2.GitHub Pages'),
-                  a.a.createElement('p', null, '3.\u4e91\u670d\u52a1\u5668'),
-                  a.a.createElement(c, { time: '2021-2-28' }),
-                ),
-              ),
-            ),
-            a.a.createElement(
-              i['a'].Col,
-              null,
-              a.a.createElement(
-                d,
-                { href: 'git' },
-                a.a.createElement(
-                  l['a'],
-                  { title: 'git \u5e38\u7528\u547d\u4ee4' },
-                  '\u4e3b\u8981\u5217\u4e3e\u4e00\u4e9b git \u5e38\u7528\u547d\u4ee4',
-                  a.a.createElement(c, { time: '2021-3-7' }),
-                ),
-              ),
-            ),
-            a.a.createElement(
-              i['a'].Col,
-              null,
-              a.a.createElement(
-                d,
-                { href: 'vultr&shadowsocks' },
-                a.a.createElement(
-                  l['a'],
-                  { title: 'vultr&shadowsocks' },
-                  a.a.createElement(
-                    'div',
-                    null,
-                    '1.\u8d2d\u4e70vultr\u670d\u52a1\u5668',
-                  ),
-                  a.a.createElement(
-                    'p',
-                    null,
-                    '2.\u901a\u8fc7shadowsocks\u642d\u5efavpn',
-                  ),
-                  a.a.createElement(c, { time: '2021-3-7' }),
-                ),
-              ),
-            ),
-          ),
-        );
-    t['default'] = f;
-  },
   dnUL: function(e, t, n) {
     'use strict';
     t.__esModule = !0;
@@ -67999,721 +68508,6 @@
       return o;
     }
   },
-  gGeM: function(e, t, n) {
-    'use strict';
-    n.r(t);
-    var r = n('yDyU'),
-      a = n.n(r),
-      o = n('kvV8'),
-      i = n('HFCj');
-    t['default'] = function() {
-      return a.a.createElement(
-        a.a.Fragment,
-        null,
-        a.a.createElement(
-          'div',
-          { className: 'markdown' },
-          a.a.createElement(
-            'h1',
-            { id: '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
-          ),
-          a.a.createElement(
-            'h2',
-            { id: 'ui-\u9009\u578b' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#ui-\u9009\u578b', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            'ui \u9009\u578b',
-          ),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                o['Link'],
-                { to: 'https://hexo.io/zh-cn/' },
-                'hexo',
-              ),
-            ),
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                o['Link'],
-                { to: 'https://vuepress.vuejs.org/zh/' },
-                'vuepress',
-              ),
-            ),
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                o['Link'],
-                { to: 'https://d.umijs.org/zh-CN' },
-                'dumi',
-              ),
-            ),
-          ),
-          a.a.createElement(
-            'h2',
-            { id: '\u90e8\u7f72' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#\u90e8\u7f72', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u90e8\u7f72',
-          ),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                o['Link'],
-                { to: 'https://pages.github.com/' },
-                'GitHub Pages',
-              ),
-            ),
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                o['Link'],
-                { to: 'https://ecs.console.aliyun.com/' },
-                '\u4e91\u670d\u52a1\u5668',
-              ),
-            ),
-          ),
-          a.a.createElement(
-            'h2',
-            {
-              id:
-                '\u672c\u6b21\u535a\u5ba2\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
-            },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to:
-                  '#\u672c\u6b21\u535a\u5ba2\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u672c\u6b21\u535a\u5ba2\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
-          ),
-          a.a.createElement(
-            'h2',
-            { id: 'dumi' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#dumi', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            'dumi',
-          ),
-          a.a.createElement(
-            'h4',
-            { id: '1\u73af\u5883\u51c6\u5907' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#1\u73af\u5883\u51c6\u5907',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '1.\u73af\u5883\u51c6\u5907',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u9996\u5148\u5f97\u6709 node\uff0c\u5e76\u786e\u4fdd node \u7248\u672c\u662f 10.13 \u6216\u4ee5\u4e0a\u3002',
-          ),
-          a.a.createElement(i['a'], { code: 'node -v\n', lang: 'unknown' }),
-          a.a.createElement(
-            'h4',
-            { id: '2\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#2\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '2.\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u6211\u4eec\u4e5f\u53ef\u4ee5\u4f7f\u7528 dumi-template \u4ed3\u5e93\u8fdb\u884c\u521d\u59cb\u5316\uff0c\u8bbf\u95ee ',
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://github.com/umijs/dumi-template' },
-              'https://github.com/umijs/dumi-template',
-            ),
-            ' \u4e86\u89e3\u66f4\u591a\u3002',
-          ),
-          a.a.createElement(
-            'h2',
-            { id: 'github-pages' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#github-pages', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://pages.github.com/' },
-              'GitHub Pages',
-            ),
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            'Head over to GitHub and create a new public repository named username.github.io, where username is your username (or organization name) on GitHub.',
-          ),
-          a.a.createElement(
-            'h4',
-            { id: '\u90e8\u7f72-1' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#\u90e8\u7f72-1', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u90e8\u7f72',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '1.\u5728 ',
-            a.a.createElement('code', null, '.umirc.ts'),
-            ' \u4e2d\u8bbe\u7f6e\u6b63\u786e\u7684 ',
-            a.a.createElement('code', null, 'base'),
-            '\u3002',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5982\u679c\u4f60\u6253\u7b97\u53d1\u5e03\u5230 ',
-            a.a.createElement('code', null, 'https://<USERNAME>.github.io/'),
-            '\uff0c\u5219\u53ef\u4ee5\u7701\u7565\u8fd9\u4e00\u6b65\uff0c\u56e0\u4e3a ',
-            a.a.createElement('code', null, 'base'),
-            ' \u548c ',
-            a.a.createElement('code', null, 'publicPath'),
-            ' \u9ed8\u8ba4\u5373\u662f ',
-            a.a.createElement('code', null, '"/"'),
-            '\u3002',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5982\u679c\u4f60\u6253\u7b97\u53d1\u5e03\u5230 ',
-            a.a.createElement(
-              'code',
-              null,
-              'https://<USERNAME>.github.io/<REPO>/',
-            ),
-            '\uff08\u4e5f\u5c31\u662f\u8bf4\u4f60\u7684\u4ed3\u5e93\u5728 ',
-            a.a.createElement(
-              'code',
-              null,
-              'https://github.com/<USERNAME>/<REPO>',
-            ),
-            '\uff09\uff0c\u5219\u5c06 ',
-            a.a.createElement('code', null, 'base'),
-            ' \u548c ',
-            a.a.createElement('code', null, 'publicPath'),
-            ' \u8bbe\u7f6e\u4e3a ',
-            a.a.createElement('code', null, '"/<REPO>/"'),
-            '\u3002',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '2.\u5728\u4f60\u7684\u9879\u76ee\u4e2d\uff0c\u521b\u5efa\u4e00\u4e2a\u5982\u4e0b\u7684 ',
-            a.a.createElement('code', null, 'deploy.sh'),
-            ' \u6587\u4ef6\uff08\u8bf7\u81ea\u884c\u5224\u65ad\u53bb\u6389\u9ad8\u4eae\u884c\u7684\u6ce8\u91ca\uff09:',
-          ),
-          a.a.createElement(i['a'], {
-            code:
-              "#!/usr/bin/env sh\n\n# \u786e\u4fdd\u811a\u672c\u629b\u51fa\u9047\u5230\u7684\u9519\u8bef\nset -e\n\n# \u751f\u6210\u9759\u6001\u6587\u4ef6\nnpm run build\n\n# \u8fdb\u5165\u751f\u6210\u7684\u6587\u4ef6\u5939\ncd docs-dist\n\n# \u5982\u679c\u662f\u53d1\u5e03\u5230\u81ea\u5b9a\u4e49\u57df\u540d\n# echo 'www.example.com' > CNAME\n\ngit init\ngit add -A\ngit commit -m 'deploy'\n\n# \u5982\u679c\u53d1\u5e03\u5230 https://<USERNAME>.github.io\n# git push -f git@github.com:xsahxl/xsahxl.github.io.git master\n\n# \u5982\u679c\u53d1\u5e03\u5230 https://<USERNAME>.github.io/<REPO>\ngit push -f git@github.com:xsahxl/blog.git master:gh-pages\n\ncd -\n",
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'h2',
-            { id: 'cdn-\u52a0\u901f' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#cdn-\u52a0\u901f', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://vercel.com/' },
-              'cdn \u52a0\u901f',
-            ),
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5c06\u9879\u76ee\u5bfc\u5165\u8fdb\u6765\uff0c\u4f1a\u5e2e\u6211\u4eec\u90e8\u7f72\u9879\u76ee\uff0c\u7136\u540e\u751f\u6210\u4e00\u4e2a\u53ef\u8bbf\u95ee\u7684 url',
-          ),
-          a.a.createElement(
-            'h2',
-            {
-              id:
-                '\u7533\u8bf7\u57df\u540d\uff08\u514d\u8d39\u4e00\u5e74\uff09',
-            },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to:
-                  '#\u7533\u8bf7\u57df\u540d\uff08\u514d\u8d39\u4e00\u5e74\uff09',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://www.freenom.com/zh/index.html?lang=zh' },
-              '\u7533\u8bf7\u57df\u540d',
-            ),
-            '\uff08\u514d\u8d39\u4e00\u5e74\uff09',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u53ef\u53c2\u8003 ',
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://zhuanlan.zhihu.com/p/115535965' },
-              '\u6559\u7a0b',
-            ),
-          ),
-          a.a.createElement(
-            'h2',
-            { id: '\u4e91\u670d\u52a1\u5668' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#\u4e91\u670d\u52a1\u5668',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://ecs.console.aliyun.com/' },
-              '\u4e91\u670d\u52a1\u5668',
-            ),
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5982\u679c\u7b2c\u4e00\u6b21\u4f7f\u7528\u963f\u91cc\u4e91\u670d\u52a1\u5668\u7684\u8bdd\uff0c\u53ef\u4ee5\u5148\u7533\u8bf7',
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://free.aliyun.com/' },
-              '\u514d\u8d39\u8bd5\u7528\u7684\u4e91\u670d\u52a1\u5668',
-            ),
-          ),
-          a.a.createElement(
-            'h3',
-            { id: 'nignx' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#nignx', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            'nignx',
-          ),
-          a.a.createElement(
-            'h4',
-            { id: '1\u5b89\u88c5' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#1\u5b89\u88c5', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '1.\u5b89\u88c5',
-          ),
-          a.a.createElement(i['a'], {
-            code: 'yum install nginx\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'h4',
-            { id: '2\u542f\u52a8-nginx' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#2\u542f\u52a8-nginx',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '2.\u542f\u52a8 nginx',
-          ),
-          a.a.createElement(i['a'], { code: 'nginx\n', lang: 'unknown' }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u963f\u91cc\u4e91\u670d\u52a1\u5668\u7684\u9ed8\u8ba4\u5f00\u653e\u7aef\u53e3\u6ca1\u6709 80,\u8bb0\u5f97\u5728\u5b89\u5168\u7ec4\u91cc\u6dfb\u52a0\u4e0b\uff0c\u7136\u540e \u8bbf\u95ee\u516c\u7f51 ip \u5e94\u8be5\u4f1a\u770b\u5230 nginx \u542f\u52a8\u6210\u529f\u4e86\uff0c\u663e\u7136\u8fd9\u65f6\u5019\u4e5f\u53ef\u4ee5\u90e8\u7f72\u6211\u4eec\u7684\u9759\u6001\u535a\u5ba2\u4e86\u3002',
-          ),
-          a.a.createElement(
-            'h3',
-            {
-              id:
-                '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
-            },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to:
-                  '#\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
-          ),
-          a.a.createElement(
-            'h4',
-            { id: '1\u5b89\u88c5-securecrt' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#1\u5b89\u88c5-securecrt',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '1.',
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://www.jianshu.com/p/983f2f226579' },
-              '\u5b89\u88c5 SecureCRT',
-            ),
-          ),
-          a.a.createElement(
-            'h4',
-            { id: '2rz-\u4e0e-sz-\u547d\u4ee4' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#2rz-\u4e0e-sz-\u547d\u4ee4',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '2.rz \u4e0e sz \u547d\u4ee4',
-          ),
-          a.a.createElement('p', null, '\u5b89\u88c5'),
-          a.a.createElement(i['a'], {
-            code: 'yum install lrzsz -y\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            'rz \u547d\u4ee4\uff08Receive ZMODEM\uff09\uff0c\u4f7f\u7528 ZMODEM \u534f\u8bae\uff0c\u5c06\u672c\u5730\u6587\u4ef6\u6279\u91cf\u4e0a\u4f20\u5230\u8fdc\u7a0b Linux/Unix \u670d\u52a1\u5668\uff0c\u6ce8\u610f\u4e0d\u80fd\u4e0a\u4f20\u6587\u4ef6\u5939\u3002 \u5f53\u6211\u4eec\u4f7f\u7528\u865a\u62df\u7ec8\u7aef\u8f6f\u4ef6\uff0c\u5982 Xshell\u3001SecureCRT \u6216 PuTTY \u6765\u8fde\u63a5\u8fdc\u7a0b\u670d\u52a1\u5668\u540e\uff0c\u4f7f\u7528 rz \u547d\u4ee4\u53ef\u4ee5\u4e0a\u4f20\u672c\u5730\u6587\u4ef6\u5230\u8fdc\u7a0b\u670d\u52a1\u5668\u3002\u8f93\u5165 rz \u56de\u8f66\u540e\uff0c\u4f1a\u51fa\u73b0\u6587\u4ef6\u9009\u62e9\u5bf9\u8bdd\u6846\uff0c\u9009\u62e9\u9700\u8981\u4e0a\u4f20\u6587\u4ef6\uff0c\u4e00\u6b21\u53ef\u4ee5\u6307\u5b9a\u591a\u4e2a\u6587\u4ef6\uff0c\u4e0a\u4f20\u5230\u670d\u52a1\u5668\u7684\u8def\u5f84\u4e3a\u5f53\u524d\u6267\u884c rz \u547d\u4ee4\u7684\u76ee\u5f55\u3002',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            'sz \u547d\u4ee4\uff08Send ZMODEM\uff09\u901a\u8fc7 ZMODEM \u534f\u8bae\uff0c\u53ef\u5c06\u591a\u4e2a\u6587\u4ef6\u4ece\u8fdc\u7a0b\u670d\u52a1\u5668\u4e0b\u8f7d\u5230\u672c\u5730\u3002\u6ce8\u610f\u4e0d\u80fd\u4e0b\u8f7d\u6587\u4ef6\u5939\uff0c\u5982\u679c\u4e0b\u8f7d\u6587\u4ef6\u5939\uff0c\u8bf7\u5148\u6253\u5305\u518d\u4e0b\u8f7d',
-          ),
-          a.a.createElement(
-            'h3',
-            { id: '\u90e8\u7f72-node-\u73af\u5883' },
-            a.a.createElement(
-              o['AnchorLink'],
-              {
-                to: '#\u90e8\u7f72-node-\u73af\u5883',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            '\u90e8\u7f72 node \u73af\u5883',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            'rz \u4e0a\u4f20 node \u5305 \u89e3\u538b node \u5305',
-          ),
-          a.a.createElement(i['a'], {
-            code: 'tar -zxvf node-v14.15.5-linux-x64.tar.xz\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5c06\u6587\u4ef6\u79fb\u52a8\u5230 /usr/local \u76ee\u5f55\u4e0b',
-          ),
-          a.a.createElement(i['a'], {
-            code: 'mv node-v14.15.5-linux-x64 /usr/local/node\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u68c0\u9a8c node \u662f\u5426\u5b89\u88c5\u6210\u529f',
-          ),
-          a.a.createElement(i['a'], { code: 'node -v\n', lang: 'unknown' }),
-          a.a.createElement('p', null, '\u8f6f\u8fde\u63a5'),
-          a.a.createElement(i['a'], {
-            code:
-              'ln -s /usr/local/node/bin/node /usr/local/bin\nln -s /usr/local/node/bin/npm /usr/local/bin\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u518d\u6b21\u6267\u884c node -v \u5c31\u53ef\u4ee5\u770b\u5230\u7248\u672c\u53f7\u4e86',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://www.expressjs.com.cn/starter/hello-world.html' },
-              'express',
-            ),
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            'pm2 \u662f\u4e00\u4e2a\u8fdb\u7a0b\u7ba1\u7406\u5de5\u5177,\u53ef\u4ee5\u7528\u5b83\u6765\u7ba1\u7406\u4f60\u7684 node \u8fdb\u7a0b\uff0c\u5e76\u67e5\u770b node \u8fdb\u7a0b\u7684\u72b6\u6001\uff0c\u5f53\u7136\u4e5f\u652f\u6301\u6027\u80fd\u76d1\u63a7\uff0c\u8fdb\u7a0b\u5b88\u62a4\uff0c\u8d1f\u8f7d\u5747\u8861\u7b49\u529f\u80fd',
-          ),
-          a.a.createElement(i['a'], {
-            code: ' npm install pm2 -g\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u542f\u52a8\u8fdb\u7a0b/\u5e94\u7528'),
-          a.a.createElement(i['a'], {
-            code: ' pm2 start helloworld.js\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5217\u51fa\u6240\u6709\u8fdb\u7a0b/\u5e94\u7528',
-          ),
-          a.a.createElement(i['a'], { code: ' pm2 list\n', lang: 'unknown' }),
-          a.a.createElement('p', null, '\u5220\u9664\u8fdb\u7a0b/\u5e94\u7528'),
-          a.a.createElement(i['a'], {
-            code: ' pm2 delete id\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'h3',
-            { id: 'mongodb' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#mongodb', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            'mongodb',
-          ),
-          a.a.createElement(
-            'p',
-            null,
-            a.a.createElement(
-              o['Link'],
-              { to: 'https://www.mongodb.com/try/download/community' },
-              '\u4e0b\u8f7d\u8d44\u6e90',
-            ),
-            ', \u6ce8\u610f\u67e5\u770b\u670d\u52a1\u5668\u7684\u64cd\u4f5c\u7cfb\u7edf\uff0c\u8bf7\u786e\u4fdd\u4e0b\u8f7d\u6b63\u786e\u7684\u7248\u672c',
-          ),
-          a.a.createElement('p', null, '\u89e3\u538b'),
-          a.a.createElement(i['a'], {
-            code: 'tar -zxvf mongodb-linux-x86_64-rhel80-4.4.4.tgz\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5c06\u89e3\u538b\u540e\u7684\u6587\u4ef6\u5939\u79fb\u52a8\u81f3\u6307\u5b9a\u76ee\u5f55',
-          ),
-          a.a.createElement(i['a'], {
-            code:
-              'mv mongodb-linux-x86_64-rhel80-4.4.4.tgz /usr/local/mongodb\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u521b\u5efa\u6570\u636e\u6587\u4ef6\u5939\u3001\u65e5\u5fd7\u6587\u4ef6\u548c mongo \u914d\u7f6e\u6587\u4ef6',
-          ),
-          a.a.createElement(i['a'], {
-            code:
-              'mkdir -p  /usr/local/mongodb/data\ntouch /usr/local/mongodb/mongod.log\ntouch /usr/local/mongodb/mongodb.conf\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u4fee\u6539\u914d\u7f6e\u6587\u4ef6'),
-          a.a.createElement(i['a'], {
-            code: 'vim /usr/local/mongodb/mongodb.conf\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u5728\u914d\u7f6e\u6587\u4ef6\u4e2d\u52a0\u5165\u5982\u4e0b\u4ee3\u7801\uff1a',
-          ),
-          a.a.createElement(i['a'], {
-            code:
-              'dbpath=/usr/local/mongodb/data\nlogpath=/usr/local/mongodb/mongod.log\nlogappend = true\nport = 27017\nfork = true\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u8fdb\u5165\u5230\u5b89\u88c5\u76ee\u5f55\u4e0b',
-          ),
-          a.a.createElement(i['a'], {
-            code: 'cd /usr/local/mongodb/bin\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u542f\u52a8'),
-          a.a.createElement(i['a'], {
-            code: './mongod --config /usr/local/mongodb/mongodb.conf\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u5173\u95ed'),
-          a.a.createElement(i['a'], {
-            code: './mongod -shutdown -dbpath=/usr/local/mongodb/data\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u8f6f\u8fde\u63a5'),
-          a.a.createElement(i['a'], {
-            code: 'ln -s /usr/local/mongodb/bin/mongo /usr/local/bin\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u67e5\u770b mongo \u8fdb\u7a0b \u7b2c\u4e8c\u5217\u5c31\u662f\u8fdb\u7a0b id',
-          ),
-          a.a.createElement(i['a'], {
-            code: 'ps -ef|grep mongo\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement('p', null, '\u7ed3\u675f\u8fdb\u7a0b'),
-          a.a.createElement(i['a'], { code: 'kill id\n', lang: 'unknown' }),
-          a.a.createElement(
-            'h2',
-            { id: 'egg-\u90e8\u7f72' },
-            a.a.createElement(
-              o['AnchorLink'],
-              { to: '#egg-\u90e8\u7f72', 'aria-hidden': 'true', tabIndex: -1 },
-              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
-            ),
-            'egg \u90e8\u7f72',
-          ),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement(
-              'li',
-              null,
-              '\u5c06\u672c\u5730\u6587\u4ef6\u9664\u4e86 node_modules \u8fdb\u884c\u538b\u7f29\uff0c\u5e76\u547d\u540d\u4e3a dist.zip',
-            ),
-            a.a.createElement(
-              'li',
-              null,
-              '\u5c06\u6587\u4ef6\u4e0a\u4f20\u5230\u4e91\u670d\u52a1\u5668',
-            ),
-            a.a.createElement('li', null, 'unzip dist.zip'),
-            a.a.createElement('li', null, '\u5b89\u88c5\u4f9d\u8d56'),
-          ),
-          a.a.createElement(i['a'], {
-            code: 'npm install --production\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement('li', null, '\u542f\u52a8'),
-          ),
-          a.a.createElement(i['a'], { code: 'npm start\n', lang: 'unknown' }),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement(
-              'li',
-              null,
-              '\u67e5\u770b\u5f53\u524d\u7aef\u53e3\u662f\u5426\u5360\u7528',
-            ),
-          ),
-          a.a.createElement(i['a'], {
-            code: 'lsof -i tcp:7001\n\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement('li', null, '\u7ed3\u675f\u8fdb\u7a0b'),
-          ),
-          a.a.createElement(i['a'], { code: 'kill pid\n', lang: 'unknown' }),
-          a.a.createElement(
-            'ul',
-            null,
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement(
-                'p',
-                null,
-                '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip + 7001 \u5c31\u53ef\u4ee5\u4e86',
-              ),
-            ),
-            a.a.createElement(
-              'li',
-              null,
-              a.a.createElement('p', null, 'Nginx \u914d\u7f6e'),
-            ),
-          ),
-          a.a.createElement(i['a'], {
-            code:
-              'location / {\n  proxy_set_header Upgrade $http_upgrade;\n  proxy_set_header Connection "upgrade";\n  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n  proxy_set_header Host $host;\n  proxy_pass   http://127.0.0.1:7001;\n\n  # http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_bind\n  # proxy_bind       $remote_addr transparent;\n}\n',
-            lang: 'unknown',
-          }),
-          a.a.createElement(
-            'p',
-            null,
-            '\u8fd9\u65f6\u5019\u8bbf\u95ee \u516c\u7f51 ip \u5c31\u53ef\u4ee5\u4e86',
-          ),
-        ),
-      );
-    };
-  },
   gGw2: function(e, t, n) {
     'use strict';
     n.r(t);
@@ -71054,16 +70848,75 @@
     n.r(t);
     var r = n('yDyU'),
       a = n.n(r),
-      o = (n('kvV8'), a.a.memo(n('dlCU').default));
+      o = n('kvV8');
     t['default'] = function() {
       return a.a.createElement(
         a.a.Fragment,
         null,
         a.a.createElement(
-          a.a.Fragment,
-          null,
-          a.a.createElement('div', { className: 'markdown' }),
-          a.a.createElement(o, null),
+          'div',
+          { className: 'markdown' },
+          a.a.createElement(
+            'h3',
+            {
+              id:
+                '1-\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+            },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to:
+                  '#1-\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '1. ',
+            a.a.createElement(
+              o['Link'],
+              { to: '/article/how-to-build-a-website' },
+              '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+            ),
+          ),
+          a.a.createElement(
+            'h3',
+            { id: '2-git-\u5e38\u7528\u7684\u547d\u4ee4' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#2-git-\u5e38\u7528\u7684\u547d\u4ee4',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '2. ',
+            a.a.createElement(
+              o['Link'],
+              { to: '/article/git' },
+              'git \u5e38\u7528\u7684\u547d\u4ee4',
+            ),
+          ),
+          a.a.createElement(
+            'h3',
+            { id: '3-vultr-\u548c-shadowsocks' },
+            a.a.createElement(
+              o['AnchorLink'],
+              {
+                to: '#3-vultr-\u548c-shadowsocks',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              a.a.createElement('span', { className: ['icon', 'icon-link'] }),
+            ),
+            '3. ',
+            a.a.createElement(
+              o['Link'],
+              { to: '/article/vultr&shadowsocks' },
+              'vultr \u548c shadowsocks',
+            ),
+          ),
         ),
       );
     };
@@ -83915,28 +83768,6 @@
   },
   lI2w: function(e, t, n) {
     n('h6RU'), n('OD9R'), (e.exports = n('cIoq').f('iterator'));
-  },
-  lKZC: function(e, t, n) {
-    'use strict';
-    n.d(t, 'a', function() {
-      return d;
-    });
-    var r = n('RPYV'),
-      a = n.n(r),
-      o = n('yDyU'),
-      i = n.n(o),
-      l = n('QIG3'),
-      s = n.n(l),
-      u = n('52XR');
-    function d(e) {
-      var t = u['a'].Consumer,
-        n = function(n) {
-          return i.a.createElement(t, null, function(t) {
-            return i.a.createElement(e, a()({}, n, { windConfig: t }));
-          });
-        };
-      return s()(n, e), n;
-    }
   },
   lUyv: function(e, t, n) {
     'use strict';
@@ -97763,7 +97594,7 @@
   },
   q3YX: function(e) {
     e.exports = JSON.parse(
-      '{"menus":{"en-US":{"/article":[{"path":"/article","title":"Index","meta":{}},{"path":"/article/git","title":"\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d","meta":{}},{"path":"/article/how-to-create-blog","title":"\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2","meta":{}},{"path":"/article/vultr&shadowsocks","title":"\u4e70\u673a\u5668","meta":{}}],"/components":[{"path":"/components/mutation","title":"Mutation","meta":{}},{"path":"/components/query","title":"Query","meta":{}}],"/notes":[{"path":"/notes/a","title":"\u8d85\u94fe\u63a5","meta":{}},{"path":"/notes/byet","title":"\u4e91\u4e3b\u673a","meta":{}},{"path":"/notes/debounce-vs-throttle","title":"\u9632\u6296\u4e0e\u8282\u6d41","meta":{}},{"path":"/notes/egg","title":"egg \u5165\u95e8","meta":{}},{"path":"/notes/git","title":"git \u547d\u4ee4","meta":{}},{"path":"/notes/jsx-control-statements","title":"jsx-control-statements","meta":{}},{"path":"/notes/module","title":"\u524d\u7aef\u6a21\u5757\u5316","meta":{}},{"path":"/notes/react-vs-vue","title":"react vs vue","meta":{}},{"path":"/notes/regx","title":"\u5e38\u7528\u6b63\u5219","meta":{}},{"path":"/notes/sync-demo","title":"sync-demo","meta":{}},{"path":"/notes/use-ref-vs-create-ref","title":"useRef vs createRef","meta":{}},{"path":"/notes/vultr&shadowsocks","title":"vultr & shadowsocks","meta":{}}],"*":[{"path":"/","title":"Index","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"},{"title":"\u6587\u7ae0","path":"/article"},{"title":"GitHub","children":[{"title":"blog","path":"https://github.com/xsahxl/blog"},{"title":"@xsahxl/ui","path":"https://github.com/xsahxl/ui"}]}]},"title":"blog","logo":"https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png","mode":"site","repository":{"branch":"master"},"theme":{}}',
+      '{"menus":{"en-US":{"/article":[{"path":"/article","title":"1. \u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9","meta":{}},{"path":"/article/git","title":"github \u56fd\u5185\u955c\u50cf\u7f51\u7ad9","meta":{}},{"path":"/article/how-to-build-a-website","title":"\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9","meta":{}},{"path":"/article/vultr&shadowsocks","title":"\u8d2d\u4e70\u673a\u5668","meta":{}}],"/components":[{"path":"/components/mutation","title":"Mutation","meta":{}},{"path":"/components/query","title":"Query","meta":{}}],"/notes":[{"path":"/notes/a","title":"\u8d85\u94fe\u63a5","meta":{}},{"path":"/notes/byet","title":"\u4e91\u4e3b\u673a","meta":{}},{"path":"/notes/debounce-vs-throttle","title":"\u9632\u6296\u4e0e\u8282\u6d41","meta":{}},{"path":"/notes/egg","title":"egg \u5165\u95e8","meta":{}},{"path":"/notes/git","title":"git \u547d\u4ee4","meta":{}},{"path":"/notes/jsx-control-statements","title":"jsx-control-statements","meta":{}},{"path":"/notes/module","title":"\u524d\u7aef\u6a21\u5757\u5316","meta":{}},{"path":"/notes/react-vs-vue","title":"react vs vue","meta":{}},{"path":"/notes/regx","title":"\u5e38\u7528\u6b63\u5219","meta":{}},{"path":"/notes/sync-demo","title":"sync-demo","meta":{}},{"path":"/notes/use-ref-vs-create-ref","title":"useRef vs createRef","meta":{}},{"path":"/notes/vultr&shadowsocks","title":"vultr & shadowsocks","meta":{}}],"*":[{"path":"/","title":"Index","meta":{}}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{"en-US":[{"title":"\u7ec4\u4ef6","path":"/components"},{"title":"\u6587\u7ae0","path":"/article"},{"title":"GitHub","children":[{"title":"blog","path":"https://github.com/xsahxl/blog"},{"title":"@xsahxl/ui","path":"https://github.com/xsahxl/ui"}]}]},"title":"blog","logo":"https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png","mode":"site","repository":{"branch":"master"},"theme":{}}',
     );
   },
   'q5+0': function(e, t, n) {
@@ -103239,9 +103070,14 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/git.md',
-                updatedTime: 161538181e4,
+                updatedTime: 1615651848e3,
                 sidemenu: !1,
                 slugs: [
+                  {
+                    depth: 2,
+                    value: 'github \u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
+                    heading: 'github-\u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
+                  },
                   {
                     depth: 2,
                     value:
@@ -103323,28 +103159,26 @@
                     heading: '\u5220\u9664\u8fdc\u7a0b\u5206\u652f',
                   },
                 ],
-                title:
-                  '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
+                title: 'github \u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
                 nav: { path: '/article', title: 'Article' },
               },
-              title:
-                '\u89e3\u51b3 git clone \u4e0b\u8f7d\u901f\u5ea6\u7f13\u6162\u95ee\u9898\uff0c \u4f7f\u7528 github \u7684\u955c\u50cf\u57df\u540d',
+              title: 'github \u56fd\u5185\u955c\u50cf\u7f51\u7ad9',
             },
             {
-              path: '/article/how-to-create-blog',
-              component: n('gGeM').default,
+              path: '/article/how-to-build-a-website',
+              component: n('LzMK').default,
               exact: !0,
               meta: {
-                filePath: 'src/article/how-to-create-blog.md',
-                updatedTime: 1615393618e3,
+                filePath: 'src/article/how-to-build-a-website.md',
+                updatedTime: 1615651848e3,
                 sidemenu: !1,
                 slugs: [
                   {
                     depth: 1,
                     value:
-                      '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
+                      '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
                     heading:
-                      '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
+                      '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
                   },
                   {
                     depth: 2,
@@ -103355,27 +103189,12 @@
                   {
                     depth: 2,
                     value:
-                      '\u672c\u6b21\u535a\u5ba2\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+                      '\u9759\u6001\u7f51\u7ad9\u642d\u5efa \u4ee5 dumi \u548c GitHub Pages \u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
                     heading:
-                      '\u672c\u6b21\u535a\u5ba2\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages\u3001\u4e91\u670d\u52a1\u5668\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
+                      '\u9759\u6001\u7f51\u7ad9\u642d\u5efa-\u4ee5-dumi-\u548c-github-pages-\u4e3a\u4f8b\u5b50\u8fdb\u884c\u6f14\u793a',
                   },
                   { depth: 2, value: 'dumi', heading: 'dumi' },
-                  {
-                    depth: 4,
-                    value: '1.\u73af\u5883\u51c6\u5907',
-                    heading: '1\u73af\u5883\u51c6\u5907',
-                  },
-                  {
-                    depth: 4,
-                    value: '2.\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316',
-                    heading: '2\u4ed3\u5e93\u6a21\u677f\u521d\u59cb\u5316',
-                  },
                   { depth: 2, value: 'GitHub Pages', heading: 'github-pages' },
-                  {
-                    depth: 4,
-                    value: '\u90e8\u7f72',
-                    heading: '\u90e8\u7f72-1',
-                  },
                   {
                     depth: 2,
                     value: 'cdn \u52a0\u901f',
@@ -103384,59 +103203,41 @@
                   {
                     depth: 2,
                     value:
-                      '\u7533\u8bf7\u57df\u540d\uff08\u514d\u8d39\u4e00\u5e74\uff09',
+                      '\u57df\u540d\u7533\u8bf7\uff08\u514d\u8d39\u4e00\u5e74\uff09',
                     heading:
-                      '\u7533\u8bf7\u57df\u540d\uff08\u514d\u8d39\u4e00\u5e74\uff09',
+                      '\u57df\u540d\u7533\u8bf7\uff08\u514d\u8d39\u4e00\u5e74\uff09',
                   },
                   {
                     depth: 2,
                     value: '\u4e91\u670d\u52a1\u5668',
                     heading: '\u4e91\u670d\u52a1\u5668',
                   },
-                  { depth: 3, value: 'nignx', heading: 'nignx' },
+                  { depth: 2, value: 'nignx', heading: 'nignx' },
                   {
-                    depth: 4,
-                    value: '1.\u5b89\u88c5',
-                    heading: '1\u5b89\u88c5',
-                  },
-                  {
-                    depth: 4,
-                    value: '2.\u542f\u52a8 nginx',
-                    heading: '2\u542f\u52a8-nginx',
-                  },
-                  {
-                    depth: 3,
+                    depth: 2,
                     value:
                       '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
                     heading:
                       '\u4e91\u670d\u52a1\u5668\u5982\u4f55\u4e0a\u4f20\u6587\u4ef6',
                   },
                   {
-                    depth: 4,
-                    value: '1.\u5b89\u88c5 SecureCRT',
-                    heading: '1\u5b89\u88c5-securecrt',
-                  },
-                  {
-                    depth: 4,
-                    value: '2.rz \u4e0e sz \u547d\u4ee4',
-                    heading: '2rz-\u4e0e-sz-\u547d\u4ee4',
-                  },
-                  {
-                    depth: 3,
+                    depth: 2,
                     value: '\u90e8\u7f72 node \u73af\u5883',
                     heading: '\u90e8\u7f72-node-\u73af\u5883',
                   },
-                  { depth: 3, value: 'mongodb', heading: 'mongodb' },
+                  { depth: 2, value: 'mongodb', heading: 'mongodb' },
                   {
                     depth: 2,
                     value: 'egg \u90e8\u7f72',
                     heading: 'egg-\u90e8\u7f72',
                   },
                 ],
-                title: '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
+                title:
+                  '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
                 nav: { path: '/article', title: 'Article' },
               },
-              title: '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u535a\u5ba2',
+              title:
+                '\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
             },
             {
               path: '/article',
@@ -103444,13 +103245,33 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/index.md',
-                updatedTime: 1614507421e3,
-                gapless: !0,
-                slugs: [],
-                title: 'Index',
+                updatedTime: 1615651848e3,
+                sidemenu: !1,
+                slugs: [
+                  {
+                    depth: 3,
+                    value:
+                      '1. \u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+                    heading:
+                      '1-\u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
+                  },
+                  {
+                    depth: 3,
+                    value: '2. git \u5e38\u7528\u7684\u547d\u4ee4',
+                    heading: '2-git-\u5e38\u7528\u7684\u547d\u4ee4',
+                  },
+                  {
+                    depth: 3,
+                    value: '3. vultr \u548c shadowsocks',
+                    heading: '3-vultr-\u548c-shadowsocks',
+                  },
+                ],
+                title:
+                  '1. \u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
                 nav: { path: '/article', title: 'Article' },
               },
-              title: 'Index',
+              title:
+                '1. \u5982\u4f55\u642d\u5efa\u81ea\u5df1\u7684\u4e2a\u4eba\u7f51\u7ad9',
             },
             {
               path: '/article/vultr&shadowsocks',
@@ -103458,13 +103279,13 @@
               exact: !0,
               meta: {
                 filePath: 'src/article/vultr&shadowsocks.md',
-                updatedTime: 1615115394312,
+                updatedTime: 1615649345745,
                 sidemenu: !1,
                 slugs: [
                   {
                     depth: 2,
-                    value: '\u4e70\u673a\u5668',
-                    heading: '\u4e70\u673a\u5668',
+                    value: '\u8d2d\u4e70\u673a\u5668',
+                    heading: '\u8d2d\u4e70\u673a\u5668',
                   },
                   {
                     depth: 2,
@@ -103483,10 +103304,10 @@
                   },
                   { depth: 2, value: 'shadowsocks', heading: 'shadowsocks' },
                 ],
-                title: '\u4e70\u673a\u5668',
+                title: '\u8d2d\u4e70\u673a\u5668',
                 nav: { path: '/article', title: 'Article' },
               },
-              title: '\u4e70\u673a\u5668',
+              title: '\u8d2d\u4e70\u673a\u5668',
             },
             {
               path: '/components/mutation',
@@ -105434,12 +105255,6 @@
       })),
       a);
     (t['default'] = x), (e.exports = t['default']);
-  },
-  uZyb: function(e, t, n) {
-    'use strict';
-    var r = n('BCQY'),
-      a = n.n(r);
-    t['a'] = a.a;
   },
   uexc: function(e, t, n) {
     (function(e, t) {

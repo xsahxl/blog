@@ -6,4 +6,4 @@ Blog:
     CodeUri: ./
     NpmClient: cnpm
     BuildFolderName: docs-dist
-  Access: default
+  Access: test

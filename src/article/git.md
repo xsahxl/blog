@@ -16,6 +16,13 @@ git clone https://github.com/xsahxl/blog.git
 git clone https://github.com.cnpmjs.org/xsahxl/blog.git
 ```
 
+## 使用.gitignore 无效的解决方法
+
+```
+git rm -r --cached .
+git add .
+```
+
 ## 如何切换链接 git 服务器的方式是 ssh 还是 http
 
 ```shell

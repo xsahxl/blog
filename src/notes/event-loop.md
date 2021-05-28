@@ -1,4 +1,6 @@
-# JS 事件循环机制（event loop）之宏任务/微任务
+# event loop
+
+## JS 事件循环机制（event loop）之宏任务/微任务
 
 - JavaScript 是单线程的语言
 - Event Loop 是 javascript 的执行机制

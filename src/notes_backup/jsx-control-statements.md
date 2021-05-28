@@ -1,16 +1,21 @@
 # jsx-control-statements
 
 ## 安装依赖
+
 ```javascript
 npm i babel-plugin-jsx-control-statements eslint-plugin-jsx-control-statements --save-dev
 ```
+
 ## 根目录下新建 .babelrc 文件
+
 ```javascript
 {
   "plugins": ["jsx-control-statements"]
 }
 ```
+
 ## 修改 .eslintrc 文件
+
 ```javascript
 {
   "parser": "babel-eslint",
@@ -28,6 +33,6 @@ npm i babel-plugin-jsx-control-statements eslint-plugin-jsx-control-statements -
 
 ```
 
+执行以上操作，重新启动编辑器就可以愉快的玩耍了 😊😊😊
 
-执行以上操作，重新启动编辑器就可以愉快的玩耍了😊😊😊
-## [demo仓库](https://github.com/shihuali5257/jsx-control-statments)
+## [demo 仓库](https://github.com/shihuali5257/jsx-control-statments)

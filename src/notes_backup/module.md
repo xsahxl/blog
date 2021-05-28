@@ -6,9 +6,9 @@ AMD 是**异步加载模块，推崇依赖前置**，模块的加载不影响它
 
 ```javascript
 // 定义math.js模块
-define(function () {
+define(function() {
   var basicNum = 0;
-  var add = function (x, y) {
+  var add = function(x, y) {
     return x + y;
   };
   return {
@@ -17,9 +17,9 @@ define(function () {
   };
 });
 // 定义一个依赖underscore.js的模块
-define(['underscore'], function (_) {
-  var classify = function (list) {
-    _.countBy(list, function (num) {
+define(['underscore'], function(_) {
+  var classify = function(list) {
+    _.countBy(list, function(num) {
       return num > 30 ? 'old' : 'young';
     });
   };
@@ -29,7 +29,7 @@ define(['underscore'], function (_) {
 });
 
 // 引用模块，将模块放在[]内
-require(['jquery', 'math'], function ($, math) {
+require(['jquery', 'math'], function($, math) {
   var sum = math.add(10, 20);
   $('#sum').html(sum);
 });
@@ -41,7 +41,7 @@ CMD 是 SeaJS 在推广过程中对模块定义的规范化产出，对于模块
 
 ```javascript
 /** AMD写法 **/
-define(['a', 'b', 'c', 'd', 'e', 'f'], function (a, b, c, d, e, f) {
+define(['a', 'b', 'c', 'd', 'e', 'f'], function(a, b, c, d, e, f) {
   // 等于在最前面声明并初始化了要用到的所有模块
   a.doSomething();
   if (false) {
@@ -51,7 +51,7 @@ define(['a', 'b', 'c', 'd', 'e', 'f'], function (a, b, c, d, e, f) {
 });
 
 /** CMD写法 **/
-define(function (require, exports, module) {
+define(function(require, exports, module) {
   var a = require('./a'); //在需要时申明
   a.doSomething();
   if (false) {
@@ -62,15 +62,15 @@ define(function (require, exports, module) {
 
 /** sea.js **/
 // 定义模块 math.js
-define(function (require, exports, module) {
+define(function(require, exports, module) {
   var $ = require('jquery.js');
-  var add = function (a, b) {
+  var add = function(a, b) {
     return a + b;
   };
   exports.add = add;
 });
 // 加载模块
-seajs.use(['math.js'], function (math) {
+seajs.use(['math.js'], function(math) {
   var sum = math.add(1 + 2);
 });
 ```
@@ -120,7 +120,7 @@ UMD 是 AMD 和 CommonJS 的一个糅合。AMD 是浏览器优先，异步加载
     //都不是，浏览器全局定义
     root.testModule = factory(root.jQuery);
   }
-})(this, ($) => {
+})(this, $ => {
   //do something...  这里是真正的函数体
 });
 ```
@@ -132,7 +132,7 @@ ES6 在语言标准的层面上，实现了模块功能，而且实现得相当�
 ```javascript
 /** 定义模块 math.js **/
 var basicNum = 0;
-var add = function (a, b) {
+var add = function(a, b) {
   return a + b;
 };
 export { basicNum, add };

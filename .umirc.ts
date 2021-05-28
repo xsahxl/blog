@@ -21,6 +21,10 @@ export default defineConfig({
       path: '/article',
     },
     {
+      title: '笔记',
+      path: '/notes',
+    },
+    {
       title: 'GitHub',
       children: [
         {

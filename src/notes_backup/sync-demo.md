@@ -16,14 +16,14 @@ function copyDir(src, dist, callback) {
     if (err) {
       callback(err);
     } else {
-      fs.readdir(src, function (err, paths) {
+      fs.readdir(src, function(err, paths) {
         if (err) {
           callback(err);
         } else {
-          paths.forEach(function (path) {
+          paths.forEach(function(path) {
             var _src = src + '/' + path;
             var _dist = dist + '/' + path;
-            fs.stat(_src, function (err, stat) {
+            fs.stat(_src, function(err, stat) {
               if (err) {
                 callback(err);
               } else {
@@ -41,7 +41,7 @@ function copyDir(src, dist, callback) {
       });
     }
   }
-  fs.access(dist, function (err) {
+  fs.access(dist, function(err) {
     if (err) {
       // 目录不存在时创建目录
       fs.mkdirSync(dist);
@@ -67,7 +67,7 @@ const baseComponentsPath = path.join(__dirname, '../base-components');
 //js=>jsx
 glob('*/demo/*.js', { cwd: baseComponentsPath }, (err, res) => {
   if (err) throw err;
-  _.each(res, (item) => {
+  _.each(res, item => {
     fs.rename(
       path.join(baseComponentsPath, `${item}`),
       path.join(baseComponentsPath, `${item}x`),
@@ -77,17 +77,17 @@ glob('*/demo/*.js', { cwd: baseComponentsPath }, (err, res) => {
 
 glob('*/*.md', { cwd: baseComponentsPath }, (err, res) => {
   if (err) throw err;
-  _.each(res, (item) => {
+  _.each(res, item => {
     const content = fs.readFileSync(
       path.join(baseComponentsPath, item),
       'utf8',
     );
     let contentLines = _.split(content, '\n');
-    const index = _.findIndex(contentLines, (obj) => _.includes(obj, '#'));
+    const index = _.findIndex(contentLines, obj => _.includes(obj, '#'));
     contentLines = _.slice(contentLines, index);
-    const apiIndex = _.findIndex(contentLines, (obj) => _.includes(obj, 'API'));
+    const apiIndex = _.findIndex(contentLines, obj => _.includes(obj, 'API'));
     apiIndex > 0 && contentLines.splice(apiIndex, 5);
-    contentLines = _.map(contentLines, (lines) => {
+    contentLines = _.map(contentLines, lines => {
       if (_.startsWith(lines, '#include')) {
         const start = lines.indexOf('demo');
         const end = lines.indexOf('js');
@@ -103,7 +103,7 @@ glob('*/*.md', { cwd: baseComponentsPath }, (err, res) => {
     );
 
     const fusionContentLines = _.split(fusionContent, '\n');
-    const fusionApiIndex = _.findIndex(fusionContentLines, (obj) =>
+    const fusionApiIndex = _.findIndex(fusionContentLines, obj =>
       _.includes(obj, 'API'),
     );
     let generateCode = _.concat(
@@ -140,8 +140,8 @@ const blocklist = [
 glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
   if (err) throw err;
   res
-    .filter((demoFile) => !blocklist.includes(demoFile))
-    .forEach((demoFile) => {
+    .filter(demoFile => !blocklist.includes(demoFile))
+    .forEach(demoFile => {
       const match = /^(.*?)\/demo\/(.*)\.md/.exec(demoFile);
       const componentName = match[1];
       const demoFilePath = match[2];
@@ -150,7 +150,7 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
       // 获取demo标题
       const title = /^\s*# (.*)/.exec(content)[1];
       // 获取demo描述
-      let description = contentLines.find((line) => {
+      let description = contentLines.find(line => {
         return line && !line.startsWith('#') && !line.startsWith('-');
       });
       // 这个demo没有描述

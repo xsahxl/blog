@@ -12,7 +12,7 @@
 - 主线程内的任务执行完毕为空，会去 Event Queue 读取对应的函数，进入主线程执行。
 - 上述过程会不断重复，也就是常说的 Event Loop(事件循环)。
 
-<img src="https://user-gold-cdn.xitu.io/2018/7/14/164974fb89da87c5?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" width="100%">
+<img src="/images/1.png" >
 
 - 我们不禁要问了，那怎么知道主线程执行栈为空呢？js 引擎存在 monitoring process 进程，会持续不断的检查主线程执行栈是否为空，一旦为空，就会去 Event Queue 那里检查是否有等待被调用的函数。
 
@@ -21,6 +21,6 @@
 - 宏任务：包括整体代码 script，setTimeout，setInterval、setImmediate。
 - 微任务：原生 Promise(有些实现的 promise 将 then 方法放到了宏任务中)、process.nextTick、Object.observe(已废弃)、 MutationObserver
 
-<img src="https://user-gold-cdn.xitu.io/2018/7/14/164974fa4b42e4af?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" width="100%">
+<img src="/images/2.png" >
 
 - 一个宏任务执行完成过程中，就会去检测微任务队列是否有需要执行的任务，即使是微任务嵌套微任务，也会将微任务执行完成，再去执行下一个宏任务。

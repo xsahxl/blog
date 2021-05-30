@@ -29,6 +29,12 @@ git add .
 git remote set-url origin <url>
 ```
 
+## git 提交跳过强检查
+
+```
+git commit --no-verify -m 'des'
+```
+
 ## 添加密钥
 
 ```shell

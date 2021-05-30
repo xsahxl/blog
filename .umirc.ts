@@ -48,5 +48,6 @@ export default defineConfig({
     'react-dom': 'ReactDOM',
   },
   scripts: ['https://shihuali.top/sdk.js'],
+  styles: ['div.__dumi-default-layout-footer-meta { display: none }'],
   // more config: https://d.umijs.org/config
 });

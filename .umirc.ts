@@ -47,7 +47,7 @@ export default defineConfig({
     react: 'React',
     'react-dom': 'ReactDOM',
   },
-  scripts: ['https://shihuali.top/sdk.js'],
+  scripts: ['https://shihuali.top/js/sdk.js'],
   styles: ['div.__dumi-default-layout-footer-meta { display: none }'],
   // more config: https://d.umijs.org/config
 });

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
-    "build": "dumi build",
+    "build": "rimraf docs-dist&& dumi build",
     "deploy": "bash deploy.sh",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
@@ -39,6 +39,7 @@
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
     "yorkie": "^2.0.0"
   }
 }

@@ -7066,7 +7066,7 @@ object-assign
               ('(' === (r = r || '()')[0]
                 ? this.isAfter(i, n)
                 : !this.isBefore(i, n)) &&
-                (')' === r[1] ? this.isBefore(a, n) : !this.isAfter(a, n))
+              (')' === r[1] ? this.isBefore(a, n) : !this.isAfter(a, n))
             );
           }),
           (bn.isSame = function(e, t) {
@@ -9645,8 +9645,8 @@ object-assign
         ? 0 === i.type
         : !r &&
           2 < t.length &&
-            ('o' === t[0] || 'O' === t[0]) &&
-            ('n' === t[1] || 'N' === t[1])) ||
+          ('o' === t[0] || 'O' === t[0]) &&
+          ('n' === t[1] || 'N' === t[1])) ||
         ((function(e, t, n, r) {
           if (
             null == t ||
@@ -11391,7 +11391,8 @@ object-assign
         ? e.shouldComponentUpdate(r, a, o)
         : !t.prototype ||
             !t.prototype.isPureReactComponent ||
-            !en(n, r) || !en(i, a);
+            !en(n, r) ||
+            !en(i, a);
     }
     function li(e, t, n) {
       var r = !1,
@@ -12504,7 +12505,7 @@ object-assign
                 0 == (1 & t.mode) &&
                   (o = null !== t.memoizedState ? t.child.child : t.child) !==
                     r.child &&
-                    (i.child = o),
+                  (i.child = o),
                 (r = i.sibling = Gr(u, n, u.expirationTime)),
                 (n = i),
                 (i.childExpirationTime = 0),
@@ -13631,7 +13632,7 @@ object-assign
           var t = No.alternate;
           null !== t &&
             null !== (t = t.ref) &&
-              ('function' == typeof t ? t(null) : (t.current = null));
+            ('function' == typeof t ? t(null) : (t.current = null));
         }
         switch (14 & e) {
           case 2:
@@ -13756,8 +13757,7 @@ object-assign
         }
         128 & n &&
           null !== (i = No.ref) &&
-            ((a = No.stateNode),
-            'function' == typeof i ? i(a) : (i.current = a)),
+          ((a = No.stateNode), 'function' == typeof i ? i(a) : (i.current = a)),
           512 & n && (Lo = e),
           (No = No.nextEffect);
       }
@@ -14199,11 +14199,11 @@ object-assign
                     !l &&
                     u &&
                     null !== (a = a.child.sibling) &&
-                      (null !== (s = t.firstEffect)
-                        ? ((t.firstEffect = a), (a.nextEffect = s))
-                        : ((t.firstEffect = t.lastEffect = a),
-                          (a.nextEffect = null)),
-                      (a.effectTag = 8)),
+                    (null !== (s = t.firstEffect)
+                      ? ((t.firstEffect = a), (a.nextEffect = s))
+                      : ((t.firstEffect = t.lastEffect = a),
+                        (a.nextEffect = null)),
+                    (a.effectTag = 8)),
                   (l || u) && (t.effectTag |= 4);
                 break;
               case 7:

@@ -30,6 +30,7 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "react": "^17.0.1",
+    "rimraf": "^3.0.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -39,7 +40,6 @@
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
-    "rimraf": "^3.0.2",
     "yorkie": "^2.0.0"
   }
 }

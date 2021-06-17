@@ -6,4 +6,6 @@ sidemenu: false
 
 ### 2. [git 常用的命令](/article/git)
 
-### 3. [vultr 和 shadowsocks](/article/vultr&shadowsocks)
+### 3. [linux 常用的命令](/article/linux-cmd)
+
+### 4. [vultr 和 shadowsocks](/article/vultr&shadowsocks)

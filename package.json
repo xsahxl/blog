@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",
-    "build": "rimraf docs-dist&& dumi build",
+    "build": "dumi build",
     "deploy": "bash deploy.sh",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
@@ -30,7 +30,6 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "react": "^17.0.1",
-    "rimraf": "^3.0.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

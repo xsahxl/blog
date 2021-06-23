@@ -40,14 +40,14 @@ export default defineConfig({
   ],
   base,
   publicPath: base,
-  externals: {
-    lodash: '_',
-    moment: 'moment',
-    'prop-types': 'propTypes',
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
-  scripts: ['https://shihuali.top/js/sdk.js'],
+  // externals: {
+  //   lodash: '_',
+  //   moment: 'moment',
+  //   'prop-types': 'propTypes',
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  // },
+  // scripts: ['https://shihuali.top/js/sdk.js'],
   styles: ['div.__dumi-default-layout-footer-meta { display: none }'],
   // more config: https://d.umijs.org/config
 });

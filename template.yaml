@@ -1,9 +1,0 @@
-Blog:
-  Component: s-web-static
-  Provider: alibaba
-  Properties:
-    Region: cn-hangzhou
-    CodeUri: ./
-    NpmClient: cnpm
-    BuildFolderName: docs-dist
-  Access: test

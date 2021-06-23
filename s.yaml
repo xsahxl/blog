@@ -15,6 +15,4 @@ services:
         index: index.html
       region: cn-hangzhou
       hosts:
-        - host: shihuali.top
-          https:
-            protocol: http
+        - host: blog.shihuali.top

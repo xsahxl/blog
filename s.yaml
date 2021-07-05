@@ -14,5 +14,3 @@ services:
         publishDir: ./docs-dist
         index: index.html
       region: cn-hangzhou
-      hosts:
-        - host: blog.shihuali.top

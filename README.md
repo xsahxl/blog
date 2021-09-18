@@ -1,6 +1,6 @@
 # blog
 
-test new website
+website
 
 ## Getting Started
 

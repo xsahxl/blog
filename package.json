@@ -2,6 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "scripts": {
+    "version": "node version.js",
     "start": "dumi dev",
     "build": "dumi build",
     "deploy": "bash deploy.sh",

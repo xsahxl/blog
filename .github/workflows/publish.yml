@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
+      - run: npm run version
       - run: npm install
       - run: npm install -g @serverless-devs/s
       - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default

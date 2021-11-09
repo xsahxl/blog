@@ -9,8 +9,11 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Deploying to production server on branch $GITHUB_REF $GITHUB_HEAD_REF $GITHUB_BASE_REF"
+      - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
+      - run: echo "GITHUB_HEAD_REF:Deploying to production server on branch $GITHUB_HEAD_REF"
+      - run: echo "GITHUB_BASE_REF:Deploying to production server on branch $GITHUB_BASE_REF"
   publish-website:
+    if: ${{ github.ref == 'refs/heads/mainx' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

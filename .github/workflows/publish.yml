@@ -11,7 +11,7 @@ jobs:
       - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
         if: ${{ github.ref == 'refs/heads/main' }}
       - run: echo "GITHUB_HEAD_REF:Deploying to production server on branch $GITHUB_HEAD_REF"
-        if: ${{ github.ref == 'refs/heads/main' }}
+        if: ${{ github.ref == 'refs/heads/mainx' }}
   publish-website:
     if: ${{ github.ref == 'refs/heads/mainx' }}
     runs-on: ubuntu-latest

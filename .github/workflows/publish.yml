@@ -6,12 +6,12 @@ on:
 
 jobs:
   prod-check:
-    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
+        if: ${{ github.ref == 'refs/heads/main' }}
       - run: echo "GITHUB_HEAD_REF:Deploying to production server on branch $GITHUB_HEAD_REF"
-      - run: echo "GITHUB_BASE_REF:Deploying to production server on branch $GITHUB_BASE_REF"
+        if: ${{ github.ref == 'refs/heads/main' }}
   publish-website:
     if: ${{ github.ref == 'refs/heads/mainx' }}
     runs-on: ubuntu-latest

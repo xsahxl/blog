@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
-      - run: echo "GITHUB_HEAD_REF:Deploying to production server on branch $GITHUB_HEAD_REF"
-        if: ${{ github.ref == 'refs/heads/mainx' }}
+        if: ${{ contains(github.ref, 'alpha')}}
+      - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
+        if: ${{ !contains(github.ref, 'alpha')}}
   publish-website:
     if: ${{ github.ref == 'refs/heads/mainx' }}
     runs-on: ubuntu-latest

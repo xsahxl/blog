@@ -1,15 +1,14 @@
 name: Website Publish
 
 on:
-  push:
-    branches: [main]
+  release:
+    types: [created]
 
 jobs:
   prod-check:
     runs-on: ubuntu-latest
     steps:
       - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
-        if: ${{ github.ref == 'refs/heads/main' }}
       - run: echo "GITHUB_HEAD_REF:Deploying to production server on branch $GITHUB_HEAD_REF"
         if: ${{ github.ref == 'refs/heads/mainx' }}
   publish-website:

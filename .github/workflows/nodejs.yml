@@ -32,8 +32,7 @@ jobs:
           path: ~/.s
           key: key
       - run: ./bin/s
-      - run: npm install @serverless-devs/s@beta -g
+      - run: npm install @serverless-devs/s -g
       - run: s -v
       - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
       - run: s deploy -y --use-local
-        if: ${{ matrix.os == 'macos-latest' && matrix.node-version  == '16.x' }}

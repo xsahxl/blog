@@ -31,6 +31,7 @@ jobs:
         with:
           path: ~/.s
           key: key
+      - run: ./bin/s
       - run: npm install @serverless-devs/s@beta -g
       - run: s -v
       - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f

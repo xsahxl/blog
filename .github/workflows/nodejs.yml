@@ -24,5 +24,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm install @serverless-devs/s -g
+      - run: npm install @serverless-devs/s@beta -g
       - run: s -v

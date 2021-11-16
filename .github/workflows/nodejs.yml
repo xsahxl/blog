@@ -26,3 +26,4 @@ jobs:
           cache: 'npm'
       - run: npm install @serverless-devs/s@beta -g
       - run: s -v
+      - run: s deploy -y --use-local

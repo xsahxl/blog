@@ -26,4 +26,5 @@ jobs:
           cache: 'npm'
       - run: npm install @serverless-devs/s@beta -g
       - run: s -v
+      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default
       - run: s deploy -y --use-local

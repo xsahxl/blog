@@ -1,19 +1,13 @@
 name: Website Publish
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  prod-check:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
-        if: ${{ contains(github.ref, 'alpha')}}
-      - run: echo "GITHUB_REF:Deploying to production server on branch $GITHUB_REF"
-        if: ${{ !contains(github.ref, 'alpha')}}
   publish-website:
-    if: ${{ github.ref == 'refs/heads/mainx' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,8 +15,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: npm run version
       - run: npm install
       - run: npm install -g @serverless-devs/s
       - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default
-      - run: s deploy --debug
+      - run: s deploy

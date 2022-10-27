@@ -20,7 +20,7 @@ jobs:
       # - run: s clean --all
       # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
 #       - run: s deploy --debug
-   publish-website:
+  publish-website:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2

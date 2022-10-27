@@ -17,11 +17,17 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: node -v
-      # - run: npm install -g @serverless-devs/s@beta
-      # - run: s clean --all
-      # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
-  #       - run: s deploy --debug
   test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: https://registry.npmjs.org/
+      - run: npm -v
+  test1:
+    needs: test
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2

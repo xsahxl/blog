@@ -24,14 +24,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: npm -v
-  test1:
-    needs: test
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14
-          registry-url: https://registry.npmjs.org/
-      - run: npm -v
+      - run: |
+          ls -la
+          rename s.yaml a.yaml
+          ls -la

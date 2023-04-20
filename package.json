@@ -43,9 +43,14 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "@alicloud/console-components": "^1.6.2",
+    "styled-components": "^5.3.9"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/lodash": "^4.14.194",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
@@ -54,6 +59,8 @@
     "father": "^4.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
@@ -62,8 +69,10 @@
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "@alicloud/console-components": ">=1.0.0",
+    "lodash": ">=4.17.0",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   },
   "publishConfig": {
     "access": "public"

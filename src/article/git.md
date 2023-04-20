@@ -114,3 +114,9 @@ git branch -d <branchName>
 ```shell
 git push origin --delete <branchName>
 ```
+
+## 代码误删
+
+```shell
+git reflog --date=iso 
+```

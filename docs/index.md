@@ -5,8 +5,6 @@ hero:
   actions:
     - text: Component
       link: /components/query
-    - text: Blog
-      link: /blog/ajv
     - text: Note
-      link: /note/git
+      link: /note/git-cmd
 ---

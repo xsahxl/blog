@@ -9,15 +9,13 @@ export default defineConfig({
       {
         title: 'Component',
         link: '/components/query',
-      },
-      {
-        title: 'Blog',
-        link: '/blog/ajv',
+        activePath: '/components',
       },
       {
         title: 'Note',
-        link: '/note/git',
+        link: '/note/git-cmd',
+        activePath: '/note',
       },
-    ],
+    ] as any,
   },
 });

@@ -1,7 +1,4 @@
----
-title: Mutation
-order: 1
----
+# Mutation
 
 ## 何时使用
 

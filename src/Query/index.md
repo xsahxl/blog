@@ -1,10 +1,4 @@
----
-title: Query
-order: 0
-nav:
-  title: 组件
-  order: 0
----
+# Query
 
 :::warning
 refreshIndex 属性的初始值务必设置为 0，非 0 的 case 下会引起 fetchData 函数请求两次

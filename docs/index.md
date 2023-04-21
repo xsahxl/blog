@@ -6,5 +6,5 @@ hero:
     - text: Component
       link: /components/query
     - text: Note
-      link: /note/git-cmd
+      link: /notes/git-cmd
 ---

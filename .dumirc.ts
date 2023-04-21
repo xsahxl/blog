@@ -13,9 +13,13 @@ export default defineConfig({
       },
       {
         title: 'Note',
-        link: '/note/git-cmd',
-        activePath: '/note',
+        link: '/notes/git-cmd',
+        activePath: '/notes',
       },
     ] as any,
+    socialLinks: {
+      github: 'https://github.com/xsahxl/blog',
+    },
+    footer: `Copyright © ${new Date().getFullYear()} | Powered by xsahxl`,
   },
 });

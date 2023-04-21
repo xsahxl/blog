@@ -1,0 +1,22 @@
+edition: 1.0.0
+access: shl
+
+services:
+  blog:
+    component: oss
+    actions:
+      pre-deploy:
+        - run: npm install
+          path: ./
+        - run: npm run docs:build
+          path: ./
+    props:
+      region: cn-chengdu
+      bucket: shihuali
+      codeUri: ./docs-dist
+      website:
+        index: index.html
+        error: 404.html
+        subDirType: index
+      customDomains:
+        - domainName: auto

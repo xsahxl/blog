@@ -8,12 +8,12 @@ export default defineConfig({
     nav: [
       {
         title: 'Component',
-        link: '/components/query',
+        link: '/components/key-value',
         activePath: '/components',
       },
       {
         title: 'Note',
-        link: '/notes/git-cmd',
+        link: '/notes/ajv',
         activePath: '/notes',
       },
     ] as any,

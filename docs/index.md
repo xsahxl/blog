@@ -4,7 +4,7 @@ hero:
   description: A react library developed with dumi
   actions:
     - text: Component
-      link: /components/query
+      link: /components/key-value
     - text: Note
-      link: /notes/git-cmd
+      link: /notes/ajv
 ---

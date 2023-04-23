@@ -21,6 +21,7 @@ jobs:
           path: |
             node_modules
           key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+      - run: npm install
       - run: npm run docs:build
       - run: npm install @serverless-devs/s -g
       - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f

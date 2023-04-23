@@ -4,12 +4,6 @@ access: shl
 services:
   blog:
     component: oss
-    actions:
-      pre-deploy:
-        - run: npm install
-          path: ./
-        - run: npm run docs:build
-          path: ./
     props:
       region: cn-chengdu
       bucket: shihuali

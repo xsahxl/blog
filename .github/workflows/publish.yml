@@ -5,7 +5,7 @@ on:
     types: [created]
 
 jobs:
-  publish-website:
+  publish-component:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,6 +13,12 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
       - run: npm install
       - run: npm publish --tag=beta
         if: ${{ contains(github.ref, 'beta')}}

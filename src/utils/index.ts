@@ -44,5 +44,9 @@ export const isEmpty = (arg: any) => {
   return true;
 };
 
+export const isNoneEmpty = (...args: any) => {
+  return _.every(args, item => !isEmpty(item));
+};
+
 
 export const sleep = (ms: number = 0) => new Promise((resolve) => setTimeout(resolve, ms));

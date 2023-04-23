@@ -1,24 +1,10 @@
-import React from 'react';
-import { FC, useState } from 'react';
-import { uniqueId, concat, map, filter, noop, isEmpty, set } from 'lodash';
-import { Grid, Button, Icon, Input } from '@alicloud/console-components';
+import { Button, Grid, Icon, Input } from '@alicloud/console-components';
 import { Rule } from '@alicloud/console-components/types/field';
+import { concat, filter, isEmpty, map, noop, set, uniqueId } from 'lodash';
+import React, { FC, useState } from 'react';
 import i18n from '../i18n';
 
 const { Row, Col } = Grid;
-
-
-type Align = 'right' | 'left' | undefined;
-
-export const FORM_LAYOUT = {
-  labelCol: {
-    fixedSpan: 6,
-  },
-  wrapperCol: {
-    span: 18,
-  },
-  labelTextAlign: 'left' as Align,
-};
 
 type IItem = {
   id: string;
@@ -42,7 +28,11 @@ export const customFormat = (value: IItem[]) => {
   return obj;
 };
 
-export const customValidate = (rule: Rule, value: IItem[], callback: (error?: string) => void) => {
+export const customValidate = (
+  rule: Rule,
+  value: IItem[],
+  callback: (error?: string) => void,
+) => {
   const newData = filter(value, (item) => item.key && item.value);
   if (newData.length === 0) {
     return callback(i18n('ui.common.at_least_one_data_required'));
@@ -51,9 +41,15 @@ export const customValidate = (rule: Rule, value: IItem[], callback: (error?: st
 };
 
 export const KeyValue: FC<Props> = (props) => {
-
-  const { value, onChange = noop, prefixKeyText = 'Key', prefixValueText = 'Value' } = props;
-  const defaultValue = isEmpty(value) ? [{ id: uniqueId() }] : map(value, (item) => ({ ...item, id: uniqueId() }));
+  const {
+    value,
+    onChange = noop,
+    prefixKeyText = 'Key',
+    prefixValueText = 'Value',
+  } = props;
+  const defaultValue = isEmpty(value)
+    ? [{ id: uniqueId() }]
+    : map(value, (item) => ({ ...item, id: uniqueId() }));
   const [list, setList] = useState<IItem[]>(defaultValue);
 
   const handleAdd = () => {
@@ -69,13 +65,17 @@ export const KeyValue: FC<Props> = (props) => {
   };
 
   const handleChangeKey = (key: string, id: string) => {
-    const option = map(list, (item) => (item.id === id ? { ...item, key } : item));
+    const option = map(list, (item) =>
+      item.id === id ? { ...item, key } : item,
+    );
     setList(option);
     onChange(option);
   };
 
   const handleChangeValue = (value: string, id: string) => {
-    const option = map(list, (item) => (item.id === id ? { ...item, value } : item));
+    const option = map(list, (item) =>
+      item.id === id ? { ...item, value } : item,
+    );
     setList(option);
     onChange(option);
   };
@@ -92,7 +92,7 @@ export const KeyValue: FC<Props> = (props) => {
               alignItems: 'center',
             }}
           >
-            <Col span="12" className="pr-16">
+            <Col span="11" className="pr-16">
               <Input
                 addonTextBefore={prefixKeyText}
                 style={{ width: '100%' }}
@@ -100,22 +100,23 @@ export const KeyValue: FC<Props> = (props) => {
                 onChange={(key) => handleChangeKey(key, item.id)}
               />
             </Col>
-            <Col span="12" className="pl-16" style={{ position: 'relative' }}>
+            <Col span="11" className="pl-16">
               <Input
                 addonTextBefore={prefixValueText}
                 style={{ width: '100%' }}
                 value={item.value}
                 onChange={(value) => handleChangeValue(value, item.id)}
               />
-              {list.length > 1 && (
+            </Col>
+            {list.length > 1 && (
+              <Col span="2" className="pl-16 pr-16">
                 <Icon
-                  style={{ cursor: 'pointer', position: 'absolute', right: -20, top: 6 }}
                   size="xs"
                   type="ashbin"
                   onClick={() => handleDelete(item.id)}
                 />
-              )}
-            </Col>
+              </Col>
+            )}
           </Row>
         );
       })}
@@ -123,4 +124,3 @@ export const KeyValue: FC<Props> = (props) => {
     </>
   );
 };
-

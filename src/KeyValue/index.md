@@ -35,7 +35,13 @@ export default Demo;
 ```tsx
 import { Button, Field, Form } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
-import { FORM_LAYOUT, KeyValue, customValidate } from '@xsahxl/ui';
+import { KeyValue, customValidate } from '@xsahxl/ui';
+const FORM_LAYOUT = {
+  labelCol: {
+    fixedSpan: 6,
+  },
+  labelTextAlign: 'left',
+};
 
 const Demo = () => {
   const field = Field.useField();

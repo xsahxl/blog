@@ -1,10 +1,8 @@
-name: Website Publish
+name: Component Publish
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  release:
+    types: [created]
 
 jobs:
   publish-website:
@@ -15,6 +13,12 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-      - run: npm install @serverless-devs/s -g
-      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
-      - run: s deploy --use-local -y
+      - run: npm install
+      - run: npm publish --tag=beta
+        if: ${{ contains(github.ref, 'beta')}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
+      - run: npm publish
+        if: ${{ !contains(github.ref, 'beta')}}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}

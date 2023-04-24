@@ -5,7 +5,7 @@ import { get } from 'lodash';
 
 
 export function getLanguage() {
-  let language = Cookies.get('aliyun_lang') || Cookies.get('inner_oneconsole_lang') || 'zh';
+  let language = Cookies.get('xsahxl_lang') || Cookies.get('aliyun_lang') || Cookies.get('inner_oneconsole_lang') || 'zh';
   // 兼容取值 zh-TW 的case
   if (language.startsWith('zh')) {
     language = 'zh';

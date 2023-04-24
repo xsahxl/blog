@@ -12,9 +12,9 @@ export default defineConfig({
         activePath: '/components',
       },
       {
-        title: 'Note',
-        link: '/notes/ajv',
-        activePath: '/notes',
+        title: 'Blog',
+        link: '/blog/ajv',
+        activePath: '/blog',
       },
     ] as any,
     socialLinks: {

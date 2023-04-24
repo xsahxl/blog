@@ -5,6 +5,6 @@ hero:
   actions:
     - text: Component
       link: /components/key-value
-    - text: Note
-      link: /notes/ajv
+    - text: Blog
+      link: /blog/ajv
 ---

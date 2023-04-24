@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # Ajv 数据校验
 
 Ajv 是一个开源的 JavaScript JSON Schema 验证器。它被广泛应用于 Web 应用程序和 API 开发中，可以有效地验证和强制执行 JSON 数据的结构和内容。如果你想使用 Ajv 来验证你的数据，下面是一些入手 Ajv 的步骤。

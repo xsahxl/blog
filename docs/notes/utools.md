@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # uTools 入门指南
 
 ## 什么是 uTools？

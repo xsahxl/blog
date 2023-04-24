@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # jsx-control-statements
 
 JSX-Control-Statements 是一个 React 库，它扩展了 JSX 语法，使得我们可以在 JSX 中使用 if、else、for 等控制语句。这样，我们就可以更加方便地编写 React 组件。

@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # vultr（梯子）
 
 ## 购买机器

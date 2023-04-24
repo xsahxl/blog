@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # 浏览器的渲染过程
 
 ![](../../public/images/0.png)

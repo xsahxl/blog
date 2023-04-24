@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # 前端模块化
 
 ## AMD（Asynchromous Module Definition - 异步模块定义）

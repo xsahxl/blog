@@ -1,3 +1,7 @@
+---
+toc: content
+---
+
 # Query
 
 :::warning

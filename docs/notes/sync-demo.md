@@ -1,3 +1,9 @@
+---
+group:
+  title: note
+toc: content
+---
+
 # sync-demo
 
 ```javascript

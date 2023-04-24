@@ -1,3 +1,9 @@
+---
+group:
+  title: note
+toc: content
+---
+
 # linux 常用的命令
 
 ## 查看占用端口

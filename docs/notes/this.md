@@ -1,3 +1,9 @@
+---
+group:
+  title: note
+toc: content
+---
+
 # this 指向问题
 
 - this 永远指向最后调用它的那个对象

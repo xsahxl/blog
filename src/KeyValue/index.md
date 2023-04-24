@@ -1,3 +1,7 @@
+---
+toc: content
+---
+
 # KeyValue
 
 ## 何时使用

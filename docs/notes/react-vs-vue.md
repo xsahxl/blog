@@ -1,3 +1,9 @@
+---
+group:
+  title: note
+toc: content
+---
+
 # react vs vue
 
 watch (computed) => componentWillReceiveProps

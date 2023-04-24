@@ -1,3 +1,9 @@
+---
+group:
+  title: article
+toc: content
+---
+
 # 如何搭建自己的个人网站
 
 ## ui 选型

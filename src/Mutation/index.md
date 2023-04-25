@@ -51,13 +51,13 @@ export default Demo;
 
 ## API
 
-| 属性         | 说明                          | 类型                                                                            | 默认值 |
-| ------------ | ----------------------------- | ------------------------------------------------------------------------------- | ------ |
-| children     | 子节点                        | (submit: () => Promise<any\>, options: [RenderProps](#renderprops) => ReactNode | -      |
-| onSubmit     | 请求数据的函数                | () => Promise<any\>                                                             | -      |
-| onCompleted  | 请求数据完成触发事件          | () => Promise<any\>                                                             | -      |
-| onError      | 请求数据错误触发事件          | () => Promise<any\>                                                             | -      |
-| refetchQuery | onSubmit 完成后发起的数据请求 | () => Promise<any\>                                                             | -      |
+| 属性         | 说明                          | 类型                                                                                  | 默认值 |
+| ------------ | ----------------------------- | ------------------------------------------------------------------------------------- | ------ |
+| children     | 子节点                        | (submit: () => Promise<any\>, options: [RenderProps](#renderprops) => React.ReactNode | -      |
+| onSubmit     | 请求数据的函数                | () => Promise<any\>                                                                   | -      |
+| onCompleted  | 请求数据完成触发事件          | () => Promise<any\>                                                                   | -      |
+| onError      | 请求数据错误触发事件          | () => Promise<any\>                                                                   | -      |
+| refetchQuery | onSubmit 完成后发起的数据请求 | () => Promise<any\>                                                                   | -      |
 
 ### RenderProps
 

@@ -66,15 +66,15 @@ export default Demo;
 
 ## API
 
-| 属性         | 说明                 | 类型                                                 | 默认值                         |
-| ------------ | -------------------- | ---------------------------------------------------- | ------------------------------ |
-| children     | 子节点               | (options: [RenderProps](#renderprops) ) => ReactNode | -                              |
-| fetchData    | 请求数据的函数       | () => Promise<any\>                                  | -                              |
-| refreshIndex | 刷新数据             | number                                               | -                              |
-| autoFetch    | 是否自动获取数据源   | boolean                                              | true                           |
-| loop         | 接口是否轮询         | Loop                                                 | { enable: false, time: 10000 } |
-| onCompleted  | 请求数据完成触发事件 | () => Promise<any\>                                  | -                              |
-| onError      | 请求数据错误触发事件 | () => Promise<any\>                                  | -                              |
+| 属性         | 说明                 | 类型                                                       | 默认值                         |
+| ------------ | -------------------- | ---------------------------------------------------------- | ------------------------------ |
+| children     | 子节点               | (options: [RenderProps](#renderprops) ) => React.ReactNode | -                              |
+| fetchData    | 请求数据的函数       | () => Promise<any\>                                        | -                              |
+| refreshIndex | 刷新数据             | number                                                     | -                              |
+| autoFetch    | 是否自动获取数据源   | boolean                                                    | true                           |
+| loop         | 接口是否轮询         | Loop                                                       | { enable: false, time: 10000 } |
+| onCompleted  | 请求数据完成触发事件 | () => Promise<any\>                                        | -                              |
+| onError      | 请求数据错误触发事件 | () => Promise<any\>                                        | -                              |
 
 ### Loop
 

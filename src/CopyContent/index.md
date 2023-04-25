@@ -71,12 +71,12 @@ export default Demo;
 
 ## API
 
-| 属性     | 说明                 | 类型      | 默认值 |
-| -------- | -------------------- | --------- | ------ |
-| children | 子节点               | ReactNode | -      |
-| text     | 复制的内容           | string    | -      |
-| showIcon | 是否默认显示复制按钮 | boolean   | false  |
-| icon     | 自定义触发复制的元素 | ReactNode |        |
-| iconSize | 指定图标大小         | IconSize  |        |
+| 属性     | 说明                 | 类型            | 默认值 |
+| -------- | -------------------- | --------------- | ------ |
+| children | 子节点               | React.ReactNode | -      |
+| text     | 复制的内容           | string          | -      |
+| showIcon | 是否默认显示复制按钮 | boolean         | false  |
+| icon     | 自定义触发复制的元素 | React.ReactNode |        |
+| iconSize | 指定图标大小         | IconSize        |        |
 
 > IconSize 可枚举值：number,'xxs','xs','small','medium','large','xl','xxl','xxxl','inherit';

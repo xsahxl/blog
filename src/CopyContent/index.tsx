@@ -1,6 +1,6 @@
 import { Button, Icon, Message } from '@alicloud/console-components';
 import copy from 'copy-to-clipboard';
-import React, { FC, PropsWithChildren, ReactNode } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import styled from 'styled-components';
 import i18n from '../i18n';
 
@@ -20,7 +20,7 @@ type Props = PropsWithChildren & {
   text: string;
   showIcon: boolean;
   iconSize: IconSize;
-  icon: ReactNode;
+  icon: React.ReactNode;
 };
 
 const CopyContent: FC<Props> = (props) => {

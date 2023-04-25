@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment, useRef, ReactNode } from 'react';
+import React, { useEffect, useState, Fragment, useRef } from 'react';
 import { get, isFunction } from 'lodash';
 import { useCompare } from '../utils';
 
@@ -15,7 +15,7 @@ type RenderProps = {
 
 type Props = {
   fetchData: () => Promise<any>;
-  children: (options: RenderProps) => ReactNode;
+  children: (options: RenderProps) => React.ReactNode;
   refreshIndex?: number;
   loop?: LoopOptions;
   onCompleted?: () => Promise<any>;

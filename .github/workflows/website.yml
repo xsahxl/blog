@@ -22,7 +22,7 @@ jobs:
           path: |
             node_modules
           key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
-      - run: npm install
+      - run: npm run error
         if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build
       - run: npm install @serverless-devs/s -g

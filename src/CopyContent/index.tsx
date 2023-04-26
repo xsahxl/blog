@@ -2,6 +2,7 @@ import { Button, Icon, Message } from '@alicloud/console-components';
 import copy from 'copy-to-clipboard';
 import React, { FC, PropsWithChildren } from 'react';
 import styled from 'styled-components';
+import { CommonProps } from '../types';
 import i18n from '../i18n';
 
 type IconSize =
@@ -16,7 +17,7 @@ type IconSize =
   | 'xxxl'
   | 'inherit';
 
-type Props = PropsWithChildren & {
+type Props = PropsWithChildren & CommonProps & {
   text: string;
   showIcon: boolean;
   iconSize: IconSize;

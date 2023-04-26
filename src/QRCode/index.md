@@ -33,17 +33,22 @@ export default () => (
 
 ```tsx
 import { QRCode, sleep } from '@xsahxl/ui';
+import { useState } from 'react';
 
-export default () => (
-  <QRCode
-    value={'https://github.com/xsahxl/blog'}
-    expired
-    onRefresh={async () => {
-      await sleep(1000);
-      console.log('refresh click!');
-    }}
-  />
-);
+export default () => {
+  const [expired, setExpired] = useState(true);
+  return (
+    <QRCode
+      value={'https://github.com/xsahxl/blog'}
+      expired={expired}
+      onRefresh={async () => {
+        await sleep(1000);
+        setExpired(false);
+        console.log('refresh click!');
+      }}
+    />
+  );
+};
 ```
 
 ## 浮层带 logo 例子

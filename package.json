@@ -45,7 +45,8 @@
   },
   "dependencies": {
     "copy-to-clipboard": "^3.3.3",
-    "js-cookie": "^3.0.4"
+    "js-cookie": "^3.0.4",
+    "qrcode.react": "^3.1.0"
   },
   "devDependencies": {
     "@alicloud/console-components": ">=1.0.0",

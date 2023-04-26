@@ -94,7 +94,7 @@ export default () => (
 | children    | 子节点                             | React.ReactNode                           | -      |
 | title       | 标题                               | React.ReactNode                           | -      |
 | trigger     | 触发元素                           | React.ReactNode                           | -      |
-| triggerType | 触发方式, 可选值：'click', 'hover' | Enum                                      | click  |
+| triggerType | 触发方式, 可选值：'click', 'hover' | enum                                      | click  |
 | dataSource  | 数据源                             | [Item](#item)[]                           | -      |
 | onConfirm   | 确定按钮事件                       | (value: [Item](#item)[]) => Promise<any\> | -      |
 | onCancel    | 取消按钮事件                       | () => void                                | -      |

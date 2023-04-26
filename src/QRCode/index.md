@@ -32,13 +32,16 @@ export default () => (
 ## 过期状态
 
 ```tsx
-import { QRCode } from '@xsahxl/ui';
+import { QRCode, sleep } from '@xsahxl/ui';
 
 export default () => (
   <QRCode
     value={'https://github.com/xsahxl/blog'}
     expired
-    onRefresh={() => console.log('refresh click!')}
+    onRefresh={async () => {
+      await sleep(1000);
+      console.log('refresh click!');
+    }}
   />
 );
 ```

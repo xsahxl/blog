@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { Icon } from '@alicloud/console-components';
 import BalloonContainer from '../BalloonContainer';
 import QRCodeReact from 'qrcode.react';
-import { noop } from '../utils';
+import { noop, tryfun } from '../utils';
 import styled from 'styled-components';
 import { CommonProps } from '../types';
 
@@ -16,18 +16,21 @@ type Props = CommonProps & {
 
 const QRCode: FC<Props> = props => {
   const { onRefresh = noop, trigger, logo, value, ...rest } = props;
+  const [loading, setLoading] = useState(false);
 
   const handleRefresh = async (e: any) => {
     e.preventDefault();
-    e.stopPropagation();
-    await onRefresh();
+    e.stopPropagation()
+    setLoading(true);
+    await tryfun(onRefresh);
+    setLoading(false);
   };
   const Pure = () => (
     <SInner {...props}>
       <QRCodeReact value={value} imageSettings={logo ? { src: logo, height: 24, width: 24, excavate: true } : undefined} {...rest} />
       <div className="qr-code__container" onClick={handleRefresh}>
         <div>
-          <Icon type="refresh" />
+          <Icon type={loading ? 'loading' : "refresh"} />
           <div>点击刷新</div>
         </div>
       </div>

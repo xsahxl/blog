@@ -50,3 +50,9 @@ export const isNoneEmpty = (...args: any) => {
 
 
 export const sleep = (ms: number = 0) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export const tryfun = async (fn: (...args: any[]) => Promise<any>, ...args: any[]) => {
+  try {
+    return await fn(...args);
+  } catch (ex) { }
+};

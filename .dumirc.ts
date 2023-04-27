@@ -13,7 +13,7 @@ export default defineConfig({
       },
       {
         title: 'Blog',
-        link: '/blog/ajv',
+        link: '/blog/serverless-devs',
         activePath: '/blog',
       },
     ] as any,

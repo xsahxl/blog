@@ -1,6 +1,7 @@
 ---
 group:
   title: note
+  order: 2
 toc: content
 ---
 

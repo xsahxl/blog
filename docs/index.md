@@ -7,5 +7,5 @@ hero:
     - text: Component
       link: /components/key-value
     - text: Blog
-      link: /blog/ajv
+      link: /blog/serverless-devs
 ---

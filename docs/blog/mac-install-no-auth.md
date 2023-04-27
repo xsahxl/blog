@@ -1,3 +1,9 @@
+---
+group:
+  title: QA
+toc: content
+---
+
 # mac install 无权限
 
 ## Mac 非 root 用户首次安装无权限

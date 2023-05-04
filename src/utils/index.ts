@@ -53,6 +53,9 @@ export const sleep = (ms: number = 0) => new Promise((resolve) => setTimeout(res
 
 export const tryfun = async (fn: (...args: any[]) => Promise<any>, ...args: any[]) => {
   try {
-    return await fn(...args);
-  } catch (ex) { }
+    const res = await fn(...args);
+    return [null, res]
+  } catch (ex) {
+    return [ex, null]
+  }
 };

@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Icon } from '@alicloud/console-components';
-import BalloonContainer from '../BalloonContainer';
+import BalloonContainer from '../balloon-container';
 import QRCodeReact from 'qrcode.react';
 import { noop, tryfun } from '../utils';
 import styled from 'styled-components';

@@ -1,9 +1,9 @@
 import './style/index.less';
 
-export { default as Mutation } from './Mutation';
-export { default as Query } from './Query';
-export { default as CopyContent } from './CopyContent';
-export { default as BalloonContainer } from './BalloonContainer';
-export { default as QRCode } from './QRCode';
-export * from './KeyValue';
+export { default as Mutation } from './mutation';
+export { default as Query } from './query';
+export { default as CopyContent } from './copy-content';
+export { default as BalloonContainer } from './balloon-container';
+export { default as QRCode } from './qr-code';
+export * from './key-value';
 export * from './utils';

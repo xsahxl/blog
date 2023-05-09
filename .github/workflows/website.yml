@@ -22,8 +22,6 @@ jobs:
           path: |
             node_modules
           key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
-      - run: export name=xiaoming
-      - run: echo $name
       - run: npm install
         if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build

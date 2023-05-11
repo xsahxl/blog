@@ -63,7 +63,6 @@ const TagContainerWithPure: FC<Props> = (props) => {
     : concat(map(value, (item) => ({ ...item, id: uniqueId() })), { id: uniqueId() });
   const [list, setList] = useState<IItem[]>(defaultValue);
   const { data } = useRequest(fetchData);
-  console.log(data, 'data')
 
   const handleDelete = (id: string) => {
     const option = filter(list, (item) => item.id !== id);

@@ -11,11 +11,12 @@ toc: content
 
 ## 基本使用
 
-```tsx
+```jsx
 import '@alicloud/console-components/dist/wind.css';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-import { get, map } from 'lodash';
+// fix: esm cannot get lodash in production
+const { get, map } = require('lodash');
 
 const Demo = () => {
   const fetchData = async () => {
@@ -36,7 +37,7 @@ export default Demo;
 ```tsx
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-import { get, map } from 'lodash';
+const { get, map } = require('lodash');
 
 const Demo = () => {
   const fetchData = async () => {
@@ -64,7 +65,7 @@ export default Demo;
 import '@alicloud/console-components/dist/wind.css';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-import { get, map } from 'lodash';
+const { get, map } = require('lodash');
 
 const Demo = () => {
   const fetchData = async () => {
@@ -88,7 +89,7 @@ export default Demo;
 import { Button, Field, Form } from '@alicloud/console-components';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-import { get, map } from 'lodash';
+const { get, map } = require('lodash');
 
 const { customValidate, customFormat } = TagContainer;
 const FORM_LAYOUT = {

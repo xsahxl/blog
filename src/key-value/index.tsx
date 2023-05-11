@@ -19,7 +19,7 @@ type Props = {
   prefixValueText?: string;
 };
 
-export const customFormat = (value: IItem[]) => {
+const customFormat = (value: IItem[]) => {
   if (isEmpty(value)) return;
   const obj = {};
   for (const item of value) {
@@ -28,7 +28,7 @@ export const customFormat = (value: IItem[]) => {
   return obj;
 };
 
-export const customValidate = (
+const customValidate = (
   rule: Rule,
   value: IItem[],
   callback: (error?: string) => void,
@@ -40,7 +40,7 @@ export const customValidate = (
   callback();
 };
 
-export const KeyValue: FC<Props> = (props) => {
+const KeyValueWithPure: FC<Props> = (props) => {
   const {
     value,
     onChange = noop,
@@ -123,4 +123,12 @@ export const KeyValue: FC<Props> = (props) => {
       <Button onClick={handleAdd}>{i18n('ui.common.add')}</Button>
     </>
   );
+};
+
+export default class KeyValue extends React.Component<Props> {
+  static customFormat = customFormat;
+  static customValidate = customValidate;
+  render() {
+    return <KeyValueWithPure {...this.props} />;
+  }
 };

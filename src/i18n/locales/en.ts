@@ -1,6 +1,6 @@
 const en = {
     "ui.common.at_least_one_data_required": "Please fill in at least one complete data",
-    "ui.common.add": "+Add item",
+    "ui.common.add": "+Add",
     'ui.common.copy_successed': 'Copied to clipboard Successfully.',
     'ui.common.copy_failed': 'Copy failed. Please copy manually.',
     'ui.common.tips': 'Note',
@@ -58,6 +58,12 @@ const en = {
     'ui.delay_2_months': 'two months',
     'ui.delay_3_months': 'three months',
     'ui.custom': 'User-Defined',
+    'ui.label_key': 'Label key',
+    'ui.label_value': 'Label value',
+    'ui.no_label_set': 'No label set',
+    'ui.edit': 'edit',
+    'ui.no_duplicate_label_keys': 'Cannot set duplicate label key',
+    'ui.please_select_or_enter_the_complete_key': 'Please select or enter the complete key',
 }
 
 export default en;

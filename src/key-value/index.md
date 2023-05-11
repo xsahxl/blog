@@ -40,7 +40,8 @@ export default Demo;
 ```tsx
 import { Button, Field, Form } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
-import { KeyValue, customValidate } from '@xsahxl/ui';
+import { KeyValue } from '@xsahxl/ui';
+const { customValidate } = KeyValue;
 const FORM_LAYOUT = {
   labelCol: {
     fixedSpan: 6,

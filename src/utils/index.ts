@@ -24,7 +24,7 @@ export function getLanguage() {
 }
 
 
-export const noop = async () => { }
+export const noop: () => Promise<any> = async () => { };
 
 export const useCompare = (value: any) => {
   const ref = React.useRef(value);

@@ -18,11 +18,10 @@ import axios from 'axios';
 import * as A from 'lodash';
 import _, { get, map } from 'lodash';
 const B = require('lodash');
-console.log('-====', _);
-console.log('A====', A);
-console.log('B====', B);
-
 console.log('get====', get);
+console.log('-.get===', _.get);
+console.log('A.get====', A.get);
+console.log('B.get====', B.get);
 
 const Demo = () => {
   const fetchData = async () => {

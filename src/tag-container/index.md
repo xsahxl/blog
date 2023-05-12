@@ -15,13 +15,7 @@ toc: content
 import '@alicloud/console-components/dist/wind.css';
 import { TagContainer, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import * as A from 'lodash';
-import _, { get, map } from 'lodash';
-const B = require('lodash');
-console.log('get====', get);
-console.log('-.get===', _.get);
-console.log('A.get====', A.get);
-console.log('B.get====', B.get);
+import _ from 'lodash';
 
 const Demo = () => {
   const fetchData = async () => {
@@ -29,8 +23,8 @@ const Demo = () => {
     const res = await axios(
       'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
     );
-    const data = get(res, 'data.data');
-    return map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    const data = _.get(res, 'data.data');
+    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
   };
   return <TagContainer fetchData={fetchData} onChange={console.log} />;
 };
@@ -43,15 +37,15 @@ export default Demo;
 ```tsx
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-const { get, map } = require('lodash');
+import _ from 'lodash';
 
 const Demo = () => {
   const fetchData = async () => {
     const res = await axios(
       'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
     );
-    const data = get(res, 'data.data');
-    return map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    const data = _.get(res, 'data.data');
+    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
   };
   return (
     <TagContainer
@@ -71,15 +65,15 @@ export default Demo;
 import '@alicloud/console-components/dist/wind.css';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-const { get, map } = require('lodash');
+import _ from 'lodash';
 
 const Demo = () => {
   const fetchData = async () => {
     const res = await axios(
       'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
     );
-    const data = get(res, 'data.data');
-    return map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    const data = _.get(res, 'data.data');
+    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
   };
   return (
     <TagContainer limit={3} fetchData={fetchData} onChange={console.log} />
@@ -95,7 +89,7 @@ export default Demo;
 import { Button, Field } from '@alicloud/console-components';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
-const { get, map } = require('lodash');
+import _ from 'lodash';
 
 const { customValidate, customFormat } = TagContainer;
 const FORM_LAYOUT = {
@@ -112,8 +106,8 @@ const Demo = () => {
     const res = await axios(
       'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
     );
-    const data = get(res, 'data.data');
-    return map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    const data = _.get(res, 'data.data');
+    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
   };
   const onValidate = () => {
     validate((errors, values) => {

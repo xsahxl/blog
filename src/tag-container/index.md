@@ -15,14 +15,14 @@ toc: content
 import '@alicloud/console-components/dist/wind.css';
 import { TagContainer, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import _, * as A from 'lodash';
+import * as A from 'lodash';
+import _, { get, map } from 'lodash';
 const B = require('lodash');
 console.log('-====', _);
 console.log('A====', A);
 console.log('B====', B);
 
-// fix: esm cannot get lodash in production
-const { get, map } = require('lodash');
+console.log('get====', get);
 
 const Demo = () => {
   const fetchData = async () => {

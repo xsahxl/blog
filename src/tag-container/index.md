@@ -21,7 +21,7 @@ const Demo = () => {
   const fetchData = async () => {
     await sleep(1000);
     const res = await axios(
-      'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
+      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
     );
     const data = _.get(res, 'data.data');
     return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
@@ -42,7 +42,7 @@ import _ from 'lodash';
 const Demo = () => {
   const fetchData = async () => {
     const res = await axios(
-      'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
+      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
     );
     const data = _.get(res, 'data.data');
     return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
@@ -70,7 +70,7 @@ import _ from 'lodash';
 const Demo = () => {
   const fetchData = async () => {
     const res = await axios(
-      'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
+      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
     );
     const data = _.get(res, 'data.data');
     return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
@@ -104,7 +104,7 @@ const Demo = () => {
   const { init, validate } = field;
   const fetchData = async () => {
     const res = await axios(
-      'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
+      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
     );
     const data = _.get(res, 'data.data');
     return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));

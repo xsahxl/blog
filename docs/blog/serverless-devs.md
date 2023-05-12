@@ -699,8 +699,8 @@ subprocess.unref();
 - A 同学本地部署后，然后 B 同学在控制台更改了线上配置，然后 A 同学如果再次部署的话工具会提示相关变动以及选择本地配置还是线上配置。
 - 如果还是 A 同学在本地更改配置，工具则不会进行提示。
 
-![image.png](../../public/images/5.png)
+![image.png](https://img.alicdn.com/imgextra/i1/O1CN01stz6St1Ly8GBpD24m_!!6000000001367-0-tps-1500-702.jpg)
 
 ## 日志查询
 
-![image.png](../../public/images/6.png)
+![image.png](https://img.alicdn.com/imgextra/i4/O1CN01ymjwbu29tIsAiHMAi_!!6000000008125-0-tps-1500-1206.jpg)

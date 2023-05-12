@@ -4,6 +4,7 @@ import { concat, filter, isEmpty, map, noop, set, uniqueId } from 'lodash';
 import React, { FC, useState } from 'react';
 import i18n from '../i18n';
 
+
 const { Row, Col } = Grid;
 
 type IItem = {
@@ -35,7 +36,7 @@ const customValidate = (
 ) => {
   const newData = filter(value, (item) => item.key && item.value);
   if (newData.length === 0) {
-    return callback(i18n('ui.common.at_least_one_data_required'));
+    return callback(i18n('ui.common.at_least_one_complete_data_required'));
   }
   callback();
 };

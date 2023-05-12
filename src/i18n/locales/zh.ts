@@ -1,5 +1,6 @@
 const zh = {
-    "ui.common.at_least_one_data_required": "请至少填写一条完整的数据",
+    "ui.common.at_least_one_complete_data_required": "请至少填写一条完整的数据",
+    "ui.common.at_least_one_data_required": "请至少填写一条数据",
     "ui.common.add": "+添加",
     'ui.common.copy_successed': '已成功复制到剪切板！',
     'ui.common.copy_failed': '复制失败，请手动复制！',
@@ -62,8 +63,9 @@ const zh = {
     'ui.label_value': '标签值',
     'ui.no_label_set': '未设置标签',
     'ui.edit': '编辑',
-    'ui.no_duplicate_label_keys': '不可设置重复的标签键',
-    'ui.please_select_or_enter_the_complete_key': '请选择或输入完整键',
+    'ui.no_duplicate_label_keys': '标签键不能重复',
+    'ui.please_select_or_enter_the_complete_key': '请选择或输入完整的标签键',
+    'ui.please_select_or_enter_the_complete_value': '请选择或输入完整的标签值',
 }
 
 export default zh;

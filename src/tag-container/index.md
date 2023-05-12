@@ -11,15 +11,22 @@ toc: content
 
 ## 基本使用
 
-```jsx
+```tsx
 import '@alicloud/console-components/dist/wind.css';
-import { TagContainer } from '@xsahxl/ui';
+import { TagContainer, sleep } from '@xsahxl/ui';
 import axios from 'axios';
+import _, * as A from 'lodash';
+const B = require('lodash');
+console.log('-====', _);
+console.log('A====', A);
+console.log('B====', B);
+
 // fix: esm cannot get lodash in production
 const { get, map } = require('lodash');
 
 const Demo = () => {
   const fetchData = async () => {
+    await sleep(1000);
     const res = await axios(
       'https://listtagesources-mock-btkhjjvqkj.cn-chengdu.fcapp.run',
     );
@@ -86,7 +93,7 @@ export default Demo;
 ## 校验
 
 ```tsx
-import { Button, Field, Form } from '@alicloud/console-components';
+import { Button, Field } from '@alicloud/console-components';
 import { TagContainer } from '@xsahxl/ui';
 import axios from 'axios';
 const { get, map } = require('lodash');
@@ -119,26 +126,24 @@ const Demo = () => {
   };
 
   return (
-    <Form field={field} {...FORM_LAYOUT}>
-      <Form.Item label="设置标签" required>
-        <TagContainer
-          fetchData={fetchData}
-          {...init('tag', {
-            rules: [
-              {
-                validator: customValidate,
-              },
-            ],
-            props: {
-              onChange: console.log,
+    <>
+      <TagContainer
+        fetchData={fetchData}
+        {...init('tag', {
+          rules: [
+            {
+              validator: customValidate,
             },
-          })}
-        />
-      </Form.Item>
-      <Button type="primary" onClick={onValidate}>
+          ],
+          props: {
+            onChange: console.log,
+          },
+        })}
+      />
+      <Button className="mt-16" type="primary" onClick={onValidate}>
         校验
       </Button>
-    </Form>
+    </>
   );
 };
 

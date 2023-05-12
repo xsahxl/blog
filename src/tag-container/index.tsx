@@ -29,7 +29,7 @@ type Props = {
 
 const customFormat = (value: IItem[]) => {
   if (isEmpty(value)) return;
-  const newData = filter(value, (item) => item.key && item.value);
+  const newData = filter(value, (item) => item.key);
   return map(newData, (item: IItem) => ({ key: item.key, value: item.value }))
 };
 
@@ -62,7 +62,7 @@ const TagContainerWithPure: FC<Props> = (props) => {
     ? [{ id: uniqueId() }]
     : concat(map(value, (item) => ({ ...item, id: uniqueId() })), { id: uniqueId() });
   const [list, setList] = useState<IItem[]>(defaultValue);
-  const { data } = useRequest(fetchData);
+  const { data, loading } = useRequest(fetchData);
 
   const handleDelete = (id: string) => {
     const option = filter(list, (item) => item.id !== id);
@@ -104,38 +104,45 @@ const TagContainerWithPure: FC<Props> = (props) => {
     return isArray(value) ? value : [value];
   }
 
+  const getState = (item: IItem) => {
+    if (loading) return 'loading';
+    if (item.error) return 'error';
+  }
+
   return (
     <>
+      <Row>
+        <Col span="11" className="pr-16"><span className='color-error mr-4'>*</span>{i18n('ui.label_key')}</Col>
+        <Col span="11" className="pl-16">{i18n('ui.label_value')}</Col>
+      </Row>
       {map(list, (item, index) => {
         return (
-          <div key={item.id} className={index === 0 ? '' : 'mt-8'}>
+          <div key={item.id} className='mt-8'>
             <Row className='align-center'>
               <Col span="11" className="space-between">
                 <Select.AutoComplete
-                  addonTextBefore={i18n('ui.label_key')}
                   className='full-width'
+                  state={getState(item)}
                   value={item.key}
                   onChange={(val: string) => handleChangeKey(val, item.id)}
                   maxLength={keyMaxLength}
                   placeholder={i18n('ui.please_select_or_enter_the_complete_key')}
                   dataSource={map(data, obj => obj.key)}
-                  style={{ border: item.error ? '1px solid red' : 'unset' }}
                 />
                 <div className='ml-16' style={{ lineHeight: '32px' }}>:</div>
               </Col>
               <Col span="11" className="pl-16">
                 <Select.AutoComplete
                   className='full-width'
-                  addonTextBefore={i18n('ui.label_value')}
                   value={item.value}
                   disabled={isEmpty(item.key)}
                   maxLength={valueMaxLength}
-                  placeholder={i18n('ui.please_select_or_enter_the_complete_key')}
+                  placeholder={i18n('ui.please_select_or_enter_the_complete_value')}
                   onChange={(val: string) => handleChangeValue(val, item.id)}
                   dataSource={item.values}
                 />
               </Col>
-              {list.length > 1 && (
+              {list.length > 1 && index !== list.length - 1 && (
                 <Col span="2" className="pl-16 pr-16">
                   <Button text iconSize='xs'>
                     <Icon
@@ -146,6 +153,7 @@ const TagContainerWithPure: FC<Props> = (props) => {
                 </Col>
               )}
             </Row>
+            {item.error && <div className='color-error'>{i18n('ui.no_duplicate_label_keys')}</div>}
           </div>
         );
       })}

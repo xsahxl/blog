@@ -313,7 +313,7 @@ export default Demo;
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 import { createRequest } from '@xsahxl/ui';
-import { set } from 'lodash';
+import _ from 'lodash';
 import { useState } from 'react';
 
 // 创建request实例
@@ -322,7 +322,7 @@ const request = createRequest({
   request: (config) => {
     console.log('request', config);
     // 添加公共的参数
-    set(config, 'params.region', 'cn-chengdu');
+    _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
   response: (config) => {
@@ -359,7 +359,7 @@ export default Demo;
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 import { createRequest } from '@xsahxl/ui';
-import { set } from 'lodash';
+import _ from 'lodash';
 import { useState } from 'react';
 
 // 创建request实例
@@ -368,7 +368,7 @@ const request = createRequest({
   request: (config) => {
     console.log('request', config);
     // 添加公共的参数
-    set(config, 'params.region', 'cn-chengdu');
+    _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
   response: (config) => {
@@ -420,7 +420,7 @@ export default Demo;
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 import { createRequest } from '@xsahxl/ui';
-import { get, set } from 'lodash';
+import _ from 'lodash';
 import { useState } from 'react';
 
 // 创建request实例
@@ -429,13 +429,13 @@ const request = createRequest({
   request: (config) => {
     console.log('request', config);
     // 添加公共的参数
-    set(config, 'params.region', 'cn-chengdu');
+    _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
   response: (config) => {
     console.log('response', config);
     // 可以处理项目的业务逻辑
-    if (get(config, 'data.code') === 'PurchaseNotFound') {
+    if (_.get(config, 'data.code') === 'PurchaseNotFound') {
       window.location.href = 'http://shihuali.oss.devsapp.net';
       return config;
     }

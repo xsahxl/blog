@@ -3,7 +3,7 @@ order: 1
 toc: content
 ---
 
-# CopyContent
+# Copy
 
 ## 何时使用
 
@@ -13,11 +13,11 @@ toc: content
 
 ```tsx
 import '@alicloud/console-components/dist/wind.css';
-import { CopyContent } from '@xsahxl/ui';
+import { Copy } from '@xsahxl/ui';
 
 const Demo = () => {
   const message = 'this is a message';
-  return <CopyContent text={message}>{message}</CopyContent>;
+  return <Copy text={message}>{message}</Copy>;
 };
 
 export default Demo;
@@ -27,14 +27,14 @@ export default Demo;
 
 ```tsx
 import '@alicloud/console-components/dist/wind.css';
-import { CopyContent } from '@xsahxl/ui';
+import { Copy } from '@xsahxl/ui';
 
 const Demo = () => {
   const message = 'this is a message';
   return (
-    <CopyContent text={message} showIcon>
+    <Copy text={message} showIcon>
       {message}
-    </CopyContent>
+    </Copy>
   );
 };
 
@@ -46,12 +46,12 @@ export default Demo;
 ```tsx
 import { Icon } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
-import { CopyContent } from '@xsahxl/ui';
+import { Copy } from '@xsahxl/ui';
 
 const Demo = () => {
   const message = 'this is a message';
   return (
-    <CopyContent
+    <Copy
       text={message}
       showIcon
       icon={
@@ -62,7 +62,7 @@ const Demo = () => {
       }
     >
       {message}
-    </CopyContent>
+    </Copy>
   );
 };
 

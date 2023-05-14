@@ -66,6 +66,13 @@ const en = {
     'ui.no_duplicate_label_keys': 'Tag keys cannot be repeated',
     'ui.please_select_or_enter_the_complete_key': 'Please select or enter a complete tag key',
     'ui.please_select_or_enter_the_complete_value': 'Please select or enter a complete tag value',
+    'ui.copy.one_click': 'One-click Copy',
+    'ui.error.detail': 'Error Detail (Error Code: <%= code %>)',
+    'ui.error': 'Error',
+    'ui.footer.close': 'Close',
+    'ui.tips': 'Tips',
+    'ui.login_token_had_expired': 'Your login information has expired, please log in again',
+    'ui.refresh_page_and_try_again': 'Your request information has expired, please refresh the page',
 }
 
 export default en;

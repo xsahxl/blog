@@ -66,6 +66,13 @@ const zh = {
     'ui.no_duplicate_label_keys': '标签键不能重复',
     'ui.please_select_or_enter_the_complete_key': '请选择或输入完整的标签键',
     'ui.please_select_or_enter_the_complete_value': '请选择或输入完整的标签值',
+    'ui.copy.one_click': '一键复制',
+    'ui.error.detail': '错误详情（错误码：<%= code %>）',
+    'ui.error': '错误',
+    'ui.footer.close': '关闭',
+    'ui.tips': '提示',
+    'ui.login_token_had_expired': '您的登录信息已经过期，请重新登录',
+    'ui.refresh_page_and_try_again': '您的请求信息已经过期，请刷新页面',
 }
 
 export default zh;

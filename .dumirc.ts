@@ -18,7 +18,7 @@ export default defineConfig({
       },
     ] as any,
     socialLinks: {
-      github: 'https://github.com/xsahxl/blog',
+      github: 'https://github.com/xsahxl',
     },
     footer: `Copyright © ${new Date().getFullYear()} | Powered by xsahxl`,
   },

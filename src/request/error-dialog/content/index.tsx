@@ -3,6 +3,7 @@ import { isEmpty } from 'lodash';
 import React, { FC, useState } from 'react';
 import Copy from '../../../copy';
 import i18n from '../../../i18n';
+import { isNoneEmpty } from '../../../utils';
 import { ResponseDataCodeError } from '../../http-errors';
 import { axiosDataIntercept } from './utils';
 
@@ -30,14 +31,16 @@ const Content: FC<Props> = ({ error, config = {} }) => {
       <>
         {url && <div>url: {url}</div>}
         {method && <div>method: {method}</div>}
-        {headers && <div>headers: {JSON.stringify(headers)}</div>}
-        {params && <div>params: {JSON.stringify(params)}</div>}
-        {traceId && <div>traceId: {traceId}</div>}
-        {requestId && <div>requestId: {requestId}</div>}
-        {requestData && <div>requestData: {JSON.stringify(requestData)}</div>}
-        {responseData && (
+        {isNoneEmpty(headers) && <div>headers: {JSON.stringify(headers)}</div>}
+        {isNoneEmpty(params) && <div>params: {JSON.stringify(params)}</div>}
+        {isNoneEmpty(requestData) && (
+          <div>requestData: {JSON.stringify(requestData)}</div>
+        )}
+        {isNoneEmpty(responseData) && (
           <div>responseData: {JSON.stringify(responseData)}</div>
         )}
+        {isNoneEmpty(traceId) && <div>traceId: {traceId}</div>}
+        {isNoneEmpty(requestId) && <div>requestId: {requestId}</div>}
       </>
     );
   };

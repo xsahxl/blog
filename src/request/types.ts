@@ -2,6 +2,8 @@ import { InternalAxiosRequestConfig, AxiosInterceptorManager, AxiosResponse } fr
 
 export const AXIOS_INSTANCE_REF = Symbol('AXIOS_INSTANCE_REF');
 
+export const DEFAULT_METHOD = 'get';
+
 export enum CONTENT_TYPE {
     json = 'application/json;charset=UTF-8',
     form = 'application/x-www-form-urlencoded;charset=UTF-8',

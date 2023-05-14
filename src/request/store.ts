@@ -1,4 +1,5 @@
 import { QuickShowRet } from "@alicloud/console-components/types/dialog";
+import { isEmpty } from "lodash";
 
 class Store {
     // 记录报错弹窗的实例，用于判断是否有弹出的报错窗口
@@ -13,6 +14,15 @@ class Store {
     clearInstance() {
         this.instance?.hide();
         this.instance = null;
+    }
+    // 用户可能会在公共地方修改请求参数，通过该字段去收集，用于报错弹窗的展示
+    private requestData: Record<string, any> = {};
+    setRequestData(data?: Record<string, any>) {
+        if (isEmpty(data)) return;
+        this.requestData = data;
+    }
+    getRequestData() {
+        return this.requestData;
     }
 }
 

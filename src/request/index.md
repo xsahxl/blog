@@ -466,3 +466,35 @@ const Demo = () => {
 
 export default Demo;
 ```
+
+## API
+
+### request(options)(config)
+
+- options
+
+| 属性      | 说明                                                              | 类型               | 默认值 |
+| --------- | ----------------------------------------------------------------- | ------------------ | ------ |
+| ...config | 继承 [Axios](https://www.axios-http.cn/docs/req_config) 的配置    | AxiosRequestConfig |        |
+| url       | `url` is the server URL that will be used for the request         | string             | -      |
+| method    | `method` is the request method to be used when making the request | string             | get    |
+
+- config
+
+| 属性        | 说明                     | 类型                                                                | 默认值 |
+| ----------- | ------------------------ | ------------------------------------------------------------------- | ------ |
+| params      | get 请求                 | Record<string, any>                                                 | -      |
+| json        | post with json 请求      | Record<string, any>                                                 | -      |
+| form        | post with form-data 请求 | Record<string, any>                                                 | -      |
+| ignoreError | 是否忽略报错的弹窗       | boolean                                                             | -      |
+| customError | 自定义报错信息           | (error: Error, data:Record<string, any> , callback: ()=>void)=>void | -      |
+
+### createRequest(interceptors), 对请求可以做一些自定义的拦截处理
+
+- interceptors
+
+| 属性     | 说明                                                           | 类型                                                 | 默认值 |
+| -------- | -------------------------------------------------------------- | ---------------------------------------------------- | ------ |
+| request  | 接口请求之前的拦截处理                                         | AxiosInterceptorManager<InternalAxiosRequestConfig\> | -      |
+| response | 接口返回之后的拦截处理                                         | AxiosInterceptorManager<AxiosResponse\>              | -      |
+| baseURL  | `baseURL` will be prepended to `url` unless `url` is absolute. | string                                               | -      |

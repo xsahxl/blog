@@ -48,3 +48,46 @@ toc: content
 }
 .loop(200);
 ```
+
+效果等同于
+
+```scss
+@for $i from 1 to 200 {
+  .pr-#{$i} {
+    padding-right: (1px * $i);
+  }
+  .p-#{$i} {
+    padding: (1px * $i);
+  }
+  .pt-#{$i} {
+    padding-top: (1px * $i);
+  }
+  .pr-#{$i} {
+    padding-right: (1px * $i);
+  }
+  .pb-#{$i} {
+    padding-bottom: (1px * $i);
+  }
+  .pl-#{$i} {
+    padding-left: (1px * $i);
+  }
+  .m-#{$i} {
+    margin: (1px * $i);
+  }
+  .mt-#{$i} {
+    margin-top: (1px * $i);
+  }
+  .mr-#{$i} {
+    margin-right: (1px * $i);
+  }
+  .mb-#{$i} {
+    margin-bottom: (1px * $i);
+  }
+  .ml-#{$i} {
+    margin-left: (1px * $i);
+  }
+  .fz-#{$i} {
+    font-size: (1px * $i);
+  }
+}
+```

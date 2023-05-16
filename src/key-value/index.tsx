@@ -4,7 +4,6 @@ import { concat, filter, isEmpty, map, noop, set, uniqueId } from 'lodash';
 import React, { FC, useState } from 'react';
 import i18n from '../i18n';
 
-
 const { Row, Col } = Grid;
 
 type IItem = {
@@ -112,6 +111,7 @@ const KeyValueWithPure: FC<Props> = (props) => {
             {list.length > 1 && (
               <Col span="2" className="pl-16 pr-16">
                 <Icon
+                  className="cursor-pointer"
                   size="xs"
                   type="ashbin"
                   onClick={() => handleDelete(item.id)}
@@ -132,4 +132,4 @@ export default class KeyValue extends React.Component<Props> {
   render() {
     return <KeyValueWithPure {...this.props} />;
   }
-};
+}

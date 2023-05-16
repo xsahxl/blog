@@ -1,16 +1,31 @@
-import { DatePicker, Dropdown, Field, Grid, Icon, Select, Button } from '@alicloud/console-components';
+import {
+  Button,
+  DatePicker,
+  Dropdown,
+  Field,
+  Grid,
+  Icon,
+  Select,
+} from '@alicloud/console-components';
 import { RangePickerProps } from '@alicloud/console-components/types/date-picker';
 import cls from 'classnames';
-import { map, noop, includes, get, filter } from 'lodash';
+import { filter, get, includes, map, noop } from 'lodash';
 import moment from 'moment';
-import React, { FC, useState, useRef, useEffect } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import i18n from '../i18n';
 import { CommonProps } from '../types';
-import { IActive, IChangeData, IMode, IModeValue, IQucikTimes, ITimeChild, } from './types';
-import { getQucikTimes, transform } from './utils';
-import { enable_loop_keys, loop_list, loop_off } from './constant';
 import { isNoneEmpty } from '../utils';
+import { enable_loop_keys, loop_list, loop_off } from './constant';
+import {
+  IActive,
+  IChangeData,
+  IMode,
+  IModeValue,
+  IQucikTimes,
+  ITimeChild,
+} from './types';
+import { getQucikTimes, transform } from './utils';
 
 const { Row, Col } = Grid;
 const { RangePicker } = DatePicker;
@@ -78,7 +93,9 @@ const TimeContainer: FC<Props> = (props) => {
       key: actived.key,
       label:
         actived.key === 'custom'
-          ? `${params[0].format('YYYY-MM-DD HH:mm:ss')} - ${params[1].format('YYYY-MM-DD HH:mm:ss')}`
+          ? `${params[0].format('YYYY-MM-DD HH:mm:ss')} - ${params[1].format(
+              'YYYY-MM-DD HH:mm:ss',
+            )}`
           : actived.label,
       momentValue: params,
       getValue: () => map(params, (item) => item.valueOf()),
@@ -99,7 +116,7 @@ const TimeContainer: FC<Props> = (props) => {
     e.preventDefault();
     e.stopPropagation();
     setActived({} as IActive);
-    resetToDefault()
+    resetToDefault();
     onChange({});
   };
 
@@ -109,15 +126,17 @@ const TimeContainer: FC<Props> = (props) => {
       <>
         <div className="mt-16 mb-8">{i18n('ui.refresh_rate')}</div>
         <Select
-          dataSource={includes(enable_loop_keys, actived.key) ? loop_list : loop_off}
+          dataSource={
+            includes(enable_loop_keys, actived.key) ? loop_list : loop_off
+          }
           className="full-width"
           {...init('loopTime', {
             initValue: actived.loopTime || 0,
           })}
         />
       </>
-    )
-  }
+    );
+  };
 
   const popRender = (
     <PopWrapper>
@@ -159,11 +178,16 @@ const TimeContainer: FC<Props> = (props) => {
         {...rangePickerProps}
       />
       {loopRender()}
-      <div className='mt-16 text-right'>
+      <div className="mt-16 text-right">
         <Button
           type="primary"
           onClick={handleConfirm}
-          disabled={get(filter(getValue('rangePicker') as number[], (item) => item), 'length') < 2}
+          disabled={
+            get(
+              filter(getValue('rangePicker') as number[], (item) => item),
+              'length',
+            ) < 2
+          }
         >
           {i18n('ui.button.confirm')}
         </Button>
@@ -176,21 +200,28 @@ const TimeContainer: FC<Props> = (props) => {
   return (
     <Dropdown
       trigger={
-        <TriggerWrapper
-          className={cls({
-            focus: visible,
-            clear_icon__container: isNoneEmpty(actived),
-          })}
-          onClick={() => setVisible((pre) => !pre)}
-        >
-          {actived.label ? <span>{actived.label}</span> : <span className="color-gray">{placeholder}</span>}
-          <Icon className="calendar_icon" type="calendar" size="xs" />
-          <Icon
-            className="clear_icon"
-            type="delete-filling"
-            onClick={handleClear}
-            size="xs"
-          />
+        <TriggerWrapper {...(props as any)}>
+          <div
+            className={cls({
+              wrap: true,
+              focus: visible,
+              clear_icon__container: isNoneEmpty(actived),
+            })}
+            onClick={() => setVisible((pre) => !pre)}
+          >
+            {actived.label ? (
+              <span>{actived.label}</span>
+            ) : (
+              <span className="color-gray">{placeholder}</span>
+            )}
+            <Icon className="calendar_icon" type="calendar" size="xs" />
+            <Icon
+              className="clear_icon"
+              type="delete-filling"
+              onClick={handleClear}
+              size="xs"
+            />
+          </div>
         </TriggerWrapper>
       }
       visible={visible}
@@ -201,38 +232,41 @@ const TimeContainer: FC<Props> = (props) => {
   );
 };
 
-const TriggerWrapper = styled.span`
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8px;
-  min-width: 180px;
-  border: 1px solid #dedede;
-  background-color: #fff;
-  height: 32px;
-  &:hover {
-    border: 1px solid #737373;
-  }
-  &.focus {
-    border: 1px solid #737373;
-  }
-  .calendar_icon {
-    margin-left: 16px;
-    color: #888;
-  }
-  .clear_icon {
-    margin-left: 16px;
-    color: #888;
-    display: none;
+const TriggerWrapper = styled.div`
+  display: inline-block;
+  > .wrap {
     cursor: pointer;
-  }
-  &:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    min-width: 180px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    height: 32px;
+    &:hover {
+      border: 1px solid #737373;
+    }
+    &.focus {
+      border: 1px solid #737373;
+    }
     .calendar_icon {
-      display: none;
+      margin-left: 16px;
+      color: #888;
     }
     .clear_icon {
-      display: inline-block;
+      margin-left: 16px;
+      color: #888;
+      display: none;
+      cursor: pointer;
+    }
+    &:hover {
+      .calendar_icon {
+        display: none;
+      }
+      .clear_icon {
+        display: inline-block;
+      }
     }
   }
 `;

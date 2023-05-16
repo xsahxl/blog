@@ -11,9 +11,9 @@ toc: content
 
 ## 基本使用
 
-```jsx
-import '@alicloud/console-components/dist/wind.css';
+```tsx
 import { Button } from '@alicloud/console-components';
+import '@alicloud/console-components/dist/wind.css';
 import { RiskConfirm, sleep } from '@xsahxl/ui';
 
 export default () => (

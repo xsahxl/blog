@@ -44,6 +44,7 @@
     ]
   },
   "dependencies": {
+    "@alicloud/console-components-truncate": "^2.0.2",
     "ahooks": "^3.7.7",
     "axios": "^1.4.0",
     "classnames": "^2.3.2",

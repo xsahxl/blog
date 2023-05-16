@@ -1,11 +1,13 @@
-import React from 'react';
-import _ from 'lodash';
 import Cookies from 'js-cookie';
-import { get } from 'lodash';
-
+import _, { get } from 'lodash';
+import React from 'react';
 
 export function getLanguage() {
-  let language = Cookies.get('xsahxl_lang') || Cookies.get('aliyun_lang') || Cookies.get('inner_oneconsole_lang') || 'zh';
+  let language =
+    Cookies.get('xsahxl_lang') ||
+    Cookies.get('aliyun_lang') ||
+    Cookies.get('inner_oneconsole_lang') ||
+    'zh';
   // 兼容取值 zh-TW 的case
   if (language.startsWith('zh')) {
     language = 'zh';
@@ -22,7 +24,6 @@ export function getLanguage() {
   }
   return language;
 }
-
 
 export const noop: () => Promise<any> = async () => { };
 
@@ -45,17 +46,34 @@ export const isEmpty = (arg: any) => {
 };
 
 export const isNoneEmpty = (...args: any) => {
-  return _.every(args, item => !isEmpty(item));
+  return _.every(args, (item) => !isEmpty(item));
 };
 
+export const sleep = (ms: number = 0) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
-export const sleep = (ms: number = 0) => new Promise((resolve) => setTimeout(resolve, ms));
-
-export const tryfun = async (fn: (...args: any[]) => Promise<any>, ...args: any[]) => {
+export const tryfun = async (
+  fn: (...args: any[]) => Promise<any>,
+  ...args: any[]
+) => {
   try {
     const res = await fn(...args);
-    return [null, res]
+    return [null, res];
   } catch (ex) {
-    return [ex, null]
+    return [ex, null];
   }
+};
+
+interface ScrollToOptions {
+  left?: number;
+  top?: number;
+  behavior?: 'auto' | 'smooth';
+}
+export const scrollTo = (data: ScrollToOptions) => {
+  // 如果页面支持 window.scrollTo 方法（大多数现代浏览器都支持），使用该方法滚动到顶部
+  if (window.scrollTo) return window.scrollTo(data);
+  // 如果不支持 window.scrollTo 方法，尝试使用 document.documentElement.scrollTop 或 document.body.scrollTop
+  if (document.documentElement.scrollTop)
+    return document.documentElement.scrollTo(data);
+  return document.body.scrollTo(data);
 };

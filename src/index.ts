@@ -9,6 +9,7 @@ export { default as RiskConfirm } from './risk-confirm';
 export { default as TimeContainer } from './time-container';
 export { default as TagContainer } from './tag-container';
 export { default as KeyValue } from './key-value';
+export { default as BackToTop } from './back-to-top';
 export { default as request, createRequest } from './request';
 export * from 'ahooks';
 export * from './utils';

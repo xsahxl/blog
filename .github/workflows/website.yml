@@ -25,8 +25,8 @@ jobs:
       - run: npm install --production=false
         # if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build
-      - run: npm install @serverless-devs/s -g
-      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
-      - run: s deploy --use-local -y
+      # - run: npm install @serverless-devs/s -g
+      # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
+      # - run: s deploy --use-local -y
       - name: Sync docs to xsahxl.github.io
-        run: ./scripts/sync.sh
+        run: bash ./scripts/sync.sh

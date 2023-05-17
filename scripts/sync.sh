@@ -4,7 +4,7 @@
 set -e
 
 # 生成静态文件
-npm run docs:build
+# npm run docs:build
 
 # 进入生成的文件夹
 cd docs-dist
@@ -13,7 +13,7 @@ cd docs-dist
 # echo 'www.example.com' > CNAME
 
 git init
-git remote add origin https://${{secrets.GIT_TOKEN}}@github.com/xsahxl/xsahxl.github.io
+git remote add origin https://${{ secrets.GIT_TOKEN }}@github.com/xsahxl/xsahxl.github.io
 git add -A
 git commit -m 'deploy'
 

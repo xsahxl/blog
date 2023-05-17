@@ -4,7 +4,7 @@ group:
 toc: content
 ---
 
-# fc 控制台 strem 流存在问题
+# fc 控制台 stream 流存在问题
 
 首先在控制天 我们创建一个 springboot 应用， 可以在根目录下新建一个 index.js
 

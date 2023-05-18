@@ -1,4 +1,5 @@
 import './style/index.less';
+export { default as StatusIndicator } from '@alicloud/console-components-status-indicator';
 export { default as Truncate } from '@alicloud/console-components-truncate';
 export * from 'ahooks';
 export { default as BackToTop } from './back-to-top';

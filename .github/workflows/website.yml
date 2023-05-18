@@ -37,7 +37,7 @@ jobs:
           cd docs-dist
 
           # 添加 README.md
-          echo '# xsahxl.github.io \n\n 此仓库代码是通过blog仓库同步过来的，您也可以访问 http://shihuali.oss.devsapp.net' > README.md
+          echo '此仓库代码是通过blog仓库同步过来的，您也可以访问 http://shihuali.oss.devsapp.net' > README.md
 
           # 代码提交
           git init

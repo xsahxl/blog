@@ -25,32 +25,24 @@ jobs:
       - run: npm install --production=false
         # if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build
-      # - run: npm install @serverless-devs/s -g
-      # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
-      # - run: s deploy --use-local -y
+      - run: npm install @serverless-devs/s -g
+      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
+      - run: s deploy --use-local -y
       - name: Sync docs to xsahxl.github.io
         run: |
           # 确保脚本抛出遇到的错误
           set -e
 
-          # 生成静态文件
-          # npm run docs:build
-
           # 进入生成的文件夹
           cd docs-dist
 
-          # 如果是发布到自定义域名
-          # echo 'www.example.com' > CNAME
+          # 添加 README.md
+          echo '# xsahxl.github.io \n\n 此仓库代码是通过blog仓库同步过来的，您也可以访问 http://shihuali.oss.devsapp.net' > README.md
 
+          # 代码提交
           git init
           git remote add origin https://${{ secrets.GIT_TOKEN }}@github.com/xsahxl/xsahxl.github.io
           git add -A
           git commit -m 'deploy'
-
-          # 如果发布到 https://<USERNAME>.github.io
           git push --set-upstream origin master -f
-
-          # 如果发布到 https://<USERNAME>.github.io/<REPO>
-          # git push -f git@github.com:xsahxl/blog.git master:gh-pages
-
           cd -

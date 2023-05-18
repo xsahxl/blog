@@ -1,15 +1,15 @@
-import React from 'react'
-import Truncate from '@alicloud/console-components-truncate'
-import { createGlobalStyle } from 'styled-components'
+import { Truncate } from '@xsahxl/ui';
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
 const sentence =
-  'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext'
+  'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext';
 
 const GlobalStyle = createGlobalStyle`
 	.wind-truncate-tooltip {
 		word-break: break-all;
 	}
-`
+`;
 
 const Demo = () => {
   return (
@@ -28,7 +28,7 @@ const Demo = () => {
         {sentence}
       </Truncate>
     </div>
-  )
-}
+  );
+};
 
-export default Demo
+export default Demo;

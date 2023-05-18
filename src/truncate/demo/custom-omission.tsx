@@ -1,9 +1,9 @@
-import React from 'react'
-import Truncate from '@alicloud/console-components-truncate'
-import { Icon } from '@alicloud/console-components'
+import { Icon } from '@alicloud/console-components';
+import { Truncate } from '@xsahxl/ui';
+import React from 'react';
 
 const sentence2 =
-  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'
+  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。';
 
 const Demo = () => {
   return (
@@ -21,6 +21,6 @@ const Demo = () => {
         {sentence2}
       </Truncate>
     </div>
-  )
-}
-export default Demo
+  );
+};
+export default Demo;

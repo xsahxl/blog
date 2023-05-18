@@ -44,6 +44,7 @@
     ]
   },
   "dependencies": {
+    "@alicloud/console-components-actions": "^2.0.2",
     "@alicloud/console-components-status-indicator": "^2.0.2",
     "@alicloud/console-components-truncate": "^2.0.2",
     "ahooks": "^3.7.7",

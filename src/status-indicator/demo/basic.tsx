@@ -1,4 +1,4 @@
-import StatusIndicator from '@alicloud/console-components-status-indicator';
+import { StatusIndicator } from '@xsahxl/ui';
 import React from 'react';
 
 export default () => {

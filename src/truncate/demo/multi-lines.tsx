@@ -1,4 +1,4 @@
-import { MultiLines } from '@alicloud/console-components-truncate';
+import { MultiLines } from '@xsahxl/ui';
 import React from 'react';
 
 const longText =

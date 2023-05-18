@@ -1,4 +1,4 @@
-import Truncate from '@alicloud/console-components-truncate';
+import { Truncate } from '@xsahxl/ui';
 import React, { useState } from 'react';
 
 const sentence =

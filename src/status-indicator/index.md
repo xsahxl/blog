@@ -4,6 +4,8 @@ toc: content
 
 # StatusIndicator
 
+状态指示器
+
 ## 基本用法
 
 ### 指定 type 即可获得标准的状态指示器：

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import Truncate from '@alicloud/console-components-truncate'
-import { Input } from '@alicloud/console-components'
+import { Input } from '@alicloud/console-components';
+import { Truncate } from '@xsahxl/ui';
+import React, { useState } from 'react';
 
 const Demo = () => {
-  const [text, setText] = useState('')
+  const [text, setText] = useState('');
   return (
     <div className="truncate-demo">
       <p>Truncate by width: </p>
@@ -18,9 +18,9 @@ const Demo = () => {
       <br />
       <p>Truncated text: </p>
       <div>
-        <Input value={text} onChange={str => setText(str)} />
+        <Input value={text} onChange={(str) => setText(str)} />
       </div>
     </div>
-  )
-}
-export default Demo
+  );
+};
+export default Demo;

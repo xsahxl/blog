@@ -1,9 +1,9 @@
-import React from 'react'
-import Truncate from '@alicloud/console-components-truncate'
+import { Truncate } from '@xsahxl/ui';
+import React from 'react';
 
-const sentence1 = 'To be or not to be, this is a question. —— Hamlet'
+const sentence1 = 'To be or not to be, this is a question. —— Hamlet';
 const sentence2 =
-  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'
+  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。';
 
 const Demo = () => {
   return (
@@ -52,7 +52,7 @@ const Demo = () => {
       <br />
       <br />
     </div>
-  )
-}
+  );
+};
 
-export default Demo
+export default Demo;

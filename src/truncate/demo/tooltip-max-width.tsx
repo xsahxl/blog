@@ -1,5 +1,5 @@
-import React from 'react'
-import Truncate from '@alicloud/console-components-truncate'
+import { Truncate } from '@xsahxl/ui';
+import React from 'react';
 
 const Demo = () => {
   return (
@@ -14,6 +14,6 @@ const Demo = () => {
         ussdfgds
       </Truncate>
     </div>
-  )
-}
-export default Demo
+  );
+};
+export default Demo;

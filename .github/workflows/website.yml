@@ -26,8 +26,10 @@ jobs:
         # if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build
       - run: npm install @serverless-devs/s@beta -g
-      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a shl -f
-      - run: s deploy --use-local -y
+      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a 123456 -f
+      - run: |
+        export serverless_devs_access_cicd_alias_name=123456
+        s deploy --use-local -y
       - name: Sync docs to xsahxl.github.io
         run: |
           # 确保脚本抛出遇到的错误

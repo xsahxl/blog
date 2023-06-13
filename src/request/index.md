@@ -13,6 +13,8 @@ toc: content
 - request(统一设置公共参数)
 - response(统一处理接口的公共业务逻辑)
 
+> 内部集成了 [ahooks](https://ahooks.gitee.io)
+
 ## 何时使用
 
 请求接口时

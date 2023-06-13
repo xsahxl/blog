@@ -2,6 +2,8 @@ import './style/index.less';
 export { default as StatusIndicator } from '@alicloud/console-components-status-indicator';
 export { default as Truncate } from '@alicloud/console-components-truncate';
 export * from '@alicloud/console-components-truncate';
+export { default as SlidePanel } from './slide-panel';
+export * from '@alicloud/console-components-slide-panel';
 export { default as Actions } from '@alicloud/console-components-actions';
 export * from '@alicloud/console-components-actions';
 export * from 'ahooks';

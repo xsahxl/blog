@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@alicloud/console-components-actions": "^2.0.2",
+    "@alicloud/console-components-slide-panel": "^3.0.3",
     "@alicloud/console-components-status-indicator": "^2.0.2",
     "@alicloud/console-components-truncate": "^2.0.2",
     "ahooks": "^3.7.7",
@@ -59,6 +60,10 @@
   },
   "devDependencies": {
     "@alicloud/console-components": ">=1.0.0",
+    "@alicloud/console-components-app-layout": "^1.1.4",
+    "@alicloud/console-components-console-menu": "^1.2.12",
+    "@alicloud/console-components-info": "^2.0.2",
+    "@alicloud/console-components-page": "^2.0.2",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/js-cookie": "^3.0.3",

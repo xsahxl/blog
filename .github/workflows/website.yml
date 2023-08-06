@@ -27,10 +27,8 @@ jobs:
       - run: npm run docs:build
       - run: npm install @serverless-devs/s -g
       - run: s -v
-      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a 123456 -f
+      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
       - run: s deploy --use-local -y
-        env:
-          serverless_devs_access_cicd_alias_name: '123456'
       - run: s -v
       - name: Sync docs to xsahxl.github.io
         run: |

@@ -1,8 +1,7 @@
 import { Truncate } from '@xsahxl/ui';
 import React, { useRef } from 'react';
 
-const sentence2 =
-  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。';
+const sentence2 = '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。';
 
 const Demo = () => {
   const updaterRef = useRef<null | (() => void)>(null);

@@ -126,7 +126,7 @@ UMD 是 AMD 和 CommonJS 的一个糅合。AMD 是浏览器优先，异步加载
     //都不是，浏览器全局定义
     root.testModule = factory(root.jQuery);
   }
-})(this, ($) => {
+})(this, $ => {
   //do something...  这里是真正的函数体
 });
 ```

@@ -28,28 +28,17 @@ const customFormat = (value: IItem[]) => {
   return obj;
 };
 
-const customValidate = (
-  rule: Rule,
-  value: IItem[],
-  callback: (error?: string) => void,
-) => {
-  const newData = filter(value, (item) => item.key && item.value);
+const customValidate = (rule: Rule, value: IItem[], callback: (error?: string) => void) => {
+  const newData = filter(value, item => item.key && item.value);
   if (newData.length === 0) {
     return callback(i18n('ui.common.at_least_one_complete_data_required'));
   }
   callback();
 };
 
-const KeyValueWithPure: FC<Props> = (props) => {
-  const {
-    value,
-    onChange = noop,
-    prefixKeyText = 'Key',
-    prefixValueText = 'Value',
-  } = props;
-  const defaultValue = isEmpty(value)
-    ? [{ id: uniqueId() }]
-    : map(value, (item) => ({ ...item, id: uniqueId() }));
+const KeyValueWithPure: FC<Props> = props => {
+  const { value, onChange = noop, prefixKeyText = 'Key', prefixValueText = 'Value' } = props;
+  const defaultValue = isEmpty(value) ? [{ id: uniqueId() }] : map(value, item => ({ ...item, id: uniqueId() }));
   const [list, setList] = useState<IItem[]>(defaultValue);
 
   const handleAdd = () => {
@@ -59,30 +48,26 @@ const KeyValueWithPure: FC<Props> = (props) => {
   };
 
   const handleDelete = (id: string) => {
-    const option = filter(list, (item) => item.id !== id);
+    const option = filter(list, item => item.id !== id);
     setList(option);
     onChange(option);
   };
 
   const handleChangeKey = (key: string, id: string) => {
-    const option = map(list, (item) =>
-      item.id === id ? { ...item, key } : item,
-    );
+    const option = map(list, item => (item.id === id ? { ...item, key } : item));
     setList(option);
     onChange(option);
   };
 
   const handleChangeValue = (value: string, id: string) => {
-    const option = map(list, (item) =>
-      item.id === id ? { ...item, value } : item,
-    );
+    const option = map(list, item => (item.id === id ? { ...item, value } : item));
     setList(option);
     onChange(option);
   };
 
   return (
     <>
-      {map(list, (item) => {
+      {map(list, item => {
         return (
           <Row
             key={item.id}
@@ -93,29 +78,14 @@ const KeyValueWithPure: FC<Props> = (props) => {
             }}
           >
             <Col span="11" className="pr-16">
-              <Input
-                addonTextBefore={prefixKeyText}
-                style={{ width: '100%' }}
-                value={item.key}
-                onChange={(key) => handleChangeKey(key, item.id)}
-              />
+              <Input addonTextBefore={prefixKeyText} style={{ width: '100%' }} value={item.key} onChange={key => handleChangeKey(key, item.id)} />
             </Col>
             <Col span="11" className="pl-16">
-              <Input
-                addonTextBefore={prefixValueText}
-                style={{ width: '100%' }}
-                value={item.value}
-                onChange={(value) => handleChangeValue(value, item.id)}
-              />
+              <Input addonTextBefore={prefixValueText} style={{ width: '100%' }} value={item.value} onChange={value => handleChangeValue(value, item.id)} />
             </Col>
             {list.length > 1 && (
               <Col span="2" className="pl-16 pr-16">
-                <Icon
-                  className="cursor-pointer"
-                  size="xs"
-                  type="ashbin"
-                  onClick={() => handleDelete(item.id)}
-                />
+                <Icon className="cursor-pointer" size="xs" type="ashbin" onClick={() => handleDelete(item.id)} />
               </Col>
             )}
           </Row>

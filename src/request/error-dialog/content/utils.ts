@@ -22,6 +22,6 @@ const getUrl = (url: string, baseURL: string) => {
   if (isAbsolute(url)) return url;
   if (isAbsolute(baseURL)) return `${baseURL}${url}`;
   return `${window.location.origin}${baseURL}${url}`;
-}
+};
 
 const isAbsolute = (url: string) => startsWith(url, 'http://') || startsWith(url, 'https://');

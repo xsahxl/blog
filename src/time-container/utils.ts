@@ -11,18 +11,18 @@ export const getQucikTimes = (mode: IModeValue, quickTimes: IQucikTimes[]) => {
   } else {
     const data: ITime[] = [];
     each(quickTimes, (item: IQucikTimes) => {
-      each(option, (obj) => {
+      each(option, obj => {
         if (item.key === obj.key) {
           const childs: ITimeChild[] = [];
-          each(obj.childs, (childsObj) => {
+          each(obj.childs, childsObj => {
             includes(item.childs, childsObj.key) && childs.push(childsObj);
           });
           isEmpty(item.childs)
             ? data.push(obj)
             : data.push({
-              ...obj,
-              childs,
-            });
+                ...obj,
+                childs,
+              });
         }
       });
     });
@@ -32,12 +32,14 @@ export const getQucikTimes = (mode: IModeValue, quickTimes: IQucikTimes[]) => {
 
 export const transform = (value: string | number[] | moment.Moment[], data: ITime[]) => {
   if (isString(value)) {
-    const newChilds = flatten(map(data, (item) => item.childs));
-    const findObj = find(newChilds, (item) => item.key === value);
-    return findObj ? {
-      ...findObj,
-      momentValue: map(findObj.getValue(), (obj) => moment(obj)),
-    } : {};
+    const newChilds = flatten(map(data, item => item.childs));
+    const findObj = find(newChilds, item => item.key === value);
+    return findObj
+      ? {
+          ...findObj,
+          momentValue: map(findObj.getValue(), obj => moment(obj)),
+        }
+      : {};
   } else if (Array.isArray(value)) {
     let [start, end] = value;
     start = moment.isMoment(start) ? start : moment(start);
@@ -50,4 +52,4 @@ export const transform = (value: string | number[] | moment.Moment[], data: ITim
     };
   }
   return {};
-}
+};

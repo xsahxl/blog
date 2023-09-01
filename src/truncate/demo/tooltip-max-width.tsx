@@ -10,8 +10,7 @@ const Demo = () => {
       <br />
       <br />
       <Truncate type="width" threshold={200} tooltipMaxWidth={120}>
-        superc alifragilis ticexpialidoc ous@supercal ifragil isticexpial idocio
-        ussdfgds
+        superc alifragilis ticexpialidoc ous@supercal ifragil isticexpial idocio ussdfgds
       </Truncate>
     </div>
   );

@@ -49,10 +49,7 @@ const createDialog = (options: QuickShowConfig = {}) => {
 const ERR_NEED_LOGIN = 'NeedLogin';
 const ERR_POSTONLY_OR_TOKEN = 'PostonlyOrTokenError';
 
-export default (
-  error = {} as ResponseDataCodeError,
-  config: Record<string, any> = {},
-) => {
+export default (error = {} as ResponseDataCodeError, config: Record<string, any> = {}) => {
   const { code } = error;
 
   // 处理公共报错

@@ -11,11 +11,7 @@ const Fragment: React.FC<{}> = () => {
           <React.Fragment>
             <LinkButton>详情</LinkButton>
             <LinkButton>删除</LinkButton>
-            {[
-              <LinkButton key={1}>编辑</LinkButton>,
-              <LinkButton key={2}>释放</LinkButton>,
-              <LinkButton key={3}>暂停</LinkButton>,
-            ]}
+            {[<LinkButton key={1}>编辑</LinkButton>, <LinkButton key={2}>释放</LinkButton>, <LinkButton key={3}>暂停</LinkButton>]}
           </React.Fragment>
         </Actions>
       </div>

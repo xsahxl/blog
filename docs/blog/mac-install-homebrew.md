@@ -45,11 +45,10 @@ plugins=(git autojump zsh-autosuggestions)
 - brew install maven
 
 - set JAVA_HOME in ~/.zshrc
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+  export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
-
 # pip
 
-- pip3 install --upgrade pip 
+- pip3 install --upgrade pip

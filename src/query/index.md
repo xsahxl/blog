@@ -30,7 +30,7 @@ const Demo = () => {
   };
   const [refreshIndex, setRefreshIndex] = useState(0);
   const [loop, setLoop] = useState({ enable: false, time: 3000 });
-  const handlePolling = (value) => {
+  const handlePolling = value => {
     setLoop({ ...loop, enable: value });
   };
 
@@ -44,13 +44,7 @@ const Demo = () => {
               <Switch style={{ marginLeft: 8 }} onChange={handlePolling} />
             </div>
             <Select dataSource={data} />
-            <Button
-              loading={loading}
-              type="primary"
-              text
-              onClick={() => setRefreshIndex(+new Date())}
-              style={{ marginLeft: 8 }}
-            >
+            <Button loading={loading} type="primary" text onClick={() => setRefreshIndex(+new Date())} style={{ marginLeft: 8 }}>
               刷新
             </Button>
           </>

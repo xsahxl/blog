@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import { Button, Input, Select } from '@alicloud/console-components'
-import Info from '@alicloud/console-components-info'
+import React, { useState } from 'react';
+import { Button, Input, Select } from '@alicloud/console-components';
+import Info from '@alicloud/console-components-info';
 
-const { Option } = Select
+const { Option } = Select;
 
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 
 export const useTextSetter = (title: React.ReactNode, init?: string) => {
-  const [text, setText] = useState<string | undefined>(init)
+  const [text, setText] = useState<string | undefined>(init);
   return [
     text,
     setText,
@@ -16,23 +16,23 @@ export const useTextSetter = (title: React.ReactNode, init?: string) => {
         <Input
           value={text}
           onChange={v => {
-            setText(v)
+            setText(v);
           }}
         />
         <Button
           onClick={() => {
-            setText(undefined)
+            setText(undefined);
           }}
         >
           重置为undefined
         </Button>
       </Info.Content>
     </Info>,
-  ]
-}
+  ];
+};
 
 export const useTextAreaSetter = (title: React.ReactNode, init?: string) => {
-  const [text, setText] = useState<string | undefined>(init)
+  const [text, setText] = useState<string | undefined>(init);
   return [
     text,
     setText,
@@ -41,23 +41,23 @@ export const useTextAreaSetter = (title: React.ReactNode, init?: string) => {
         <Input.TextArea
           value={text}
           onChange={v => {
-            setText(v)
+            setText(v);
           }}
         />
         <Button
           onClick={() => {
-            setText(undefined)
+            setText(undefined);
           }}
         >
           重置为undefined
         </Button>
       </Info.Content>
     </Info>,
-  ]
-}
+  ];
+};
 
 export const useBoolSetter = (title: React.ReactNode, init?: boolean) => {
-  const [flag, setFlag] = useState<boolean | undefined>(init)
+  const [flag, setFlag] = useState<boolean | undefined>(init);
   return [
     flag,
     setFlag,
@@ -65,8 +65,8 @@ export const useBoolSetter = (title: React.ReactNode, init?: boolean) => {
       <Select
         value={flag}
         onChange={v => {
-          if (v === 'undefined') setFlag(undefined)
-          else setFlag(v)
+          if (v === 'undefined') setFlag(undefined);
+          else setFlag(v);
         }}
         placeholder="undefined"
       >
@@ -75,5 +75,5 @@ export const useBoolSetter = (title: React.ReactNode, init?: boolean) => {
         <Option value={false}>false</Option>
       </Select>
     </Info>,
-  ]
-}
+  ];
+};

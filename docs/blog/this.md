@@ -43,7 +43,7 @@ foo1.getValue(); // undefined
 - 构造函数使用箭头函数
 
 ```js
-const Foo = (value) => {
+const Foo = value => {
   this.value = value;
 };
 const foo1 = new Foo(1);

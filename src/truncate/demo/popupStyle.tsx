@@ -2,8 +2,7 @@ import { Truncate } from '@xsahxl/ui';
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
-const sentence =
-  'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext';
+const sentence = 'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext';
 
 const GlobalStyle = createGlobalStyle`
 	.wind-truncate-tooltip {

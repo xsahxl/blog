@@ -127,10 +127,7 @@ export const offlines = [
       {
         label: i18n('ui.yesterday'),
         key: 'yesterday',
-        getValue: () => [
-          moment().startOf('day').add(-1, 'day').valueOf(),
-          moment().endOf('day').add(-1, 'day').valueOf(),
-        ],
+        getValue: () => [moment().startOf('day').add(-1, 'day').valueOf(), moment().endOf('day').add(-1, 'day').valueOf()],
       },
       {
         label: i18n('ui.last_three_days'),
@@ -156,12 +153,12 @@ export const offlines = [
             .week(moment().week() - 1)
             .startOf('week')
             .valueOf() +
-          24 * 60 * 60 * 1000,
+            24 * 60 * 60 * 1000,
           moment()
             .week(moment().week() - 1)
             .endOf('week')
             .valueOf() +
-          24 * 60 * 60 * 1000,
+            24 * 60 * 60 * 1000,
         ],
       },
       {
@@ -254,14 +251,7 @@ export const offlines = [
   },
 ];
 
-export const enable_loop_keys = [
-  'last_5_minutes',
-  'last_10_minutes',
-  'last_15_minutes',
-  'last_half_hour',
-  'last_hour',
-  'last_6_hours',
-];
+export const enable_loop_keys = ['last_5_minutes', 'last_10_minutes', 'last_15_minutes', 'last_half_hour', 'last_hour', 'last_6_hours'];
 
 export const loop_list = [
   {

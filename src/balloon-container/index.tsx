@@ -21,22 +21,22 @@ type Item = {
   value?: string;
   required?: boolean;
   props?: Record<string, any>;
-}
+};
 
-type Props = PropsWithChildren & BalloonProps & {
-  title?: React.ReactNode;
-  trigger?: React.ReactNode;
-  triggerType?: 'click' | 'hover';
-  dataSource?: Item[]
-  closable?: boolean;
-  popupStyle?: React.CSSProperties;
-  onConfirm?: (value: Item[]) => Promise<any>;
-  onCancel?: () => void;
-  confirmButtonText?: string;
-  cancelButtonText?: string;
-
-}
-const BalloonContainer: FC<Props> = (props) => {
+type Props = PropsWithChildren &
+  BalloonProps & {
+    title?: React.ReactNode;
+    trigger?: React.ReactNode;
+    triggerType?: 'click' | 'hover';
+    dataSource?: Item[];
+    closable?: boolean;
+    popupStyle?: React.CSSProperties;
+    onConfirm?: (value: Item[]) => Promise<any>;
+    onCancel?: () => void;
+    confirmButtonText?: string;
+    cancelButtonText?: string;
+  };
+const BalloonContainer: FC<Props> = props => {
   const {
     title,
     trigger,
@@ -88,10 +88,9 @@ const BalloonContainer: FC<Props> = (props) => {
       try {
         await onConfirm(values);
         setVisible(false);
-      } catch (error) { }
+      } catch (error) {}
       setLoading(false);
-    })
-
+    });
   };
 
   const handleCancel = () => {
@@ -101,11 +100,7 @@ const BalloonContainer: FC<Props> = (props) => {
 
   const defaultChildren = () => {
     if (isNoneEmpty(children)) {
-      return (
-        <div className='p-4'>
-          {children}
-        </div>
-      );
+      return <div className="p-4">{children}</div>;
     }
     return (
       <>
@@ -123,7 +118,7 @@ const BalloonContainer: FC<Props> = (props) => {
             const rules = get(item, 'props.rules', {
               required,
               message: i18n('ui.field_is_required', { value: item.label }),
-            })
+            });
             return (
               <FormItem label={item.label} key={item.label} required={required}>
                 {get(item, 'props.dataSource') ? (
@@ -135,21 +130,25 @@ const BalloonContainer: FC<Props> = (props) => {
                       rules,
                     })}
                   />
-                ) : <Input
-                  {...item.props}
-                  {...init(item.name, {
-                    initValue: item.value,
-                    rules,
-                  })}
-                />}
+                ) : (
+                  <Input
+                    {...item.props}
+                    {...init(item.name, {
+                      initValue: item.value,
+                      rules,
+                    })}
+                  />
+                )}
               </FormItem>
-            )
+            );
           })}
           <FormItem style={{ marginBottom: 0, textAlign: 'right' }}>
-            <Button type="primary" loading={loading} onClick={handleConfirm} >
+            <Button type="primary" loading={loading} onClick={handleConfirm}>
               {confirmButtonText}
             </Button>
-            <Button className='ml-8' onClick={handleCancel}>{cancelButtonText}</Button>
+            <Button className="ml-8" onClick={handleCancel}>
+              {cancelButtonText}
+            </Button>
           </FormItem>
         </Form>
       </>
@@ -157,16 +156,10 @@ const BalloonContainer: FC<Props> = (props) => {
   };
   if (triggerType === 'hover') {
     return (
-      <Balloon
-        {...rest}
-        closable={closable}
-        trigger={trigger}
-        triggerType="hover"
-        popupStyle={{ maxWidth: 500, minWidth: 180, ...popupStyle }}
-      >
+      <Balloon {...rest} closable={closable} trigger={trigger} triggerType="hover" popupStyle={{ maxWidth: 500, minWidth: 180, ...popupStyle }}>
         <div style={{ padding: '8px 0' }}>{children}</div>
       </Balloon>
-    )
+    );
   }
   return (
     <Balloon
@@ -181,6 +174,6 @@ const BalloonContainer: FC<Props> = (props) => {
       {defaultChildren()}
     </Balloon>
   );
-}
+};
 
 export default BalloonContainer;

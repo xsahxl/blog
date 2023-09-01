@@ -1,8 +1,7 @@
 import { MultiLines } from '@xsahxl/ui';
 import React from 'react';
 
-const longText =
-  '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'.repeat(10);
+const longText = '毕竟西湖六月中，风光不与四时同。接天莲叶无穷碧，映日荷花别样红。'.repeat(10);
 
 const Demo = () => {
   return (

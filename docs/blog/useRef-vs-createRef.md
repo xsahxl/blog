@@ -48,7 +48,7 @@ const Demo = () => {
       <p>current render index: {renderIndex}</p>
       <p>refFromUseRef: {refFromUseRef.current}</p>
       <p>refFromCreateRef: {refFromCreateRef.current}</p>
-      <button onClick={() => setRenderIndex((pre) => pre + 1)}>add</button>
+      <button onClick={() => setRenderIndex(pre => pre + 1)}>add</button>
     </>
   );
 };
@@ -71,7 +71,7 @@ const Demo = () => {
   return (
     <>
       <p>you clicked {count} times</p>
-      <button onClick={() => setCount((pre) => pre + 1)}>Focus input</button>
+      <button onClick={() => setCount(pre => pre + 1)}>Focus input</button>
       <button onClick={handleAlertClick}>show alert</button>
     </>
   );
@@ -102,7 +102,7 @@ const Demo = () => {
     <>
       <p>pre: {countRef.current} times</p>
       <p>you clicked {count} times</p>
-      <button onClick={() => setCount((pre) => pre + 1)}>Focus input</button>
+      <button onClick={() => setCount(pre => pre + 1)}>Focus input</button>
       <button onClick={handleAlertClick}>show alert</button>
     </>
   );

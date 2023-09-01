@@ -44,10 +44,8 @@ const Example = () => {
               setActive(false);
             }}
             popupProps={{
-              container: () =>
-                document.querySelector('.windcc-app-layout__content'),
-              target: () =>
-                document.querySelector('.windcc-app-layout__content'),
+              container: () => document.querySelector('.windcc-app-layout__content'),
+              target: () => document.querySelector('.windcc-app-layout__content'),
               // 让滑动面板从内容区域的下方出现，并且距离内容区域有内边距24px
               offset: [24, 0],
               style: {

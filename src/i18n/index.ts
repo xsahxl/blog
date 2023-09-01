@@ -1,20 +1,19 @@
-import en from './locales/en'
-import zh from './locales/zh'
-import { template, get } from 'lodash'
-import { getLanguage } from '../utils'
+import en from './locales/en';
+import zh from './locales/zh';
+import { template, get } from 'lodash';
+import { getLanguage } from '../utils';
 
 const langMap = {
-    en,
-    zh,
-}
+  en,
+  zh,
+};
 
 const i18n = (key: string, args?: Record<string, any>) => {
-    const lang = getLanguage();
-    const data = get(langMap, lang);
-    const value = data[key]
-    if (!value) return key;
-    return args ? template(value)(args) : value;
-}
+  const lang = getLanguage();
+  const data = get(langMap, lang);
+  const value = data[key];
+  if (!value) return key;
+  return args ? template(value)(args) : value;
+};
 
 export default i18n;
-

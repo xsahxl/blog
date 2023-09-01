@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export interface CommonProps {
-    className?: string;
-    style?: React.CSSProperties;
-    key?: string;
+  className?: string;
+  style?: React.CSSProperties;
+  key?: string;
 }

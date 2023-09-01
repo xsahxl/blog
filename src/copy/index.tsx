@@ -5,17 +5,7 @@ import styled from 'styled-components';
 import i18n from '../i18n';
 import { CommonProps } from '../types';
 
-type IconSize =
-  | number
-  | 'xxs'
-  | 'xs'
-  | 'small'
-  | 'medium'
-  | 'large'
-  | 'xl'
-  | 'xxl'
-  | 'xxxl'
-  | 'inherit';
+type IconSize = number | 'xxs' | 'xs' | 'small' | 'medium' | 'large' | 'xl' | 'xxl' | 'xxxl' | 'inherit';
 
 type Props = PropsWithChildren &
   CommonProps & {
@@ -25,7 +15,7 @@ type Props = PropsWithChildren &
     icon?: React.ReactNode;
   };
 
-const Copy: FC<Props> = (props) => {
+const Copy: FC<Props> = props => {
   const { children, text, icon, iconSize } = props;
   const onCopy = (e: any) => {
     e.stopPropagation();

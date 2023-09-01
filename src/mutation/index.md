@@ -22,19 +22,11 @@ const Demo = () => {
     return { time: moment().format('YYYY-MM-DD HH:mm:ss') };
   };
   return (
-    <Mutation
-      onSubmit={submit}
-      refetchQuery={async () => console.log('refetchQuery')}
-    >
+    <Mutation onSubmit={submit} refetchQuery={async () => console.log('refetchQuery')}>
       {(create, { data, loading }) => {
         return (
           <>
-            <Button
-              loading={loading}
-              type="primary"
-              onClick={create}
-              style={{ marginLeft: 8 }}
-            >
+            <Button loading={loading} type="primary" onClick={create} style={{ marginLeft: 8 }}>
               创建
             </Button>
             <pre>{JSON.stringify(data)}</pre>

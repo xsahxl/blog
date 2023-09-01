@@ -14,12 +14,7 @@ const SlidePanelDemo: React.FC<{}> = () => {
       >
         open
       </Button>
-      <SlidePanel
-        top={50}
-        title="CheckPanelShouldBeClosable"
-        isShowing={active}
-        width="medium"
-      >
+      <SlidePanel top={50} title="CheckPanelShouldBeClosable" isShowing={active} width="medium">
         content
       </SlidePanel>
     </>

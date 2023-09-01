@@ -51,12 +51,7 @@ export default () => {
   const field = Field.useField();
   const { init, getValue } = field;
 
-  return (
-    <TimeContainer
-      {...init('time', { initValue: 'last_5_minutes' })}
-      onChange={console.log}
-    />
-  );
+  return <TimeContainer {...init('time', { initValue: 'last_5_minutes' })} onChange={console.log} />;
 };
 ```
 
@@ -70,12 +65,7 @@ export default () => {
   const field = Field.useField();
   const { init, getValue } = field;
 
-  return (
-    <TimeContainer
-      {...init('time', { initValue: [1597999568648, 1598001368648] })}
-      onChange={console.log}
-    />
-  );
+  return <TimeContainer {...init('time', { initValue: [1597999568648, 1598001368648] })} onChange={console.log} />;
 };
 ```
 
@@ -114,18 +104,8 @@ import { TimeContainer } from '@xsahxl/ui';
 export default () => {
   const field = Field.useField();
   const { init } = field;
-  const quickTimes = [
-    { key: 'minute', childs: ['last_5_minutes', 'last_15_minutes'] },
-    { key: 'hour' },
-    { key: 'day' },
-  ];
-  return (
-    <TimeContainer
-      quickTimes={quickTimes}
-      {...init('time')}
-      onChange={console.log}
-    />
-  );
+  const quickTimes = [{ key: 'minute', childs: ['last_5_minutes', 'last_15_minutes'] }, { key: 'hour' }, { key: 'day' }];
+  return <TimeContainer quickTimes={quickTimes} {...init('time')} onChange={console.log} />;
 };
 ```
 

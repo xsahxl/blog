@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
 import ResponseError from './ResponseError';
-const format = require('format')
+const format = require('format');
 
 const ERR_MSG = 'Invalid response status code: %d';
 

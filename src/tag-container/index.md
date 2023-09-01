@@ -19,11 +19,9 @@ import _ from 'lodash';
 const Demo = () => {
   const fetchData = async () => {
     await sleep(1000);
-    const res = await axios(
-      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
-    );
+    const res = await axios('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags');
     const data = _.get(res, 'data.data');
-    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    return _.map(data, item => ({ key: item.TagKey, value: item.TagValue }));
   };
   return <TagContainer fetchData={fetchData} onChange={console.log} />;
 };
@@ -40,19 +38,11 @@ import _ from 'lodash';
 
 const Demo = () => {
   const fetchData = async () => {
-    const res = await axios(
-      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
-    );
+    const res = await axios('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags');
     const data = _.get(res, 'data.data');
-    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    return _.map(data, item => ({ key: item.TagKey, value: item.TagValue }));
   };
-  return (
-    <TagContainer
-      fetchData={fetchData}
-      value={[{ key: 'www', value: '11111111' }]}
-      onChange={console.log}
-    />
-  );
+  return <TagContainer fetchData={fetchData} value={[{ key: 'www', value: '11111111' }]} onChange={console.log} />;
 };
 
 export default Demo;
@@ -68,15 +58,11 @@ import _ from 'lodash';
 
 const Demo = () => {
   const fetchData = async () => {
-    const res = await axios(
-      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
-    );
+    const res = await axios('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags');
     const data = _.get(res, 'data.data');
-    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    return _.map(data, item => ({ key: item.TagKey, value: item.TagValue }));
   };
-  return (
-    <TagContainer limit={3} fetchData={fetchData} onChange={console.log} />
-  );
+  return <TagContainer limit={3} fetchData={fetchData} onChange={console.log} />;
 };
 
 export default Demo;
@@ -102,11 +88,9 @@ const Demo = () => {
   const field = Field.useField();
   const { init, validate } = field;
   const fetchData = async () => {
-    const res = await axios(
-      'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags',
-    );
+    const res = await axios('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/listtags');
     const data = _.get(res, 'data.data');
-    return _.map(data, (item) => ({ key: item.TagKey, value: item.TagValue }));
+    return _.map(data, item => ({ key: item.TagKey, value: item.TagValue }));
   };
   const onValidate = () => {
     validate((errors, values) => {
@@ -169,10 +153,7 @@ export default () => {
     <>
       <>
         有标签的场景：
-        <ColumnTag
-          dataSource={dataSource}
-          onClick={() => console.log('点击了操作按钮')}
-        />
+        <ColumnTag dataSource={dataSource} onClick={() => console.log('点击了操作按钮')} />
       </>
       <div className="mt-16">
         无标签的场景：

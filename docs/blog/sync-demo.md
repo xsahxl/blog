@@ -73,27 +73,21 @@ const baseComponentsPath = path.join(__dirname, '../base-components');
 //js=>jsx
 glob('*/demo/*.js', { cwd: baseComponentsPath }, (err, res) => {
   if (err) throw err;
-  _.each(res, (item) => {
-    fs.rename(
-      path.join(baseComponentsPath, `${item}`),
-      path.join(baseComponentsPath, `${item}x`),
-    );
+  _.each(res, item => {
+    fs.rename(path.join(baseComponentsPath, `${item}`), path.join(baseComponentsPath, `${item}x`));
   });
 });
 
 glob('*/*.md', { cwd: baseComponentsPath }, (err, res) => {
   if (err) throw err;
-  _.each(res, (item) => {
-    const content = fs.readFileSync(
-      path.join(baseComponentsPath, item),
-      'utf8',
-    );
+  _.each(res, item => {
+    const content = fs.readFileSync(path.join(baseComponentsPath, item), 'utf8');
     let contentLines = _.split(content, '\n');
-    const index = _.findIndex(contentLines, (obj) => _.includes(obj, '#'));
+    const index = _.findIndex(contentLines, obj => _.includes(obj, '#'));
     contentLines = _.slice(contentLines, index);
-    const apiIndex = _.findIndex(contentLines, (obj) => _.includes(obj, 'API'));
+    const apiIndex = _.findIndex(contentLines, obj => _.includes(obj, 'API'));
     apiIndex > 0 && contentLines.splice(apiIndex, 5);
-    contentLines = _.map(contentLines, (lines) => {
+    contentLines = _.map(contentLines, lines => {
       if (_.startsWith(lines, '#include')) {
         const start = lines.indexOf('demo');
         const end = lines.indexOf('js');
@@ -103,21 +97,11 @@ glob('*/*.md', { cwd: baseComponentsPath }, (err, res) => {
       }
     });
     const [compName] = _.split(item, '/');
-    const fusionContent = fs.readFileSync(
-      path.join(fusionDocs, `${compName}/index.md`),
-      'utf8',
-    );
+    const fusionContent = fs.readFileSync(path.join(fusionDocs, `${compName}/index.md`), 'utf8');
 
     const fusionContentLines = _.split(fusionContent, '\n');
-    const fusionApiIndex = _.findIndex(fusionContentLines, (obj) =>
-      _.includes(obj, 'API'),
-    );
-    let generateCode = _.concat(
-      ['---\n group:\n  title: 基础组件\n---\n'],
-      contentLines,
-      ['## API\n'],
-      fusionContentLines.splice(fusionApiIndex + 4),
-    );
+    const fusionApiIndex = _.findIndex(fusionContentLines, obj => _.includes(obj, 'API'));
+    let generateCode = _.concat(['---\n group:\n  title: 基础组件\n---\n'], contentLines, ['## API\n'], fusionContentLines.splice(fusionApiIndex + 4));
     generateCode = _.join(generateCode, '\n');
 
     fs.writeFile(path.join(baseComponentsPath, item), generateCode);
@@ -138,16 +122,13 @@ const fusionDocs = 'fusionDocs';
 
 const root = path.join(__dirname, '../');
 
-const blocklist = [
-  'pagination/demo/react-router.md',
-  'config-provider/demo/components.md',
-];
+const blocklist = ['pagination/demo/react-router.md', 'config-provider/demo/components.md'];
 
 glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
   if (err) throw err;
   res
-    .filter((demoFile) => !blocklist.includes(demoFile))
-    .forEach((demoFile) => {
+    .filter(demoFile => !blocklist.includes(demoFile))
+    .forEach(demoFile => {
       const match = /^(.*?)\/demo\/(.*)\.md/.exec(demoFile);
       const componentName = match[1];
       const demoFilePath = match[2];
@@ -156,26 +137,20 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
       // 获取demo标题
       const title = /^\s*# (.*)/.exec(content)[1];
       // 获取demo描述
-      let description = contentLines.find((line) => {
+      let description = contentLines.find(line => {
         return line && !line.startsWith('#') && !line.startsWith('-');
       });
       // 这个demo没有描述
       if (description.startsWith(':::')) description = '';
       description = description.replace(/\</g, '&lt;');
-      description =
-        description.indexOf("'") > -1 ? `"${description}"` : `'${description}'`;
+      description = description.indexOf("'") > -1 ? `"${description}"` : `'${description}'`;
       assert(title);
       // 提取demo的代码块内容
       const demo = /```\s*jsx([\s\S]*?)```/.exec(content)[1];
       assert(demo);
       // 解析ReactDOM.render(<JSX />, mountNode);语句
-      const reactdom_render_regexp =
-        /^ReactDOM\.render\(([\s\S]*),\s*mountNode\s*(?:,\s*)?\);?/m;
-      if (
-        content.match(
-          /^ReactDOM\.render\(([\s\S]*),\s*mountNode\s*(?:,\s*)?\);?/gm,
-        ).length !== 1
-      ) {
+      const reactdom_render_regexp = /^ReactDOM\.render\(([\s\S]*),\s*mountNode\s*(?:,\s*)?\);?/m;
+      if (content.match(/^ReactDOM\.render\(([\s\S]*),\s*mountNode\s*(?:,\s*)?\);?/gm).length !== 1) {
         throw new Error(`unexpected demo: ${demoFile}
       has multiple ReactDOM.render`);
       }
@@ -189,14 +164,8 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
 
       // 产生的demo不应该直接调用ReactDOM.render，而是export一个DemoComponent
       let generateCode = demo.replace(reactdom_render_regexp, '');
-      generateCode = generateCode.replace(
-        /from ['"]@alifd\/next['"]/,
-        `from '@b-design/ui'`,
-      );
-      generateCode = generateCode.replace(
-        /from ['"]react-router['"]/,
-        `from 'react-router-dom'`,
-      );
+      generateCode = generateCode.replace(/from ['"]@alifd\/next['"]/, `from '@b-design/ui'`);
+      generateCode = generateCode.replace(/from ['"]react-router['"]/, `from 'react-router-dom'`);
 
       generateCode += `export default function DemoComponent() {
       const content = (${renderJSX})
@@ -215,21 +184,13 @@ glob('*/demo/*.md', { cwd: fusionDocs }, (err, res) => {
       generateCode += `const Style = styled.div\`${css}\`;`;
       generateCode = `import styled from 'styled-components';\n` + generateCode;
 
-      if (
-        !/import React/.test(generateCode) &&
-        !/import * as React/.test(generateCode)
-      )
-        generateCode = `import * as React from 'react';\n` + generateCode;
+      if (!/import React/.test(generateCode) && !/import * as React/.test(generateCode)) generateCode = `import * as React from 'react';\n` + generateCode;
 
       if (componentName === 'grid' && demoFilePath === 'type') {
-        generateCode =
-          `import * as ReactDOM from 'react-dom';\n` + generateCode;
+        generateCode = `import * as ReactDOM from 'react-dom';\n` + generateCode;
       }
       assert(!/@alifd\/next/.test(generateCode), generateCode);
-      const writePath = path.join(
-        root,
-        `src/docs/${componentName}/demo/${demoFilePath}.jsx`,
-      );
+      const writePath = path.join(root, `src/docs/${componentName}/demo/${demoFilePath}.jsx`);
       fs.ensureDirSync(path.dirname(writePath));
       fs.writeFileSync(writePath, generateCode);
     });

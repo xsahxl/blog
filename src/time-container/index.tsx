@@ -1,12 +1,4 @@
-import {
-  Button,
-  DatePicker,
-  Dropdown,
-  Field,
-  Grid,
-  Icon,
-  Select,
-} from '@alicloud/console-components';
+import { Button, DatePicker, Dropdown, Field, Grid, Icon, Select } from '@alicloud/console-components';
 import { RangePickerProps } from '@alicloud/console-components/types/date-picker';
 import cls from 'classnames';
 import { filter, get, includes, map, noop } from 'lodash';
@@ -17,14 +9,7 @@ import i18n from '../i18n';
 import { CommonProps } from '../types';
 import { isNoneEmpty } from '../utils';
 import { enable_loop_keys, loop_list, loop_off } from './constant';
-import {
-  IActive,
-  IChangeData,
-  IMode,
-  IModeValue,
-  IQucikTimes,
-  ITimeChild,
-} from './types';
+import { IActive, IChangeData, IMode, IModeValue, IQucikTimes, ITimeChild } from './types';
 import { getQucikTimes, transform } from './utils';
 
 const { Row, Col } = Grid;
@@ -40,16 +25,8 @@ type Props = CommonProps & {
   showLoop?: boolean;
 };
 
-const TimeContainer: FC<Props> = (props) => {
-  const {
-    value,
-    mode = IMode.realTime,
-    placeholder = i18n('ui.common.select.placeholder'),
-    quickTimes,
-    onChange = noop,
-    showLoop = true,
-    rangePickerProps,
-  } = props;
+const TimeContainer: FC<Props> = props => {
+  const { value, mode = IMode.realTime, placeholder = i18n('ui.common.select.placeholder'), quickTimes, onChange = noop, showLoop = true, rangePickerProps } = props;
   const [visible, setVisible] = useState(false);
   const _quickTimes = getQucikTimes(mode, quickTimes as IQucikTimes[]);
   const defaultActive = transform(value, _quickTimes);
@@ -78,7 +55,7 @@ const TimeContainer: FC<Props> = (props) => {
     const value = childs.getValue();
     setActived({
       ...childs,
-      momentValue: map(value, (item) => moment(item)),
+      momentValue: map(value, item => moment(item)),
     });
     onChange({
       key: childs.key,
@@ -91,14 +68,9 @@ const TimeContainer: FC<Props> = (props) => {
     const params: moment.Moment[] = getValue('rangePicker');
     const data = {
       key: actived.key,
-      label:
-        actived.key === 'custom'
-          ? `${params[0].format('YYYY-MM-DD HH:mm:ss')} - ${params[1].format(
-              'YYYY-MM-DD HH:mm:ss',
-            )}`
-          : actived.label,
+      label: actived.key === 'custom' ? `${params[0].format('YYYY-MM-DD HH:mm:ss')} - ${params[1].format('YYYY-MM-DD HH:mm:ss')}` : actived.label,
       momentValue: params,
-      getValue: () => map(params, (item) => item.valueOf()),
+      getValue: () => map(params, item => item.valueOf()),
       loopTime: getValue('loopTime') as number,
       getLoopValue: actived.getValue,
     };
@@ -126,9 +98,7 @@ const TimeContainer: FC<Props> = (props) => {
       <>
         <div className="mt-16 mb-8">{i18n('ui.refresh_rate')}</div>
         <Select
-          dataSource={
-            includes(enable_loop_keys, actived.key) ? loop_list : loop_off
-          }
+          dataSource={includes(enable_loop_keys, actived.key) ? loop_list : loop_off}
           className="full-width"
           {...init('loopTime', {
             initValue: actived.loopTime || 0,
@@ -140,13 +110,13 @@ const TimeContainer: FC<Props> = (props) => {
 
   const popRender = (
     <PopWrapper>
-      {map(_quickTimes, (item) => {
+      {map(_quickTimes, item => {
         return (
           <div key={item.label} className="default_range">
             <span className="left_lable">{item.label}</span>
             <div className="right_content">
               <Row>
-                {map(item.childs, (childs) => {
+                {map(item.childs, childs => {
                   return (
                     <Col key={childs.key} span={8}>
                       <span
@@ -184,7 +154,7 @@ const TimeContainer: FC<Props> = (props) => {
           onClick={handleConfirm}
           disabled={
             get(
-              filter(getValue('rangePicker') as number[], (item) => item),
+              filter(getValue('rangePicker') as number[], item => item),
               'length',
             ) < 2
           }
@@ -207,20 +177,11 @@ const TimeContainer: FC<Props> = (props) => {
               focus: visible,
               clear_icon__container: isNoneEmpty(actived),
             })}
-            onClick={() => setVisible((pre) => !pre)}
+            onClick={() => setVisible(pre => !pre)}
           >
-            {actived.label ? (
-              <span>{actived.label}</span>
-            ) : (
-              <span className="color-gray">{placeholder}</span>
-            )}
+            {actived.label ? <span>{actived.label}</span> : <span className="color-gray">{placeholder}</span>}
             <Icon className="calendar_icon" type="calendar" size="xs" />
-            <Icon
-              className="clear_icon"
-              type="delete-filling"
-              onClick={handleClear}
-              size="xs"
-            />
+            <Icon className="clear_icon" type="delete-filling" onClick={handleClear} size="xs" />
           </div>
         </TriggerWrapper>
       }

@@ -1,1 +1,1 @@
-declare module '@alicloud/console-components-info'
+declare module '@alicloud/console-components-info';

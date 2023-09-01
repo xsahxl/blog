@@ -7,7 +7,6 @@ import i18n from '../i18n';
 import { useRequest } from 'ahooks';
 import { isNoneEmpty, noop } from '../utils';
 
-
 const { Row, Col } = Grid;
 
 type IItem = {
@@ -24,21 +23,17 @@ type Props = {
   keyMaxLength?: number;
   valueMaxLength?: number;
   limit?: number;
-  fetchData?: () => Promise<{ key: string, value: string }[]>;
+  fetchData?: () => Promise<{ key: string; value: string }[]>;
 };
 
 const customFormat = (value: IItem[]) => {
   if (isEmpty(value)) return;
-  const newData = filter(value, (item) => item.key);
-  return map(newData, (item: IItem) => ({ key: item.key, value: item.value }))
+  const newData = filter(value, item => item.key);
+  return map(newData, (item: IItem) => ({ key: item.key, value: item.value }));
 };
 
-const customValidate = (
-  rule: Rule,
-  value: IItem[],
-  callback: (error?: string) => void,
-) => {
-  const newData = filter(value, (item) => item.key);
+const customValidate = (rule: Rule, value: IItem[], callback: (error?: string) => void) => {
+  const newData = filter(value, item => item.key);
   if (newData.length === 0) {
     return callback(i18n('ui.common.at_least_one_data_required'));
   }
@@ -49,30 +44,24 @@ const customValidate = (
   callback();
 };
 
-const TagContainerWithPure: FC<Props> = (props) => {
-  const {
-    value,
-    onChange = noop,
-    keyMaxLength = 64,
-    valueMaxLength = 64,
-    fetchData = noop,
-    limit = +Infinity,
-  } = props;
+const TagContainerWithPure: FC<Props> = props => {
+  const { value, onChange = noop, keyMaxLength = 64, valueMaxLength = 64, fetchData = noop, limit = +Infinity } = props;
   const defaultValue = isEmpty(value)
     ? [{ id: uniqueId() }]
-    : concat(map(value, (item) => ({ ...item, id: uniqueId() })), { id: uniqueId() });
+    : concat(
+        map(value, item => ({ ...item, id: uniqueId() })),
+        { id: uniqueId() },
+      );
   const [list, setList] = useState<IItem[]>(defaultValue);
   const { data, loading } = useRequest(fetchData);
 
   const handleDelete = (id: string) => {
-    const option = filter(list, (item) => item.id !== id);
+    const option = filter(list, item => item.id !== id);
     checkKey(option);
   };
 
   const handleChangeKey = (key: string, id: string) => {
-    const option = map(list, (item) =>
-      item.id === id ? { ...item, key, value: undefined, values: getValues(key) } : item,
-    );
+    const option = map(list, item => (item.id === id ? { ...item, key, value: undefined, values: getValues(key) } : item));
     checkKey(option);
   };
   const checkKey = (option: IItem[]) => {
@@ -81,17 +70,15 @@ const TagContainerWithPure: FC<Props> = (props) => {
     option.length < limit && shouldAdd && option.push({ id: uniqueId() });
     // 如果key重复，就标记错误
     const newList = map(option, item => {
-      const newOption = filter(option, (obj) => obj.key === item.key);
-      return { ...item, error: newOption.length > 1 }
+      const newOption = filter(option, obj => obj.key === item.key);
+      return { ...item, error: newOption.length > 1 };
     });
     setList(newList);
-    onChange(newList)
-  }
+    onChange(newList);
+  };
 
   const handleChangeValue = (value: string, id: string) => {
-    const option = map(list, (item) =>
-      item.id === id ? { ...item, value } : item,
-    );
+    const option = map(list, item => (item.id === id ? { ...item, value } : item));
     setList(option);
     onChange(option);
   };
@@ -99,29 +86,34 @@ const TagContainerWithPure: FC<Props> = (props) => {
   const getValues = (key: string | undefined) => {
     if (isEmpty(key)) return [];
     const findObj = find(data, item => item.key === key);
-    const value = get(findObj, 'value', [])
+    const value = get(findObj, 'value', []);
     if (isEmpty(value)) return [];
     return isArray(value) ? value : [value];
-  }
+  };
 
   const getState = (item: IItem) => {
     if (loading) return 'loading';
     if (item.error) return 'error';
-  }
+  };
 
   return (
     <>
       <Row>
-        <Col span="11" className="pr-16"><span className='color-error mr-4'>*</span>{i18n('ui.label_key')}</Col>
-        <Col span="11" className="pl-16">{i18n('ui.label_value')}</Col>
+        <Col span="11" className="pr-16">
+          <span className="color-error mr-4">*</span>
+          {i18n('ui.label_key')}
+        </Col>
+        <Col span="11" className="pl-16">
+          {i18n('ui.label_value')}
+        </Col>
       </Row>
       {map(list, (item, index) => {
         return (
-          <div key={item.id} className='mt-8'>
-            <Row className='align-center'>
+          <div key={item.id} className="mt-8">
+            <Row className="align-center">
               <Col span="11" className="space-between">
                 <Select.AutoComplete
-                  className='full-width'
+                  className="full-width"
                   state={getState(item)}
                   value={item.key}
                   onChange={(val: string) => handleChangeKey(val, item.id)}
@@ -129,11 +121,13 @@ const TagContainerWithPure: FC<Props> = (props) => {
                   placeholder={i18n('ui.please_select_or_enter_the_complete_key')}
                   dataSource={map(data, obj => obj.key)}
                 />
-                <div className='ml-16' style={{ lineHeight: '32px' }}>:</div>
+                <div className="ml-16" style={{ lineHeight: '32px' }}>
+                  :
+                </div>
               </Col>
               <Col span="11" className="pl-16">
                 <Select.AutoComplete
-                  className='full-width'
+                  className="full-width"
                   value={item.value}
                   disabled={isEmpty(item.key)}
                   maxLength={valueMaxLength}
@@ -144,16 +138,13 @@ const TagContainerWithPure: FC<Props> = (props) => {
               </Col>
               {list.length > 1 && index !== list.length - 1 && (
                 <Col span="2" className="pl-16 pr-16">
-                  <Button text iconSize='xs'>
-                    <Icon
-                      type="ashbin"
-                      onClick={() => handleDelete(item.id)}
-                    />
+                  <Button text iconSize="xs">
+                    <Icon type="ashbin" onClick={() => handleDelete(item.id)} />
                   </Button>
                 </Col>
               )}
             </Row>
-            {item.error && <div className='color-error'>{i18n('ui.no_duplicate_label_keys')}</div>}
+            {item.error && <div className="color-error">{i18n('ui.no_duplicate_label_keys')}</div>}
           </div>
         );
       })}
@@ -168,4 +159,4 @@ export default class TagContainer extends React.Component<Props> {
   render() {
     return <TagContainerWithPure {...this.props} />;
   }
-};
+}

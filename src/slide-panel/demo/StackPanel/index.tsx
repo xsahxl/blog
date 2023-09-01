@@ -1,10 +1,5 @@
 import { Button } from '@alicloud/console-components';
-import {
-  SlidePanelGroup,
-  SlidePanelItem,
-  usePanelStack,
-  usePanelStackCtx,
-} from '@xsahxl/ui';
+import { SlidePanelGroup, SlidePanelItem, usePanelStack, usePanelStackCtx } from '@xsahxl/ui';
 import React, { useState } from 'react';
 
 /* eslint-disable no-console */

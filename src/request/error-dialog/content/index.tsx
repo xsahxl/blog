@@ -17,28 +17,15 @@ const Content: FC<Props> = ({ error, config = {} }) => {
   const errorInfo = axiosDataIntercept(error, config);
   const renderDetail = () => {
     if (!isShow) return null;
-    const {
-      url,
-      method,
-      params,
-      requestData,
-      responseData,
-      traceId,
-      requestId,
-      headers,
-    } = errorInfo;
+    const { url, method, params, requestData, responseData, traceId, requestId, headers } = errorInfo;
     return (
       <>
         {url && <div>url: {url}</div>}
         {method && <div>method: {method}</div>}
         {isNoneEmpty(headers) && <div>headers: {JSON.stringify(headers)}</div>}
         {isNoneEmpty(params) && <div>params: {JSON.stringify(params)}</div>}
-        {isNoneEmpty(requestData) && (
-          <div>requestData: {JSON.stringify(requestData)}</div>
-        )}
-        {isNoneEmpty(responseData) && (
-          <div>responseData: {JSON.stringify(responseData)}</div>
-        )}
+        {isNoneEmpty(requestData) && <div>requestData: {JSON.stringify(requestData)}</div>}
+        {isNoneEmpty(responseData) && <div>responseData: {JSON.stringify(responseData)}</div>}
         {isNoneEmpty(traceId) && <div>traceId: {traceId}</div>}
         {isNoneEmpty(requestId) && <div>requestId: {requestId}</div>}
       </>
@@ -48,10 +35,7 @@ const Content: FC<Props> = ({ error, config = {} }) => {
     if (isEmpty(errorInfo.code)) return null;
     return (
       <>
-        <div
-          className="cursor-pointer align-center"
-          onClick={() => setIsShow(!isShow)}
-        >
+        <div className="cursor-pointer align-center" onClick={() => setIsShow(!isShow)}>
           <Copy
             text={JSON.stringify(errorInfo)}
             showIcon

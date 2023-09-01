@@ -18,12 +18,7 @@ const Threshold: React.FC<{}> = () => {
       <hr />
       <div className="block">
         current threshold:
-        <NumberPicker
-          type="inline"
-          value={threshold}
-          onChange={setThreshold}
-          min={0}
-        />
+        <NumberPicker type="inline" value={threshold} onChange={setThreshold} min={0} />
       </div>
 
       <div className="block">

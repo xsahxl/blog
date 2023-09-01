@@ -12,7 +12,7 @@ type Props = CommonProps & {
   expired?: boolean;
   trigger?: React.ReactNode;
   logo?: string;
-}
+};
 
 const QRCode: FC<Props> = props => {
   const { onRefresh = noop, trigger, logo, value, ...rest } = props;
@@ -20,7 +20,7 @@ const QRCode: FC<Props> = props => {
 
   const handleRefresh = async (e: any) => {
     e.preventDefault();
-    e.stopPropagation()
+    e.stopPropagation();
     setLoading(true);
     await tryfun(onRefresh);
     setLoading(false);
@@ -30,7 +30,7 @@ const QRCode: FC<Props> = props => {
       <QRCodeReact value={value} imageSettings={logo ? { src: logo, height: 24, width: 24, excavate: true } : undefined} {...rest} />
       <div className="qr-code__container" onClick={handleRefresh}>
         <div>
-          <Icon type={loading ? 'loading' : "refresh"} />
+          <Icon type={loading ? 'loading' : 'refresh'} />
           <div>点击刷新</div>
         </div>
       </div>
@@ -42,10 +42,10 @@ const QRCode: FC<Props> = props => {
       <BalloonContainer trigger={trigger} popupStyle={{ minWidth: 'unset' }} triggerType="hover">
         <Pure />
       </BalloonContainer>
-    )
+    );
   }
 
-  return <Pure />
+  return <Pure />;
 };
 
 const SInner = styled.div`

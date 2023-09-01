@@ -4,7 +4,6 @@ import qs from 'qs';
 import { IConfig, CONTENT_TYPE } from '../types';
 import store from '../store';
 
-
 const getPostData = (config: IConfig = {}) => {
   if (isPlainObject(config.json)) {
     store.setRequestData({ params: config.params, data: config.json });
@@ -24,7 +23,7 @@ const getPostData = (config: IConfig = {}) => {
       } as AxiosRequestHeaders,
     };
   }
-}
+};
 
 export default (config: InternalAxiosRequestConfig) => {
   if (config.method === 'get') {

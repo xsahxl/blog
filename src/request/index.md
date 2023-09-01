@@ -46,10 +46,7 @@ const Demo = () => {
     <>
       <div>
         <Button onClick={fetchData}>简单使用</Button>
-        <Button
-          className="ml-8"
-          onClick={() => getstatus({ params: { code: '401' } })}
-        >
+        <Button className="ml-8" onClick={() => getstatus({ params: { code: '401' } })}>
           401
         </Button>
       </div>
@@ -172,10 +169,7 @@ const Demo = () => {
   return (
     <>
       <Button onClick={() => fetchData({ code: 'NeedLogin' })}>登录过期</Button>
-      <Button
-        className="ml-8"
-        onClick={() => fetchData({ code: 'PostonlyOrTokenError' })}
-      >
+      <Button className="ml-8" onClick={() => fetchData({ code: 'PostonlyOrTokenError' })}>
         请求过期
       </Button>
       <Button className="ml-8" onClick={() => fetchData({ code: '401' })}>
@@ -211,9 +205,7 @@ const Demo = () => {
   };
   return (
     <>
-      <Button onClick={() => Promise.all([fetchData(), fetchData()])}>
-        多接口报错
-      </Button>
+      <Button onClick={() => Promise.all([fetchData(), fetchData()])}>多接口报错</Button>
     </>
   );
 };
@@ -306,6 +298,44 @@ const Demo = () => {
 export default Demo;
 ```
 
+## cutsomError (公共处理)
+
+```tsx
+import { Button } from '@alicloud/console-components';
+import '@alicloud/console-components/dist/wind.css';
+import { request } from '@xsahxl/ui';
+import { useState } from 'react';
+
+const createService = options => config =>
+  request(options)({
+    ...config,
+    customError: (err, config, callback) => {
+      console.log('err', err);
+      console.log('config', config);
+      // 处理自己的逻辑
+      callback();
+    },
+  });
+
+// 项目里可以新建一个services目录，统一管理接口
+const service = createService({
+  url: 'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/post',
+});
+
+const Demo = () => {
+  const [data, setData] = useState();
+  const fetchData = async () => {
+    const res = await service({
+      form: { name: 'xiaoming' },
+    });
+    setData(res);
+  };
+  return <Button onClick={fetchData}>custom error</Button>;
+};
+
+export default Demo;
+```
+
 ## createRequest
 
 ### baseURL(统一设置 baseURL)
@@ -320,13 +350,13 @@ import { useState } from 'react';
 // 创建request实例
 const request = createRequest({
   baseURL: 'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8',
-  request: (config) => {
+  request: config => {
     console.log('request', config);
     // 添加公共的参数
     _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
-  response: (config) => {
+  response: config => {
     console.log('response', config);
     return config;
   },
@@ -366,13 +396,13 @@ import { useState } from 'react';
 // 创建request实例
 const request = createRequest({
   baseURL: 'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8',
-  request: (config) => {
+  request: config => {
     console.log('request', config);
     // 添加公共的参数
     _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
-  response: (config) => {
+  response: config => {
     console.log('response', config);
     return config;
   },
@@ -427,13 +457,13 @@ import { useState } from 'react';
 // 创建request实例
 const request = createRequest({
   baseURL: 'https://mock.presstime.cn/mock/645db7465bbac3001ab907c8',
-  request: (config) => {
+  request: config => {
     console.log('request', config);
     // 添加公共的参数
     _.set(config, 'params.region', 'cn-chengdu');
     return config;
   },
-  response: (config) => {
+  response: config => {
     console.log('response', config);
     // 可以处理项目的业务逻辑
     if (_.get(config, 'data.code') === 'PurchaseNotFound') {

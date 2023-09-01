@@ -5,16 +5,17 @@ import { replace, isString } from 'lodash';
 import { noop, tryfun } from '../utils';
 import i18n from '../i18n';
 
-type Props = PropsWithChildren & DialogProps & {
-  disabled?: boolean;
-  title?: React.ReactNode;
-  message: string | React.ReactNode;
-  confirmKey: string;
-  confirmPlaceholer?: string
-  riskInfo?: React.ReactNode;
-  onConfirm: () => Promise<any>;
-  onCancel?: () => void;
-}
+type Props = PropsWithChildren &
+  DialogProps & {
+    disabled?: boolean;
+    title?: React.ReactNode;
+    message: string | React.ReactNode;
+    confirmKey: string;
+    confirmPlaceholer?: string;
+    riskInfo?: React.ReactNode;
+    onConfirm: () => Promise<any>;
+    onCancel?: () => void;
+  };
 
 const RiskConfirm: FC<Props> = props => {
   const {
@@ -37,19 +38,15 @@ const RiskConfirm: FC<Props> = props => {
   const _title = (
     <div>
       <Icon type="warning" style={{ color: '#ffc440', verticalAlign: 'middle' }} />
-      <span
-        style={{ color: '#333', fontSize: 18, verticalAlign: 'middle', marginLeft: 8 }}
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
+      <span style={{ color: '#333', fontSize: 18, verticalAlign: 'middle', marginLeft: 8 }} dangerouslySetInnerHTML={{ __html: title }} />
     </div>
   );
 
   const handleOk = async () => {
     setLoading(true);
-    const [err] = await tryfun(onConfirm)
+    const [err] = await tryfun(onConfirm);
     if (!err) setVisible(false);
     setLoading(false);
-
   };
   const handleCancel = () => {
     setVisible(false);
@@ -63,7 +60,7 @@ const RiskConfirm: FC<Props> = props => {
   };
   return (
     <>
-      <div className='display-inline' onClick={handleOpen}>
+      <div className="display-inline" onClick={handleOpen}>
         {children}
       </div>
       <Dialog
@@ -78,12 +75,16 @@ const RiskConfirm: FC<Props> = props => {
         okProps={{ disabled: getValue('key') !== confirmKey, loading }}
         {...rest}
       >
-        {isString(message) ? <div
-          dangerouslySetInnerHTML={{
-            __html: replace(message, confirmKey, `<span style="color: #d93026">${confirmKey}</span>`),
-          }}
-        /> : message}
-        <div className='mt-16'>
+        {isString(message) ? (
+          <div
+            dangerouslySetInnerHTML={{
+              __html: replace(message, confirmKey, `<span style="color: #d93026">${confirmKey}</span>`),
+            }}
+          />
+        ) : (
+          message
+        )}
+        <div className="mt-16">
           <Input {...init('key')} style={{ width: '100%' }} placeholder={confirmPlaceholer} />
         </div>
         {riskInfo}

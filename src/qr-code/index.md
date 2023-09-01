@@ -20,12 +20,7 @@ export default () => <QRCode value={'https://github.com/xsahxl/blog'} />;
 
 ```tsx
 import { QRCode } from '@xsahxl/ui';
-export default () => (
-  <QRCode
-    value={'https://github.com/xsahxl/blog'}
-    logo="https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png"
-  />
-);
+export default () => <QRCode value={'https://github.com/xsahxl/blog'} logo="https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png" />;
 ```
 
 ## 过期状态
@@ -55,13 +50,7 @@ export default () => {
 ```tsx
 import { QRCode } from '@xsahxl/ui';
 
-export default () => (
-  <QRCode
-    value={'https://github.com/xsahxl/blog'}
-    logo="https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png"
-    trigger="触发元素"
-  />
-);
+export default () => <QRCode value={'https://github.com/xsahxl/blog'} logo="https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png" trigger="触发元素" />;
 ```
 
 ## API

@@ -31,20 +31,18 @@ function onFinish(cp) {
   return new Promise((resolve, reject) => {
     const stdout = [];
     const stderr = [];
-    cp.stdout.on('data', (chunk) => {
+    cp.stdout.on('data', chunk => {
       console.info(chunk.toString());
       stdout.push(chunk);
     });
 
-    cp.stderr.on('data', (chunk) => {
+    cp.stderr.on('data', chunk => {
       console.info(chunk.toString());
       stderr.push(chunk);
     });
 
-    cp.on('exit', (code) => {
-      code === 0
-        ? resolve({})
-        : reject(new Error(Buffer.concat(stderr).toString()));
+    cp.on('exit', code => {
+      code === 0 ? resolve({}) : reject(new Error(Buffer.concat(stderr).toString()));
     });
   });
 }

@@ -18,7 +18,7 @@ const Demo = () => {
       <br />
       <p>Truncated text: </p>
       <div>
-        <Input value={text} onChange={(str) => setText(str)} />
+        <Input value={text} onChange={str => setText(str)} />
       </div>
     </div>
   );

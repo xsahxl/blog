@@ -19,7 +19,7 @@ import { BalloonContainer, sleep } from '@xsahxl/ui';
 export default () => (
   <BalloonContainer
     title="新建标题"
-    onConfirm={async (value) => {
+    onConfirm={async value => {
       console.log('点击了确定', value);
       await sleep(1000);
     }}
@@ -60,7 +60,7 @@ export default () => (
     title="编辑标题"
     dataSource={dataSource}
     trigger={<Icon type="edit" size="xs" />}
-    onConfirm={async (value) => {
+    onConfirm={async value => {
       console.log('点击了确定', value);
       await sleep(1000);
     }}
@@ -77,11 +77,8 @@ import { BalloonContainer } from '@xsahxl/ui';
 
 export default () => (
   <BalloonContainer triggerType="hover" trigger="自定义">
-    她发现孤独的人 准备动身 于是就祷告着黄昏 直到夜里 她转头听见 悲伤的呜咽
-    一个善良的女子 长发垂肩 她已跟随黄昏来临 翠绿的衣裳在炉火中 化为灰烬
-    升起火焰 一直烧到黎明 一直到那女子推开门离去 她自言自语 在离这很远的地方
-    有一片海滩 孤独的人他就在海上 撑着船帆 如果你看到 他回到海岸 就请你告诉他
-    你的名字我的名字 莉莉安
+    她发现孤独的人 准备动身 于是就祷告着黄昏 直到夜里 她转头听见 悲伤的呜咽 一个善良的女子 长发垂肩 她已跟随黄昏来临 翠绿的衣裳在炉火中 化为灰烬 升起火焰 一直烧到黎明
+    一直到那女子推开门离去 她自言自语 在离这很远的地方 有一片海滩 孤独的人他就在海上 撑着船帆 如果你看到 他回到海岸 就请你告诉他 你的名字我的名字 莉莉安
   </BalloonContainer>
 );
 ```

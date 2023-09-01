@@ -7,7 +7,7 @@ type Props = {
   threshold?: number;
 };
 
-const BackToTop: FC<Props> = (props) => {
+const BackToTop: FC<Props> = props => {
   const { threshold = 200 } = props;
   const [visible, setVisible] = useState(false);
 
@@ -17,14 +17,7 @@ const BackToTop: FC<Props> = (props) => {
   }, [visible]);
 
   const handleScroll = throttle(() => {
-    const scrollTop =
-      window.pageYOffset !== undefined
-        ? window.pageYOffset
-        : (
-            document.documentElement ||
-            document.body.parentNode ||
-            document.body
-          ).scrollTop;
+    const scrollTop = window.pageYOffset !== undefined ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     setVisible(scrollTop > threshold);
   }, 500);
 
@@ -46,8 +39,7 @@ const BackToTop: FC<Props> = (props) => {
 };
 
 const Wrapper = styled.div`
-  display: ${(props: { visible: boolean }) =>
-    props.visible ? 'inline-block' : 'none'};
+  display: ${(props: { visible: boolean }) => (props.visible ? 'inline-block' : 'none')};
   position: fixed;
   right: 20px;
   bottom: 10px;

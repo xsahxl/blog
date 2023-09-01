@@ -5,13 +5,13 @@ import { useCompare } from '../utils';
 type LoopOptions = {
   enable?: boolean;
   time?: number;
-}
+};
 
 type RenderProps = {
   data: any;
   loading: boolean;
   error?: Error;
-}
+};
 
 type Props = {
   fetchData: () => Promise<any>;
@@ -21,25 +21,17 @@ type Props = {
   onCompleted?: () => Promise<any>;
   onError?: (err: Error) => Promise<any>;
   autoFetch?: boolean;
-}
+};
 
 type ParamsOptions = {
   showLoading?: boolean;
-}
+};
 
 type RefOptions = {
   current: { id?: any };
-}
+};
 function Query(props: Props) {
-  const {
-    fetchData: fetchDataFromProps,
-    refreshIndex = 0,
-    loop = { time: 10000, enable: false },
-    children,
-    onCompleted,
-    onError,
-    autoFetch = true,
-  } = props;
+  const { fetchData: fetchDataFromProps, refreshIndex = 0, loop = { time: 10000, enable: false }, children, onCompleted, onError, autoFetch = true } = props;
 
   const loopRef: RefOptions = useRef({});
   const [result, setResult] = useState();
@@ -51,21 +43,24 @@ function Query(props: Props) {
       const data = await fetchDataFromProps();
       setLoading(false);
       setResult(data);
-      isFunction(onCompleted) && await onCompleted();
+      isFunction(onCompleted) && (await onCompleted());
     } catch (error) {
       const err = error as Error;
-      isFunction(onCompleted) && await onCompleted();
-      isFunction(onError) && await onError(err);
+      isFunction(onCompleted) && (await onCompleted());
+      isFunction(onError) && (await onError(err));
       setError(err);
       setLoading(false);
     }
   };
 
   const fetchDataLoop = () => {
-    loopRef.current.id = setTimeout(() => {
-      fetchData({ showLoading: false });
-      fetchDataLoop();
-    }, get(loop, 'time', 10000));
+    loopRef.current.id = setTimeout(
+      () => {
+        fetchData({ showLoading: false });
+        fetchDataLoop();
+      },
+      get(loop, 'time', 10000),
+    );
   };
 
   useEffect(() => {
@@ -73,10 +68,10 @@ function Query(props: Props) {
   }, [autoFetch]);
 
   const onRefresh = async () => {
-    clearTimeout(loopRef.current.id)
+    clearTimeout(loopRef.current.id);
     await fetchData();
-    loop.enable && fetchDataLoop()
-  }
+    loop.enable && fetchDataLoop();
+  };
 
   useEffect(() => {
     if (refreshIndex !== 0) {
@@ -85,7 +80,7 @@ function Query(props: Props) {
   }, [refreshIndex]);
 
   useEffect(() => {
-    clearTimeout(loopRef.current.id)
+    clearTimeout(loopRef.current.id);
     if (loop.enable) {
       fetchData({ showLoading: false });
       fetchDataLoop();

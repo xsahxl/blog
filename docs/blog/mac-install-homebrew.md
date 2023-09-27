@@ -39,7 +39,7 @@ plugins=(git autojump zsh-autosuggestions)
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 ```
 
-# java
+## java
 
 - brew install java11
 - brew install maven
@@ -49,6 +49,6 @@ plugins=(git autojump zsh-autosuggestions)
 export JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
-# pip
+## pip
 
 - pip3 install --upgrade pip

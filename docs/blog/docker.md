@@ -1142,9 +1142,60 @@ docker run -it --name docker02 --volumes-from docker01  xsahxl/centos:0.1 /bin/b
 docker run -it --name docker03 --volumes-from docker01  xsahxl/centos:0.1 /bin/bash
 ```
 
+## dockerfile
 
+dockerfile是用来构建docker镜像的文件，命令参数脚本
 
+构建步骤：
+- 编写一个dockerfile文件
+- docker build 构建成为一个镜像
+- docker run 运行镜像
+- docker push 发布镜像（docker hub, 阿里云镜像仓库）
 
+很多官方镜像都是基础包，很多功能都没有，我们需要自己构建自己的镜像
+
+### dockerfile构建过程
+
+- 每个保留关键字（指令）都必须是大写字母
+- 执行从上到下 顺序执行
+- \# 表示注释
+- 每一条指令都会创建一个新的镜像层，并提交
+
+### dockerfile的指令
+- FROM 基础镜像，一切从这里开始构建
+- MAINTAINER 镜像是谁写的，姓名+邮箱
+- RUN 镜像构建的时候需要运行的命令
+- ADD 步骤：tomcat镜像，这个tomcat压缩包！添加内容
+- WORKDIR 镜像的工作目录
+- VOLUME 挂载目录
+- EXPOSE 暴漏端口
+- CMD 指定这个容器启动的时候要运行的命令，只有最后一个会生效，可被替代
+- ENTRYPOINT 指定这个容器启动的时候要运行的命令，可以追加命令
+- COPY 类似ADD，将我们文件拷贝到镜像中
+- ENV 构建的时候设置环境变量
+
+### 实战测试
+
+docker hub中99%的镜像都是从这个基础镜像过来的 FROM scratch, 然后来配置需要的软件和配置来进行构建
+
+```bash
+docker build -f dockerfile -t mycentos:0.1 .  
+
+docker history 镜像id
+
+docker run --name test01 -d -p 3008:3000 mytest:0.1
+
+# 构建自己的nginx镜像
+docker build -t xsahxl/blog-nginx:0.1 .
+# 运行镜像
+docker run --name blog-nginx01 -d -p 3007:80 xsahxl/blog-nginx:0.1
+
+➜  blog docker ps                             
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                  NAMES
+9ca9dac3d9dc   xsahxl/blog-nginx:0.1   "/docker-entrypoint.…"   10 minutes ago   Up 10 minutes   0.0.0.0:3007->80/tcp   blog-nginx01
+
+# 浏览器即可访问 http://localhost:3007
+```
 
 
 

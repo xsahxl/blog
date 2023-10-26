@@ -1197,6 +1197,180 @@ CONTAINER ID   IMAGE                   COMMAND                  CREATED         
 # 浏览器即可访问 http://localhost:3007
 ```
 
+### CMD 和 ENTRYPOINT
+
+```bash
+➜  docker git:(main) ✗ docker build -f docker-cmd-test -t cmdtest .     
+[+] Building 0.2s (5/5) FINISHED                                                                                     docker:desktop-linux
+ => [internal] load build definition from docker-cmd-test                                                                            0.1s
+ => => transferring dockerfile: 71B                                                                                                  0.0s
+ => [internal] load .dockerignore                                                                                                    0.1s
+ => => transferring context: 2B                                                                                                      0.0s
+ => [internal] load metadata for docker.io/library/centos:latest                                                                     0.0s
+ => CACHED [1/1] FROM docker.io/library/centos                                                                                       0.0s
+ => exporting to image                                                                                                               0.1s
+ => => exporting layers                                                                                                              0.0s
+ => => writing image sha256:f87b3e751b9eea89912948636c0b5f4783d633e37c87386708da0398ea2f94ad                                         0.0s
+ => => naming to docker.io/library/cmdtest                                                                                           0.0s
+
+What's Next?
+  View summary of image vulnerabilities and recommendations → docker scout quickview
+
+➜  docker git:(main) ✗ docker images                                
+REPOSITORY            TAG       IMAGE ID       CREATED         SIZE
+centos                latest    5d0da3dc9764   2 years ago     231MB
+cmdtest               latest    f87b3e751b9e   2 years ago     231MB
+➜  docker git:(main) ✗ docker run f87b3e751b9e                                   
+total 56
+drwxr-xr-x   1 root root 4096 Oct 17 07:21 .
+drwxr-xr-x   1 root root 4096 Oct 17 07:21 ..
+-rwxr-xr-x   1 root root    0 Oct 17 07:21 .dockerenv
+lrwxrwxrwx   1 root root    7 Nov  3  2020 bin -> usr/bin
+drwxr-xr-x   5 root root  340 Oct 17 07:21 dev
+drwxr-xr-x   1 root root 4096 Oct 17 07:21 etc
+drwxr-xr-x   2 root root 4096 Nov  3  2020 home
+lrwxrwxrwx   1 root root    7 Nov  3  2020 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov  3  2020 lib64 -> usr/lib64
+drwx------   2 root root 4096 Sep 15  2021 lost+found
+drwxr-xr-x   2 root root 4096 Nov  3  2020 media
+drwxr-xr-x   2 root root 4096 Nov  3  2020 mnt
+drwxr-xr-x   2 root root 4096 Nov  3  2020 opt
+dr-xr-xr-x 227 root root    0 Oct 17 07:21 proc
+dr-xr-x---   2 root root 4096 Sep 15  2021 root
+drwxr-xr-x  11 root root 4096 Sep 15  2021 run
+lrwxrwxrwx   1 root root    8 Nov  3  2020 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Nov  3  2020 srv
+dr-xr-xr-x  13 root root    0 Oct 17 07:21 sys
+drwxrwxrwt   7 root root 4096 Sep 15  2021 tmp
+drwxr-xr-x  12 root root 4096 Sep 15  2021 usr
+drwxr-xr-x  20 root root 4096 Sep 15  2021 var
+➜  docker git:(main) ✗ docker run f87b3e751b9e ls -lh   # ls -lh 替换的是 CMD ["ls", "-la"]
+total 48K
+lrwxrwxrwx   1 root root    7 Nov  3  2020 bin -> usr/bin
+drwxr-xr-x   5 root root  340 Oct 17 07:38 dev
+drwxr-xr-x   1 root root 4.0K Oct 17 07:38 etc
+drwxr-xr-x   2 root root 4.0K Nov  3  2020 home
+lrwxrwxrwx   1 root root    7 Nov  3  2020 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov  3  2020 lib64 -> usr/lib64
+drwx------   2 root root 4.0K Sep 15  2021 lost+found
+drwxr-xr-x   2 root root 4.0K Nov  3  2020 media
+drwxr-xr-x   2 root root 4.0K Nov  3  2020 mnt
+drwxr-xr-x   2 root root 4.0K Nov  3  2020 opt
+dr-xr-xr-x 230 root root    0 Oct 17 07:38 proc
+dr-xr-x---   2 root root 4.0K Sep 15  2021 root
+drwxr-xr-x  11 root root 4.0K Sep 15  2021 run
+lrwxrwxrwx   1 root root    8 Nov  3  2020 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4.0K Nov  3  2020 srv
+dr-xr-xr-x  13 root root    0 Oct 17 07:38 sys
+drwxrwxrwt   7 root root 4.0K Sep 15  2021 tmp
+drwxr-xr-x  12 root root 4.0K Sep 15  2021 usr
+drwxr-xr-x  20 root root 4.0K Sep 15  2021 var
+
+
+➜  docker git:(main) ✗ docker build -f docker-entrypoint-test -t entrypointtest .
+[+] Building 0.3s (5/5) FINISHED                                                                                     docker:desktop-linux
+ => [internal] load build definition from docker-entrypoint-test                                                                     0.0s
+ => => transferring dockerfile: 84B                                                                                                  0.0s
+ => [internal] load .dockerignore                                                                                                    0.0s
+ => => transferring context: 2B                                                                                                      0.0s
+ => [internal] load metadata for docker.io/library/centos:latest                                                                     0.0s
+ => CACHED [1/1] FROM docker.io/library/centos                                                                                       0.0s
+ => exporting to image                                                                                                               0.0s
+ => => exporting layers                                                                                                              0.0s
+ => => writing image sha256:b325f5b972337e763ad3b2c0f1a720eb2d5b11a39b3d88008cc5a0e42393b617                                         0.0s
+ => => naming to docker.io/library/entrypointtest                                                                                    0.0s
+
+What's Next?
+  View summary of image vulnerabilities and recommendations → docker scout quickview
+➜  docker git:(main) ✗ docker images                                             
+REPOSITORY            TAG       IMAGE ID       CREATED         SIZE
+cmdtest               latest    f87b3e751b9e   2 years ago     231MB
+entrypointtest        latest    b325f5b97233   2 years ago     231MB
+centos                latest    5d0da3dc9764   2 years ago     231MB
+➜  docker git:(main) ✗ docker run b325f5b97233                   
+.
+..
+.dockerenv
+bin
+dev
+etc
+home
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+➜  docker git:(main) ✗ docker run b325f5b97233 -l
+total 56
+drwxr-xr-x   1 root root 4096 Oct 17 07:44 .
+drwxr-xr-x   1 root root 4096 Oct 17 07:44 ..
+-rwxr-xr-x   1 root root    0 Oct 17 07:44 .dockerenv
+lrwxrwxrwx   1 root root    7 Nov  3  2020 bin -> usr/bin
+drwxr-xr-x   5 root root  340 Oct 17 07:44 dev
+drwxr-xr-x   1 root root 4096 Oct 17 07:44 etc
+drwxr-xr-x   2 root root 4096 Nov  3  2020 home
+lrwxrwxrwx   1 root root    7 Nov  3  2020 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Nov  3  2020 lib64 -> usr/lib64
+drwx------   2 root root 4096 Sep 15  2021 lost+found
+drwxr-xr-x   2 root root 4096 Nov  3  2020 media
+drwxr-xr-x   2 root root 4096 Nov  3  2020 mnt
+drwxr-xr-x   2 root root 4096 Nov  3  2020 opt
+dr-xr-xr-x 231 root root    0 Oct 17 07:44 proc
+dr-xr-x---   2 root root 4096 Sep 15  2021 root
+drwxr-xr-x  11 root root 4096 Sep 15  2021 run
+lrwxrwxrwx   1 root root    8 Nov  3  2020 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Nov  3  2020 srv
+dr-xr-xr-x  13 root root    0 Oct 17 07:44 sys
+drwxrwxrwt   7 root root 4096 Sep 15  2021 tmp
+drwxr-xr-x  12 root root 4096 Sep 15  2021 usr
+drwxr-xr-x  20 root root 4096 Sep 15  2021 var
+➜  docker git:(main) ✗ 
+```
+
+## push image to registry
+
+```bash
+$ docker login --username=xsa***@126.com registry.cn-hangzhou.aliyuncs.com
+$ docker tag [ImageId] registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx:[镜像版本号]
+$ docker push registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx:[镜像版本号]
+```
+
+```bash
+➜  docker git:(main) ✗ docker login --username=xsahxl@126.com registry.cn-hangzhou.aliyuncs.com
+Password: 
+Login Succeeded
+➜  docker git:(main) ✗ docker images                                                           
+REPOSITORY            TAG       IMAGE ID       CREATED         SIZE
+xsahxl/blog-nginx     0.3       b37322450b5a   6 days ago      160MB
+➜  docker git:(main) ✗ docker tag b37322450b5a registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx:0.1
+➜  docker git:(main) ✗ docker images                                                                    
+REPOSITORY                                              TAG       IMAGE ID       CREATED         SIZE
+xsahxl/blog-nginx                                       0.3       b37322450b5a   6 days ago      160MB
+registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx   0.1       b37322450b5a   6 days ago      160MB
+➜  docker git:(main) ✗ docker push registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx:0.1
+The push refers to repository [registry.cn-hangzhou.aliyuncs.com/shl-test/blog-nginx]
+08b238436bd6: Pushed 
+dd12a7c26bb9: Pushed 
+d874fd2bc83b: Pushed 
+32ce5f6a5106: Pushed 
+f1db227348d0: Pushed 
+b8d6e692a25e: Pushed 
+e379e8aedd4d: Pushed 
+2edcec3590a4: Pushed 
+0.1: digest: sha256:4871c26b48025fbf84f405998dd5752f8ab195393d8b367ecd5a2c004ad94418 size: 1989
+➜  docker git:(main) ✗ 
+```
+
 
 
 

@@ -15,6 +15,13 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - name: Install ossutil
+        run: |
+          curl -L https://gosspublic.alicdn.com/ossutil/1.7.4/ossutil64 -o ossutil
+          chmod +x ossutil
+          mv ossutil /usr/local/bin/
+      - name: Upload file to OSS
+        run: ossutil
       - name: Cache node modules
         uses: actions/cache@v3
         id: cache

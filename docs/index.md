@@ -1,4 +1,5 @@
 ---
+title: 史华力的个人网站 - shihuali's Personal Website
 hero:
   title: library
   description: A react library developed with dumi

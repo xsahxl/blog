@@ -29,11 +29,15 @@ jobs:
       - run: npm install --production=false
         # if: steps.cache.outputs.cache-hit != 'true'
       - run: npm run docs:build
-      - run: npm install @serverless-devs/s -g
-      - run: s -v
-      - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
-      - run: s deploy --use-local -y
-      - run: s -v
+      # - run: npm install @serverless-devs/s -g
+      # - run: s -v
+      # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
+      # - run: s deploy --use-local -y
+      # - run: s -v
+      - name: Install ossutil
+        run: curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+      - name: Upload file to OSS
+        run: ossutil --endpoint oss-cn-chengdu.aliyuncs.com --access-key-id ${{secrets.ALIYUN_ACCESS_KEY_ID}} --access-key-secret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} cp -r docs-dist/ oss://shihuali
       - name: Sync docs to xsahxl.github.io
         run: |
           # 确保脚本抛出遇到的错误

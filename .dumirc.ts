@@ -1,7 +1,6 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: `shihuali's blog`,
   favicons: [
     'https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png',
   ],

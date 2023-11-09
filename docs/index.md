@@ -1,11 +1,10 @@
 ---
-title: 史华力的个人网站 - shihuali's Personal Website
+title: xsahxl的个人网站 - xsahxl's Personal Website
 hero:
-  title: library
-  description: A react library developed with dumi
+  description: xsahxl's Personal Website
   actions:
-    - text: Component
-      link: /components/key-value
-    - text: Blog
-      link: /blog/serverless-devs
+    - text: 组件
+      link: /components/copy
+    - text: 小记
+      link: /note/build-a-website
 ---

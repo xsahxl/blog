@@ -10,18 +10,33 @@ export default defineConfig({
     logo: 'https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png',
     nav: [
       {
-        title: 'Component',
-        link: '/components/key-value',
+        title: '组件',
+        link: '/components/copy',
         activePath: '/components',
       },
       {
-        title: 'Blog',
-        link: '/blog/serverless-devs',
-        activePath: '/blog',
+        title: '小记',
+        link: '/note/build-a-website',
+        activePath: '/note',
+      },
+      {
+        title: '知识点',
+        link: '/learn/debounce-and-throttle',
+        activePath: '/learn',
+      },
+      {
+        title: '踩坑日记',
+        link: '/faq/debug',
+        activePath: '/faq',
+      },
+      {
+        title: '那些好用的包',
+        link: '/npm/ajv',
+        activePath: '/npm',
       },
     ] as any,
     socialLinks: {
-      github: 'https://github.com/xsahxl/blog',
+      github: 'https://github.com/xsahxl',
     },
     footer: `Copyright © ${new Date().getFullYear()} | Powered by xsahxl`,
   },

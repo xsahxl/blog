@@ -5,6 +5,6 @@ hero:
   actions:
     - text: 组件
       link: /components/copy
-    - text: 小记
+    - text: 随笔
       link: /note/build-a-website
 ---

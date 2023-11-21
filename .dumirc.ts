@@ -40,5 +40,6 @@ export default defineConfig({
       github: 'https://github.com/xsahxl',
     },
     footer: `Copyright © ${new Date().getFullYear()} | Powered by xsahxl`,
+    showLineNum: true,
   },
 });

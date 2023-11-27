@@ -1,6 +1,5 @@
 ---
 toc: content
-sidebar: false
 ---
 
 # serverless-devs 使用介绍

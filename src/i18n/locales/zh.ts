@@ -73,6 +73,8 @@ const zh = {
   'ui.tips': '提示',
   'ui.login_token_had_expired': '您的登录信息已经过期，请重新登录',
   'ui.refresh_page_and_try_again': '您的请求信息已经过期，请刷新页面',
+  'ui.total': '共<%= total %>条',
+  'ui.refresh': '刷新',
 };
 
 export default zh;

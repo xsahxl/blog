@@ -5,7 +5,7 @@
 ## 进化史
 
 - 全局函数
-- 命名空间函数 
+- 命名空间函数
 - IIFE（匿名闭包）
 - IIFE 增强版, 传入依赖
 
@@ -17,6 +17,7 @@
 - 高可维护性
 
 ## 页面引入加载 script 存在问题
+
 - 请求过多
 - 依赖模糊
 - 难以维护
@@ -24,6 +25,7 @@
 ## 模块化
 
 ### CommonJS （服务端 同步加载）
+
 CommonJS是服务端模块的规范，由于Nodejs被广泛认知，根据CommonJS规范，一个文件就是一个模块，通过 `require` 方法加载模块，最后返回 module.exports 对象
 
 ### AMD （浏览器端 异步加载模块 RequireJS）
@@ -35,6 +37,7 @@ Asynchromous Module Definition主要是通过 `RequireJS` 实现的模块化，�
 定义的时候使用 `AMD define` 的方式，暴漏的时候使用 `CommonJS` 的方法，function接收是三个固定的行参（require, exports, module）
 
 ### UMD （CommonJS + AMD）
+
 UMD 是 CommonJS 和 AMD 的一个结合，AMD 是浏览器优先，异步加载；CommonJS 是服务端优先，同步加载；
 
 ### es6

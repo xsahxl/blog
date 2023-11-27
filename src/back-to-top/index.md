@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # BackToTop
 
 ## 何时使用

@@ -21,8 +21,10 @@
   },
   "dependencies": {
     "@alicloud/console-components-actions": "^2.0.2",
+    "@alicloud/console-components-search": "^0.2.34",
     "@alicloud/console-components-slide-panel": "^3.0.3",
     "@alicloud/console-components-status-indicator": "^2.0.2",
+    "@alicloud/console-components-table": "^1.0.27",
     "@alicloud/console-components-truncate": "^2.0.2",
     "ahooks": "^3.7.8",
     "axios": "^1.4.0",

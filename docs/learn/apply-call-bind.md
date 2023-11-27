@@ -5,12 +5,12 @@
 那什么情况下需要改变 `this` 指向呢？
 
 ```js
-var name = "lucy";
+var name = 'lucy';
 var obj = {
-    name: "tom",
-    say: function () {
-        console.log(this.name);
-    }
+  name: 'tom',
+  say: function () {
+    console.log(this.name);
+  },
 };
 obj.say(); // tom 指向 obj 对象
 setTimeout(obj.say); // lucy, this 指向 window 对象
@@ -24,25 +24,25 @@ obj.say() 输出 tom, setTimeout(obj.say) 输出了 lucy
 
 ```js
 setTimeout(obj.say.bind(obj)); // lucy, this 指向 window 对象
-
 ```
 
 ## call
 
-steven 的手机电量由 20 充到了 90 
+steven 的手机电量由 20 充到了 90
+
 ```js
 const steven = {
   name: 'steven',
   phoneBattery: 20,
   charge: function (level) {
     this.phoneBattery = level;
-  }
-}
+  },
+};
 
 const tom = {
   name: 'tom',
-  phoneBattery: 30
-}
+  phoneBattery: 30,
+};
 
 console.log(steven);
 steven.charge(90);
@@ -51,28 +51,26 @@ console.log(steven);
 
 现在tom的手机也没电了，但是又不想买充电宝，想借用 steven的充电宝给手机充电
 
-
-
 ```js
 const steven = {
   name: 'steven',
   phoneBattery: 20,
   charge: function (level) {
     this.phoneBattery = level;
-  }
-}
+  },
+};
 
 const tom = {
   name: 'tom',
-  phoneBattery: 30
-}
+  phoneBattery: 30,
+};
 
 console.log(steven);
 steven.charge(90);
 console.log(steven);
 
 console.log(tom);
-steven.charge.call(tom, 90)
+steven.charge.call(tom, 90);
 console.log(tom);
 ```
 
@@ -84,22 +82,23 @@ const steven = {
   phoneBattery: 20,
   charge: function (level1, level2) {
     this.phoneBattery = level1 + level2;
-  }
-}
+  },
+};
 
 const tom = {
   name: 'tom',
-  phoneBattery: 30
-}
+  phoneBattery: 30,
+};
 
 console.log(steven);
 steven.charge(40, 50);
 console.log(steven);
 
 console.log(tom);
-steven.charge.apply(tom, [40, 50])
+steven.charge.apply(tom, [40, 50]);
 console.log(tom);
 ```
+
 ## bind
 
 ```js
@@ -108,13 +107,13 @@ const steven = {
   phoneBattery: 20,
   charge: function (level1, level2) {
     this.phoneBattery = level1 + level2;
-  }
-}
+  },
+};
 
 const tom = {
   name: 'tom',
-  phoneBattery: 30
-}
+  phoneBattery: 30,
+};
 
 console.log(steven);
 steven.charge(40, 50);
@@ -126,7 +125,7 @@ console.log(tom);
 // const func = steven.charge.bind(tom, 40, 50);
 // func()
 const func = steven.charge.bind(tom);
-func(40, 50)
+func(40, 50);
 console.log(tom);
 ```
 
@@ -137,13 +136,12 @@ console.log(tom);
 - apply 接收的参数是数组，call是参数列表
 - apply 和 call 会立即执行，bind则是返回绑定this之后的函数
 
-
 ## 手写 call
 
 ```js
 Function.prototype.myCall = function (context, ...args) {
   if (typeof this !== 'function') {
-    throw new TypeError('error')
+    throw new TypeError('error');
   }
   /**
    * 为什么要通过context调用fn？
@@ -153,7 +151,7 @@ Function.prototype.myCall = function (context, ...args) {
   context[fn] = this;
   context[fn](...args);
   delete context[fn];
-}
+};
 ```
 
 ## 手写 apply
@@ -161,7 +159,7 @@ Function.prototype.myCall = function (context, ...args) {
 ```js
 Function.prototype.myApply = function (context, args) {
   if (typeof this !== 'function') {
-    throw new TypeError('error')
+    throw new TypeError('error');
   }
   /**
    * 为什么要通过context调用fn？
@@ -171,7 +169,7 @@ Function.prototype.myApply = function (context, args) {
   context[fn] = this;
   context[fn](...args);
   delete context[fn];
-}
+};
 ```
 
 ## 手写 bind
@@ -179,14 +177,14 @@ Function.prototype.myApply = function (context, args) {
 ```js
 Function.prototype.myBind = function (context, ...args) {
   if (typeof this !== 'function') {
-    throw new TypeError('error')
+    throw new TypeError('error');
   }
   const that = this;
   return function fn(...innerArgs) {
     if (this instanceof fn) {
-      return new that(...args, ...innerArgs)
+      return new that(...args, ...innerArgs);
     }
-    that.apply(context, [...args, ...innerArgs])
-  }
-}
+    that.apply(context, [...args, ...innerArgs]);
+  };
+};
 ```

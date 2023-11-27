@@ -1,4 +1,3 @@
-
 # homebrew
 
 ```bash
@@ -41,12 +40,12 @@ plugins=(git autojump zsh-autosuggestions)
   export JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.20/libexec/openjdk.jdk/Contents/Home
   export PATH=$JAVA_HOME/bin:$PATH
   ```
+
 ## pip
 
 - pip3 install --upgrade pip
 
-
-## cat ~/.zshrc 
+## cat ~/.zshrc
 
 ```bash
 blog git:(main) ✗ cat ~/.zshrc

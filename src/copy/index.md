@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # Copy
 
 ## 何时使用

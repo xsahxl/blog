@@ -14,6 +14,7 @@ js作为主要运行在浏览器中的脚本语言，其主要用途之一是操
 为了避免这种问题，js必须是一门单线程语言，并且在未来这个特点也不会改变。
 
 ## js 异步执行的运行机制
+
 1. 所有任务都在主线程上执行，形成一个`执行栈`
 2. 主线程之外还有一个`任务队列`，所有异步任务都会放入任务队列之中
 3. 一旦`执行栈`的同步任务执行完毕，就会读取`任务队列`中的任务，遵循`先进先出`原则
@@ -41,10 +42,10 @@ js作为主要运行在浏览器中的脚本语言，其主要用途之一是操
 console.log(1);
 
 async function async1() {
-  await async2()
-  console.log(2)
-  await async3()
-  console.log(3)
+  await async2();
+  console.log(2);
+  await async3();
+  console.log(3);
 }
 
 async function async2() {
@@ -55,56 +56,55 @@ async function async3() {
   console.log(5);
 }
 
-async1()
-console.log(6)
+async1();
+console.log(6);
 
 // 1 4 6 2 5 3
 ```
 
 ```js
-console.log("1");
+console.log('1');
 
 //setTimeout1
 setTimeout(function () {
-  console.log("2");
+  console.log('2');
   new Promise(function (resolve) {
-    console.log("3");
+    console.log('3');
     resolve();
   }).then(function () {
-    console.log("4");
+    console.log('4');
   });
   //setTimeout2
   setTimeout(function () {
-    console.log("5");
+    console.log('5');
     new Promise(function (resolve) {
-      console.log("6");
+      console.log('6');
       resolve();
     }).then(function () {
-      console.log("7");
+      console.log('7');
     });
   });
-  console.log("14");
+  console.log('14');
 });
 
 new Promise(function (resolve) {
-  console.log("8");
+  console.log('8');
   resolve();
 }).then(function () {
-  console.log("9");
+  console.log('9');
 });
 
 //setTimeout3
 setTimeout(function () {
-  console.log("10");
+  console.log('10');
   new Promise(function (resolve) {
-    console.log("11");
+    console.log('11');
     resolve();
   }).then(function () {
-    console.log("12");
+    console.log('12');
   });
 });
 
-console.log("13");
+console.log('13');
 // 1 8 13 9 2 3 14 4 10 11 12 5 6 7
 ```
-

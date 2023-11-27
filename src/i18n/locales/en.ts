@@ -73,6 +73,8 @@ const en = {
   'ui.tips': 'Tips',
   'ui.login_token_had_expired': 'Your login information has expired, please log in again',
   'ui.refresh_page_and_try_again': 'Your request information has expired, please refresh the page',
+  'ui.total': 'Total  <%= total %>',
+  'ui.refresh': 'Refresh',
 };
 
 export default en;

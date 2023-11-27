@@ -11,11 +11,11 @@ import { Logger, ConsoleTransport } from 'egg-logger';
   logger.set('console', new ConsoleTransport({ level: 'INFO' }));
   const cp = spawn('mvn -v', { shell: true });
   await new Promise((resolve, reject) => {
-    cp.stdout.on('data', (chunk) => {
+    cp.stdout.on('data', chunk => {
       logger.info(chunk.toString());
     });
 
-    cp.on('exit', (code) => {
+    cp.on('exit', code => {
       code === 0 ? resolve('') : reject('');
     });
   });
@@ -29,12 +29,7 @@ import { Logger, ConsoleTransport } from 'egg-logger';
 新建一个 logger 文件:
 
 ```typescript
-import {
-  Logger as _Logger,
-  LoggerLevel,
-  EggLoggerOptions,
-  ConsoleTransport,
-} from 'egg-logger';
+import { Logger as _Logger, LoggerLevel, EggLoggerOptions, ConsoleTransport } from 'egg-logger';
 import { set, get } from 'lodash';
 import os from 'os';
 
@@ -90,11 +85,11 @@ import { Logger } from './logger';
   const logger = new Logger({});
   const cp = spawn('mvn -v', { shell: true });
   await new Promise((resolve, reject) => {
-    cp.stdout.on('data', (chunk) => {
+    cp.stdout.on('data', chunk => {
       logger.append(chunk.toString());
     });
 
-    cp.on('exit', (code) => {
+    cp.on('exit', code => {
       logger.append('\n'); // 最后根据需要输出一个回车符
       code === 0 ? resolve('') : reject('');
     });

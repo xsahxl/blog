@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # QRCode
 
 ## 何时使用

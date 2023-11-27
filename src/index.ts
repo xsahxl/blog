@@ -18,4 +18,5 @@ export { createRequest, default as request } from './request';
 export { default as RiskConfirm } from './risk-confirm';
 export { default as TagContainer } from './tag-container';
 export { default as TimeContainer } from './time-container';
+export { default as RcTable } from './rc-table';
 export * from './utils';

@@ -5,10 +5,11 @@
 ```bash
 npm install -g pkg
 ```
+
 After installing it, run pkg --help without arguments to see list of options:
 
 ```bash
- blog git:(main) ✗ pkg -h                         
+ blog git:(main) ✗ pkg -h
 
   pkg [options] <input>
 
@@ -55,10 +56,8 @@ After installing it, run pkg --help without arguments to see list of options:
 
 ## PKG_CACHE_PATH
 
-`PKG_CACHE_PATH`	Used to specify a custom path for node binaries cache folder. Default is `~/.pkg-cache`;
+`PKG_CACHE_PATH` Used to specify a custom path for node binaries cache folder. Default is `~/.pkg-cache`;
 
 ## pkg-fetch
 
 https://github.com/vercel/pkg-fetch/releases
-
-

@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # Mutation
 
 ## 何时使用

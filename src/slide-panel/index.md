@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # SlidePanel
 
 滑动面板，从浏览器右侧弹出面板。

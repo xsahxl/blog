@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       {
         title: '组件',
-        link: '/components/copy',
+        link: '/components/rc-table',
         activePath: '/components',
       },
       {

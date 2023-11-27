@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # StatusIndicator
 
 状态指示器

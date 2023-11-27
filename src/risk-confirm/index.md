@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # RiskConfirm
 
 ## 何时使用

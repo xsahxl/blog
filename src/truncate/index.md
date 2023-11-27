@@ -1,7 +1,3 @@
----
-toc: content
----
-
 # Truncate
 
 文本截断

@@ -1,37 +1,49 @@
-.loop(@counter) when (@counter >= 0) {
+.loop(@counter) when (@counter >=0) {
   .p-@{counter} {
-    padding: (1px * @counter);
+    padding: (1px * @counter) !important;
   }
+
   .pt-@{counter} {
-    padding-top: (1px * @counter);
+    padding-top: (1px * @counter) !important;
   }
+
   .pr-@{counter} {
-    padding-right: (1px * @counter);
+    padding-right: (1px * @counter) !important;
   }
+
   .pb-@{counter} {
-    padding-bottom: (1px * @counter);
+    padding-bottom: (1px * @counter) !important;
   }
+
   .pl-@{counter} {
-    padding-left: (1px * @counter);
+    padding-left: (1px * @counter) !important;
   }
+
   .m-@{counter} {
-    margin: (1px * @counter);
+    margin: (1px * @counter) !important;
   }
+
   .mt-@{counter} {
-    margin-top: (1px * @counter);
+    margin-top: (1px * @counter) !important;
   }
+
   .mr-@{counter} {
-    margin-right: (1px * @counter);
+    margin-right: (1px * @counter) !important;
   }
+
   .mb-@{counter} {
-    margin-bottom: (1px * @counter);
+    margin-bottom: (1px * @counter) !important;
   }
+
   .ml-@{counter} {
-    margin-left: (1px * @counter);
+    margin-left: (1px * @counter) !important;
   }
+
   .fz-@{counter} {
-    font-size: (1px * @counter);
+    font-size: (1px * @counter) !important;
   }
+
   .loop((@counter - 1));
 }
+
 .loop(200);

@@ -6,7 +6,7 @@
 
 ```tsx
 import React from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import '@alicloud/console-components/dist/wind.css';
@@ -41,6 +41,7 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -70,7 +71,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -107,6 +108,7 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -142,7 +144,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -178,6 +180,7 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -197,7 +200,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -276,6 +279,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -308,7 +312,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -387,6 +391,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -420,7 +425,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -500,6 +505,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -533,7 +539,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
@@ -616,6 +622,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -649,7 +656,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
@@ -732,6 +739,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -775,7 +783,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
@@ -859,6 +867,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -902,7 +911,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
@@ -988,6 +997,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
@@ -1031,7 +1041,7 @@ export default Demo;
 
 ```tsx
 import React, { useState } from 'react';
-import { RcTable } from '@xsahxl/ui';
+import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
@@ -1114,6 +1124,7 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
+    await sleep(1000);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });

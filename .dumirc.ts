@@ -2,17 +2,17 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   favicons: [
-    'https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png',
+    'https://img.alicdn.com/imgextra/i2/O1CN01ZAedQu1xiyboFhMKk_!!6000000006478-55-tps-200-200.svg',
   ],
   outputPath: 'docs-dist',
   styles: [`body { --font-size-body-1: 16px; }`],
   themeConfig: {
     name: 'xsahxl',
-    logo: 'https://img.alicdn.com/tfs/TB1d_KkfQcx_u4jSZFlXXXnUFXa-200-200.png',
+    logo: 'https://img.alicdn.com/imgextra/i2/O1CN01ZAedQu1xiyboFhMKk_!!6000000006478-55-tps-200-200.svg',
     nav: [
       {
         title: '组件',
-        link: '/components/rc-table',
+        link: '/components/rc-table#search-default-value',
         activePath: '/components',
       },
       {

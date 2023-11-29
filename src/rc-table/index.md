@@ -8,7 +8,6 @@
 import React from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import '@alicloud/console-components/dist/wind.css';
 
 const Demo = () => {
@@ -41,14 +40,14 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -73,7 +72,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -108,14 +106,14 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -146,7 +144,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -180,14 +177,14 @@ const Demo = () => {
   ];
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return <RcTable columns={columns} fetchData={fetchData} showRefreshButton operation={<Button type="primary">创建应用</Button>} />;
@@ -202,7 +199,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -279,14 +275,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -314,7 +310,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -391,14 +386,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -427,7 +422,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -505,14 +499,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -541,7 +535,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -622,14 +615,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -658,7 +651,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -739,14 +731,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -785,7 +777,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -867,14 +858,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -913,7 +904,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -997,14 +987,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (
@@ -1043,7 +1033,6 @@ export default Demo;
 import React, { useState } from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
-import { get } from 'lodash';
 import { Button, Badge } from '@alicloud/console-components';
 import '@alicloud/console-components/dist/wind.css';
 
@@ -1124,14 +1113,14 @@ const Demo = () => {
   };
   const fetchData = async params => {
     console.log('params', params);
-    await sleep(1000);
+    await sleep(500);
     const res = await axios.get('https://mock.presstime.cn/mock/645db7465bbac3001ab907c8/api/tablelist', {
       params,
     });
     console.log(res);
     return {
-      data: get(res, 'data.data.Instances.Instance'),
-      total: get(res, 'data.data.TotalCount'),
+      data: res.data.data.Instances.Instance,
+      total: res.data.data.TotalCount,
     };
   };
   return (

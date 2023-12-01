@@ -106,11 +106,11 @@ const RcTable: FC<ITableProps> = props => {
         const exist = find(filters, { dataIndex });
         return exist
           ? map(filters, item => {
-              if (item.dataIndex === dataIndex) {
-                return { ...item, ...extra };
-              }
-              return item;
-            })
+            if (item.dataIndex === dataIndex) {
+              return { ...item, ...extra };
+            }
+            return item;
+          })
           : [...filters, extra];
       };
       setFilters(getData() as IRcSearchTagItemProps[]);
@@ -162,9 +162,9 @@ const RcTable: FC<ITableProps> = props => {
       {filters.length > 0 && <SearchFilter className="mt-4" dataSource={filters} onChange={onFilterChange} onClear={onFilterClear} />}
       <div className="mt-8">{search.afterFilterRender}</div>
       <Table
+        loading={loading}
         {...restProps}
         className="mt-8"
-        loading={loading}
         dataSource={dataSource}
         pagination={props.pagination === false ? null : _pagination}
         // 如果设置了selection，rowSelection默认值修改为空对象

@@ -106,11 +106,11 @@ const RcTable: FC<ITableProps> = props => {
         const exist = find(filters, { dataIndex });
         return exist
           ? map(filters, item => {
-            if (item.dataIndex === dataIndex) {
-              return { ...item, ...extra };
-            }
-            return item;
-          })
+              if (item.dataIndex === dataIndex) {
+                return { ...item, ...extra };
+              }
+              return item;
+            })
           : [...filters, extra];
       };
       setFilters(getData() as IRcSearchTagItemProps[]);

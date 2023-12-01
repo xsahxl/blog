@@ -78,6 +78,21 @@ vscode.commands.executeCommand(
 );
 ```
 
+## 创建一个新的终端
+
+```ts
+const TERMINAL_NAME = '#1';
+const terminals = vscode.window.terminals;
+for (const item of terminals) {
+  if (item.name === TERMINAL_NAME) {
+    item.dispose();
+  }
+}
+const terminal = vscode.window.createTerminal(TERMINAL_NAME);
+terminal.sendText(newCommand);
+terminal.show();
+```
+
 ## package.json
 
 - explorer/context： 资源管理器右键菜单

@@ -14,14 +14,14 @@ export function getLanguage() {
   if (language.startsWith('ja')) {
     language = 'ja';
   }
-  const vscodeLanguage = get(window, 'SERVERLESS_DEVS_CONFIG.lang');
+  const vscodeLanguage = get(window, 'XSAHXL_CONFIG.lang');
   if (vscodeLanguage) {
     language = vscodeLanguage;
   }
   return language;
 }
 
-export const noop: () => Promise<any> = async () => {};
+export const noop: () => Promise<any> = async () => { };
 
 export const useCompare = (value: any) => {
   const ref = React.useRef(value);

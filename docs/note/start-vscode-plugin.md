@@ -93,6 +93,18 @@ terminal.sendText(newCommand);
 terminal.show();
 ```
 
+## output 窗口显示相关日志
+
+```bash
+const outputChannel = vscode.window.createOutputChannel('Package Manage');
+# 清除已有日志
+outputChannel.clear();
+# 打开o utput 窗口
+outputChannel.show();
+# 追加日志信息
+outputChannel.appendLine(`Package ${data.name}@${data.version} is updating...`);
+```
+
 ## package.json
 
 - explorer/context： 资源管理器右键菜单

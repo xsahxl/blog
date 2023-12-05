@@ -1,6 +1,6 @@
 {
   "name": "@xsahxl/ui",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A react library developed with dumi",
   "license": "MIT",
   "module": "dist/index.js",
@@ -31,8 +31,10 @@
     "classnames": "^2.3.2",
     "copy-to-clipboard": "^3.3.3",
     "format": "^0.2.2",
+    "highlight.js": "^11.9.0",
     "js-cookie": "^3.0.5",
     "marked": "^11.0.0",
+    "marked-highlight": "^2.0.9",
     "qrcode.react": "^3.1.0",
     "qs": "^6.11.2",
     "xlsx": "^0.18.5"

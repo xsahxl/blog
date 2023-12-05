@@ -19,4 +19,5 @@ export { default as RiskConfirm } from './risk-confirm';
 export { default as TagContainer } from './tag-container';
 export { default as TimeContainer } from './time-container';
 export { default as RcTable } from './rc-table';
+export { default as Markdown } from './markdown';
 export * from './utils';

@@ -32,6 +32,7 @@
     "copy-to-clipboard": "^3.3.3",
     "format": "^0.2.2",
     "js-cookie": "^3.0.5",
+    "marked": "^11.0.0",
     "qrcode.react": "^3.1.0",
     "qs": "^6.11.2",
     "xlsx": "^0.18.5"

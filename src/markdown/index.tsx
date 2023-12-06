@@ -83,18 +83,28 @@ const Wrapper = styled.div`
   a:hover {
     text-decoration: underline;
   }
-  pre {
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f6f8fa;
+  blockquote {
+    background: #efefef;
+    padding: 1px 16px;
+    margin-left: 0;
+    margin-right: 0;
+    border-left: #cecece solid 10px;
     border-radius: 3px;
+    & > p {
+      margin: 8px 0;
+    }
+  }
+  pre {
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 12px;
+    font-size: 1em;
+    background: #f7f7f7;
+    border-radius: 2px;
+    overflow-x: auto;
     position: relative;
   }
   pre code {
-    max-width: 680px;
     overflow: auto;
     display: block;
   }

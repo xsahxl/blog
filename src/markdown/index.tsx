@@ -1,31 +1,38 @@
-import React, { useEffect, useRef, PropsWithChildren } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Marked } from 'marked';
 import { markedHighlight } from 'marked-highlight';
 import HighlightJS from 'highlight.js';
-import './css/index.css';
+import copyToClipboard from 'copy-to-clipboard';
+import styled from 'styled-components';
+import 'highlight.js/styles/github.min.css';
 const { highlight, highlightAuto } = HighlightJS;
 
-type Props = PropsWithChildren & {
-
-}
+type Props = {
+  children: string;
+};
 
 function Markdown(props: Props) {
   const { children } = props;
+  if (typeof children !== 'string') {
+    return 'Only support children is string';
+  }
   const ref = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const element = ref.current;
     if (element) {
-      const markedInstance = new Marked(markedHighlight((code, language) => {
-        if (!language) {
-          return highlightAuto(code).value;
-        }
-        return highlight(code, { language }).value;
-      }));
+      const markedInstance = new Marked(
+        markedHighlight((code, language) => {
+          if (!language) {
+            return highlightAuto(code).value;
+          }
+          return highlight(code, { language }).value;
+        }),
+      );
       element.innerHTML = markedInstance.parse(children as string) as string;
       // add copy button
       const div = document.createElement('div');
-      div.innerHTML = '<div class="tooltip-copy"><img src="https://img.alicdn.com/imgextra/i4/O1CN01oZmdp01V8VqQgi84F_!!6000000002608-55-tps-64-64.svg" class="icon-copy" title="Click to Copy" /></div>';
+      div.innerHTML =
+        '<div class="tooltip-copy"><img src="https://img.alicdn.com/imgextra/i4/O1CN01oZmdp01V8VqQgi84F_!!6000000002608-55-tps-64-64.svg" class="icon-copy" title="Click to Copy" /></div>';
       div.className = 'div-copy';
 
       const allPres = element.querySelectorAll('pre');
@@ -41,8 +48,10 @@ function Markdown(props: Props) {
           copy.classList.remove('active');
           copy.classList.remove('click');
         };
-        copy.onclick = function () {
-          navigator.clipboard.writeText(pre.textContent as string);
+        copy.onclick = function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          copyToClipboard(pre.textContent as string);
           copy.classList.add('click');
           clearTimeout(timeout);
           timeout = setTimeout(function () {
@@ -51,11 +60,104 @@ function Markdown(props: Props) {
         };
       });
     }
-  }, []);
+  }, [children]);
 
-  return (
-    <div ref={ref} />
-  )
+  return <Wrapper ref={ref} />;
 }
+
+const Wrapper = styled.div`
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  pre {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    position: relative;
+  }
+  pre code {
+    max-width: 680px;
+    overflow: auto;
+    display: block;
+  }
+  :not(pre) > code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+  }
+  .div-copy {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+  .div-copy .icon-copy {
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+  }
+  .div-copy.active .icon-copy {
+    opacity: 1;
+  }
+  .div-copy .tooltip-copy {
+    position: relative;
+  }
+  .div-copy .tooltip-copy::before {
+    content: 'Copied';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+    margin-right: 5px;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .div-copy.click .tooltip-copy::before {
+    opacity: 1;
+  }
+
+  .div-copy .tooltip-copy::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    margin-right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 2px 2px 5px 8px;
+    border-color: transparent transparent transparent #444;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .div-copy.click .tooltip-copy::after {
+    opacity: 1;
+  }
+`;
 
 export default Markdown;

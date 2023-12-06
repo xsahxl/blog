@@ -1,6 +1,6 @@
 {
   "name": "@xsahxl/ui",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A react library developed with dumi",
   "license": "MIT",
   "module": "dist/index.js",

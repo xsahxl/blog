@@ -14,7 +14,7 @@ type Props = {
 function Markdown(props: Props) {
   const { children } = props;
   if (typeof children !== 'string') {
-    return 'Only support children is string';
+    return <div>Only support children is string</div>;
   }
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {

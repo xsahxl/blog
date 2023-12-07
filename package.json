@@ -17,7 +17,8 @@
     "format": "prettier --write src/ docs/",
     "prepare": "husky install && dumi setup",
     "prepublishOnly": "npm run build",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "release": "gh release create $npm_package_version --generate-notes"
   },
   "dependencies": {
     "@alicloud/console-components-actions": "^2.0.2",

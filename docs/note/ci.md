@@ -145,3 +145,16 @@ echo "Branch: $BRANCH"
 如果 $branch 变量有值，则 BRANCH 将设置为 $branch 的值；如果 $branch 变量为空或未定义，则 BRANCH 将设置为 "publish"。然后，脚本输出 Branch: $BRANCH。
 
 这样，你可以在需要设置默认值的情况下使用该语法来简化脚本的编写。
+
+## 设置npm token
+
+```bash
+echo "//registry.npmjs.org/:_authToken=${TOKEN}" > ~/.npmrc
+```
+
+## gh 创建一个release
+
+```bash
+gh release create v1.2.3 --notes "bugfix release"
+gh release create v1.2.3 --generate-notes
+```

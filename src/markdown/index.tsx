@@ -22,7 +22,7 @@ function Markdown(props: Props) {
     if (element) {
       const markedInstance = new Marked(
         markedHighlight((code, language) => {
-          if (!language) {
+          if (!language || language === 'none') {
             return highlightAuto(code).value;
           }
           return highlight(code, { language }).value;

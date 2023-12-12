@@ -1,11 +1,13 @@
 import { usePrefersColor } from 'dumi';
+import { useLocation } from 'dumi';
 import React, { type FC } from 'react';
 import Giscus from '@giscus/react';
 
 const Footer: FC = () => {
+  const location = useLocation();
   const _usePrefersColor = usePrefersColor();
   return (
-    <section style={{ marginTop: 32 }}>
+    <div style={{ marginTop: 32 }} key={location.pathname}>
       <Giscus
         repo="xsahxl/blog"
         repoId="MDEwOlJlcG9zaXRvcnkzNDAwMTg3NzQ="
@@ -20,7 +22,7 @@ const Footer: FC = () => {
         theme={_usePrefersColor[0] === 'dark' ? 'dark_dimmed' : 'light'}
         lang="zh-CN"
       />
-    </section>
+    </div>
   );
 };
 

@@ -2,7 +2,6 @@ import { usePrefersColor } from 'dumi';
 import React, { type FC } from 'react';
 import Giscus from '@giscus/react';
 
-
 const Footer: FC = () => {
   const _usePrefersColor = usePrefersColor();
   return (
@@ -14,7 +13,7 @@ const Footer: FC = () => {
         categoryId="DIC_kwDOFERGVs4Cbp7S"
         mapping="pathname"
         reactionsEnabled="1"
-        emitMetadata='1'
+        emitMetadata="1"
         inputPosition="top"
         loading="lazy"
         strict="0"

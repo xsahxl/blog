@@ -48,6 +48,7 @@
     "@alicloud/console-components-page": "^2.0.2",
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@giscus/react": "^2.3.0",
     "@types/js-cookie": "^3.0.3",
     "@types/lodash": "^4.14.202",
     "@types/qs": "^6.9.7",

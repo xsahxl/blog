@@ -6,6 +6,8 @@ import Giscus from '@giscus/react';
 const Footer: FC = () => {
   const location = useLocation();
   const _usePrefersColor = usePrefersColor();
+  // 首页不展示 评论相关ui
+  if (location.pathname === '/') return null;
   return (
     <div style={{ marginTop: 32 }} key={location.pathname}>
       <Giscus

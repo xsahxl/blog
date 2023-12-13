@@ -107,6 +107,8 @@ const Wrapper = styled.div`
   pre code {
     overflow: auto;
     display: block;
+    background: unset;
+    color: unset;
   }
   :not(pre) > code {
     padding: 0.2em 0.4em;

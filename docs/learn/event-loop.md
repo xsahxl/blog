@@ -27,7 +27,7 @@ js作为主要运行在浏览器中的脚本语言，其主要用途之一是操
 - 宏任务：事件，网络请求，script整体代码，setTimeout，setInterval、setImmediate((Node.js 环境))。
 - 微任务：Promise.then()、process.nextTick、 MutationObserver
 
-![](../../public/images/2.png)
+![](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/event-loop.png)
 
 - 一个宏任务执行完成过程中，就会去检测微任务队列是否有需要执行的任务，即使是微任务嵌套微任务，也会将微任务执行完成，再去执行下一个宏任务。
 

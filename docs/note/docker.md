@@ -22,7 +22,7 @@ See 'docker run --help'.
 ## 配置[阿里云镜像](https://cr.console.aliyun.com/cn-chengdu/instances/mirrors)
 
 - 点击 Docker Desktop 应用图标 > 设置 > Docker Engine, 将 https://xxxx.mirror.aliyuncs.com 加到"registry-mirrors"的数组里，点击 Apply & Restart按钮，等待Docker重启并应用配置的镜像加速器。
-  ![image](../../public/images/10.png)
+  ![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/docker-registry.png)
 
 ```json
 {
@@ -69,14 +69,14 @@ For more examples and ideas, visit:
 
 ## docker run 的流程图
 
-![images](../../public//images/11.png)
+![images](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/docker-run.png)
 
 ## docker 为什么比 vm 快
 
 - docker有着比虚拟机更少的抽象层
 - docker利用的宿主机的内核，vm需要Guest OS
 
-![images](../../public//images/12.png)
+![images](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/docker.png)
 
 所以说，新建一个容器的时候，docker不需要像虚拟机一样重新加载一个操作系统内核，虚拟机加载Guest OS，分钟级别的，而docker是宿主机的操作系统，
 省略了这个复杂的过程，秒级。
@@ -656,7 +656,7 @@ Commercial support is available at
 ```
 
 - 端口的暴漏
-  ![image](../../public/images/13.png)
+  ![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/docker-port.png)
 
 - 思考问题
 

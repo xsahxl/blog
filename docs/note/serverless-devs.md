@@ -607,15 +607,11 @@ s framework deploy: 指定部署某个服务
 
 - 主进程
 
-![](../../public/images/7.png)
+![](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/deploy.png)
 
 - 组件的加载机制
 
-![](../../public/images/8.png)
-
-- core 的自更新机制
-
-![](../../public/images/9.png)
+![](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/load-component.png)
 
 - 组件如何引用 core 包
 

@@ -65,4 +65,4 @@
 
 ## 流程图
 
-![image](../../public/images/http.png)
+![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/http.png)

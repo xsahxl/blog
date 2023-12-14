@@ -36,7 +36,7 @@
 
 - 首先，我们需要明确的是[更改主题](https://d.umijs.org/theme)可以去添加 评论相关的ui
 - 根据自己需要，看看这个 评论相关的ui 放到哪个位置，那么dumi留给哪些slot我们可以自己去自定义呢？
-  ![Alt text](../../public/images/17.png)
+  ![](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/theme-slot.png)
   直接 `cd node_modules/dumi/theme-default/slots`, 可以看到截图中的slot我们都可以进行自定义。
 
 ## 安装

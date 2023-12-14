@@ -27,7 +27,7 @@ const result = await vscode.window.showQuickPick(
 console.log(result.value);
 ```
 
-![image](../../public/images/14.png)
+![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/show-quick-pick.png)
 
 ## 右下角弹窗提示
 
@@ -36,7 +36,7 @@ vscode.window.showInformationMessage('Hello World from start-vscode-plugin!');
 vscode.window.showErrorMessage('some error');
 ```
 
-![image](../../public/images/15.png)
+![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/show-message.png)
 
 ## 打开某个文件
 
@@ -66,7 +66,7 @@ if (selectFolderUri) {
 }
 ```
 
-![image](../../public/images/16.png)
+![image](https://cdn.jsdelivr.net/gh/xsahxl/blog-images/show-open-dialog.png)
 
 ## 打开一个新的项目
 

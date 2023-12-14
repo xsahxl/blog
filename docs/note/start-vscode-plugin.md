@@ -306,3 +306,9 @@ vscode.postMessage({
 ```ts
 // 参考demo里的 `receiveMessage` 方法
 ```
+
+## 发布
+
+- https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+- https://dev.azure.com
+- 获取个人token：https://dev.azure.com/xsahxl/_usersSettings/tokens

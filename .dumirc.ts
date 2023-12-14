@@ -17,7 +17,7 @@ export default defineConfig({
       },
       {
         title: '随笔',
-        link: '/note/build-a-website',
+        link: '/note/giscus',
         activePath: '/note',
       },
       {

@@ -37,7 +37,7 @@ export default defineConfig({
       },
     ] as any,
     socialLinks: {
-      github: 'https://github.com/xsahxl',
+      github: 'https://github.com/xsahxl/blog',
     },
     footer: `Copyright © ${new Date().getFullYear()} | Powered by xsahxl`,
     showLineNum: true,

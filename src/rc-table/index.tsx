@@ -182,6 +182,7 @@ const Wrapper = styled.span`
   }
   .rc-search-taglist .remove-btn {
     color: #0064c8;
+    font-size: 12px;
   }
   .cnd-search {
     display: flex;

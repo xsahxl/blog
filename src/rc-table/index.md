@@ -9,6 +9,9 @@ import React from 'react';
 import { RcTable, sleep } from '@xsahxl/ui';
 import axios from 'axios';
 import '@alicloud/console-components/dist/wind.css';
+import Cookie from 'js-cookie';
+
+Cookie.set('aliyun_lang', 'zh');
 
 const Demo = () => {
   const columns = [

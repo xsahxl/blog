@@ -13,14 +13,14 @@ export default defineConfig({
     logo: 'https://img.alicdn.com/imgextra/i2/O1CN01ZAedQu1xiyboFhMKk_!!6000000006478-55-tps-200-200.svg',
     nav: [
       {
-        title: '组件',
-        link: '/components/rc-table#search-default-value',
-        activePath: '/components',
-      },
-      {
         title: '随笔',
         link: '/note/giscus',
         activePath: '/note',
+      },
+      {
+        title: '组件',
+        link: '/components/rc-table#table',
+        activePath: '/components',
       },
       {
         title: '面试题',

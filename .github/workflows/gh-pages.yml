@@ -1,0 +1,59 @@
+name: Website Publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  publish-website:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - name: Cache node modules
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+      - run: npm install --production=false
+        # if: steps.cache.outputs.cache-hit != 'true'
+      - run: npm run docs:build
+      # - run: npm install @serverless-devs/s -g
+      # - run: s -v
+      # - run: s config add --AccountID ${{secrets.ALIYUN_ACCOUNT_ID}} --AccessKeyID ${{secrets.ALIYUN_ACCESS_KEY_ID}} --AccessKeySecret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} -a default -f
+      # - run: s deploy --use-local -y
+      # - run: s -v
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GIT_TOKEN }}
+          publish_dir: ./docs-dist
+      # - name: Install ossutil
+      #   run: curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+      # - name: Upload file to OSS
+      #   run: ossutil --endpoint oss-cn-chengdu.aliyuncs.com --access-key-id ${{secrets.ALIYUN_ACCESS_KEY_ID}} --access-key-secret ${{secrets.ALIYUN_ACCESS_KEY_SECRET}} cp -r docs-dist/ oss://shihuali
+      # - name: Sync docs to xsahxl.github.io
+      #   run: |
+      #     # 确保脚本抛出遇到的错误
+      #     set -e
+
+      #     # 进入生成的文件夹
+      #     cd docs-dist
+
+      #     # 添加 README.md
+      #     echo 'My personal website: https://xsahxl.github.io. If you feel it is too slow to access the page, you can also visit the oss address: http://shihuali.oss.devsapp.net' > README.md
+
+      #     # 代码提交
+      #     git init
+      #     git remote add origin https://${{ secrets.GIT_TOKEN }}@github.com/xsahxl/xsahxl.github.io
+      #     git add -A
+      #     git commit -m 'deploy'
+      #     git push --set-upstream origin master -f
+      #     cd -

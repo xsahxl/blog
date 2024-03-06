@@ -6,5 +6,5 @@ hero:
     - text: 随笔
       link: /note/giscus
     - text: 组件
-      link: /components/rc-table#table
+      link: https://xsahxl.github.io
 ---

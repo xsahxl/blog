@@ -18,11 +18,6 @@ export default defineConfig({
         activePath: '/note',
       },
       {
-        title: '组件',
-        link: '/components/rc-table#table',
-        activePath: '/components',
-      },
-      {
         title: '面试题',
         link: '/learn/debounce-and-throttle',
         activePath: '/learn',
@@ -36,6 +31,10 @@ export default defineConfig({
         title: '那些好用的包',
         link: '/npm/ajv',
         activePath: '/npm',
+      },
+      {
+        title: '组件',
+        link: 'https://xsahxl.github.io',
       },
     ] as any,
     socialLinks: {

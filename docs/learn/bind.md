@@ -1,4 +1,6 @@
-# apply call bind 区别？如何实现一个bind?
+# 如何实现一个 bind?
+
+## apply call bind 区别？
 
 主要作用是改变 函数执行时的上下文，换句话说是改变函数运行时的 `this` 指向
 
@@ -49,7 +51,7 @@ steven.charge(90);
 console.log(steven);
 ```
 
-现在tom的手机也没电了，但是又不想买充电宝，想借用 steven的充电宝给手机充电
+现在 tom 的手机也没电了，但是又不想买充电宝，想借用 steven 的充电宝给手机充电
 
 ```js
 const steven = {
@@ -131,10 +133,10 @@ console.log(tom);
 
 ## 区别
 
-- 都可以改变this指向
-- 第一个参数都是this要指向的对象，如果不传递或者为null，undefined，则默认指向全局的window
-- apply 接收的参数是数组，call是参数列表
-- apply 和 call 会立即执行，bind则是返回绑定this之后的函数
+- 都可以改变 this 指向
+- 第一个参数都是 this 要指向的对象，如果不传递或者为 null，undefined，则默认指向全局的 window
+- apply 接收的参数是数组，call 是参数列表
+- apply 和 call 会立即执行，bind 则是返回绑定 this 之后的函数
 
 ## 手写 call
 

@@ -1,4 +1,4 @@
-# 手写promise
+# 手写 promise
 
 ## 基本使用
 
@@ -78,7 +78,7 @@ console.log(p2.result); // fail
 
 ## then 第一节
 
-- 首先明确的是需要返回一个promise
+- 首先明确的是需要返回一个 promise
 - 应该根据当前状态做相关处理
 
 ```js
@@ -587,9 +587,9 @@ p3.then(
 ## Promise.resolve 和 Promise.reject
 
 - Promise.resolve(value):
-  - 如果value是promise，则value的执行结果就是Promise.resolve的返回结果
-  - 如果value不是promise，则返回成功的promise，其结果就是value
-- Promise.reject(reason): 返回一个失败的promise，原因就是reason
+  - 如果 value 是 promise，则 value 的执行结果就是 Promise.resolve 的返回结果
+  - 如果 value 不是 promise，则返回成功的 promise，其结果就是 value
+- Promise.reject(reason): 返回一个失败的 promise，原因就是 reason
 
 ```js
 class MyPromise {

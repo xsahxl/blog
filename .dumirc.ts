@@ -19,7 +19,7 @@ export default defineConfig({
       },
       {
         title: '面试题',
-        link: '/learn/debounce-and-throttle',
+        link: '/learn/debounce-throttle',
         activePath: '/learn',
       },
       {
